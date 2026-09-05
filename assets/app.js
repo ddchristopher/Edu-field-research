@@ -325,7 +325,7 @@
     } catch (err) {
       const box = $('#load-error');
       box.hidden = false;
-      $('#load-error-msg').textContent = err.message;
+      $('#load-error-msg').textContent = err.message + (location.protocol === 'file:' ? ' (opened from disk).' : '.');
       console.error(err);
     }
   }

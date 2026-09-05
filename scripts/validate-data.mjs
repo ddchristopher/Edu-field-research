@@ -77,7 +77,7 @@ for (const k of ['edition', 'generated', 'summary', 'items', 'upcoming', 'change
 briefing.items.forEach((it, i) => { for (const k of ['date', 'tag', 'headline', 'detail']) if (!it[k]) fail(`briefing.items[${i}] missing ${k}`); if (!isoDate.test(it.date)) fail(`briefing.items[${i}] bad date`); if (!['AI', 'Math', 'Data', 'Policy'].includes(it.tag)) fail(`briefing.items[${i}] unknown tag ${it.tag}`); checkSource(it.source, `briefing.items[${i}]`); });
 const dates = briefing.items.map(i => i.date);
 if (dates.some((d, i) => i && d > dates[i - 1])) warn('briefing.items are not sorted newest first');
-briefing.upcoming.forEach((u, i) => { for (const k of ['date', 'what', 'why']) if (!u[k]) fail(`briefing.upcoming[${i}] missing ${k}`); });
+briefing.upcoming.forEach((u, i) => { for (const k of ['date', 'what', 'why']) if (!u[k]) fail(`briefing.upcoming[${i}] missing ${k}`); if (u.source) checkSource(u.source, `briefing.upcoming[${i}]`); });
 for (const k of ['name', 'tagline', 'edition', 'generatedAt', 'nextScheduledRun', 'cadence', 'repo']) if (!meta[k]) fail(`meta missing ${k}`);
 if (meta.edition !== briefing.edition) fail(`meta.edition (${meta.edition}) != briefing.edition (${briefing.edition})`);
 for (const id of Object.keys(sources)) if (!usedSources.has(id)) warn(`source '${id}' is never cited`);

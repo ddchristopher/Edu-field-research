@@ -30,7 +30,18 @@
       },
       "asOf": "Dec 2025",
       "source": "rand_youth_ai_2026",
-      "note": "RAND American Youth Panel, 1,214 respondents ages 12–29. Middle and high schoolers drove the increase."
+      "note": "RAND American Youth Panel, 1,214 respondents ages 12–29. Middle and high schoolers drove the increase.",
+      "spark": {
+        "label": "Students using AI for homework (%)",
+        "x": [
+          "May 2025",
+          "Dec 2025"
+        ],
+        "values": [
+          48,
+          62
+        ]
+      }
     },
     {
       "id": "teachers_use_ai",
@@ -202,7 +213,6 @@
         "subtitle": "Reported use of AI versus the share receiving policy, training or explicit instruction. Different surveys, 2025–26; hover for each source.",
         "unit": "%",
         "format": "percent",
-        "legend": true,
         "items": [
           {
             "label": "Students using AI for homework (Dec 2025)",

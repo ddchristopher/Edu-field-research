@@ -154,7 +154,7 @@
       "chart": {
         "kind": "multiples",
         "title": "NAEP average scores, 2013–2024",
-        "subtitle": "The 'learning recession' predates the pandemic: scores peaked around 2013 and every grade and subject is now below 2019.",
+        "subtitle": "The 'learning recession' predates the pandemic: scores peaked around 2013 and every grade and subject is now below 2019. Panels share one vertical scale (same points per pixel) around each grade's own level.",
         "unit": "NAEP scale score",
         "x": [
           "2013",
@@ -344,7 +344,7 @@
       "chart": {
         "kind": "line",
         "title": "Public school enrollment, fall 2019–2024",
-        "subtitle": "Millions of PK-12 students in public schools. Falling births, more homeschooling and private choice, and migration all contribute.",
+        "subtitle": "Millions of PK-12 students in public schools; the axis starts at 46 million, not zero. Falling births, more homeschooling and private choice, and migration all contribute.",
         "unit": "M",
         "x": [
           "2019",

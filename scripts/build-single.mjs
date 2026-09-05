@@ -13,7 +13,7 @@ html = html.replace('<link rel="stylesheet" href="assets/styles.css">', () => `<
 const inline = `<script type="application/json" id="chalkline-data">${JSON.stringify(data).replace(/<\/script/gi, '<\\/script')}</script>`;
 html = html.replace('<script src="assets/charts.js"></script>', () => `${inline}\n<script>\n${read('assets/charts.js')}\n</script>`);
 html = html.replace('<script src="assets/app.js"></script>', () => `<script>\n${read('assets/app.js')}\n</script>`);
-html = html.replace(/href="data\/(\w+)\.json"/g, 'href="https://github.com/ddchristopher/Edu-field-research/blob/main/data/$1.json"');
+html = html.replace(/href="data\/(\w+)\.json"/g, 'href="https://github.com/ddchristopher/Edu-field-research/blob/HEAD/data/$1.json"');
 mkdirSync(resolve(root, 'dist'), { recursive: true });
 if (artifact) {
   // Keep only what belongs inside <body>, plus <title>, font link and styles, which the host places for us.

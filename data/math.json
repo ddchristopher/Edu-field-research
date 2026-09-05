@@ -235,7 +235,7 @@
       "chart": {
         "kind": "line",
         "title": "TIMSS math, U.S. average scores",
-        "subtitle": "International benchmark (centerpoint 500). Both grades posted their lowest U.S. scores ever in 2023.",
+        "subtitle": "International benchmark (centerpoint 500); the axis starts at 470, not zero. Both grades posted their lowest U.S. scores ever in 2023.",
         "unit": "TIMSS scale score",
         "x": [
           "2015",

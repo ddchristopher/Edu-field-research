@@ -115,15 +115,17 @@
     container.appendChild(svg);
     return { svg, width, height };
   }
+  // Slot 0 is the section accent (or the default blue); later slots are hues no section uses as its accent.
   function seriesColor(i, accent, root) {
-    if (accent && i === 0) return accent;
-    return cssVar(`--series-${i + 1}`, root) || '#2a78d6';
+    const slots = [accent || cssVar('--series-1', root) || '#2a78d6', cssVar('--series-2', root), cssVar('--series-3', root)];
+    return slots[Math.min(i, slots.length - 1)];
   }
 
   /* ---------- LINE ---------- */
   function renderLine(container, spec, opts) {
     const root = document.documentElement;
-    const { svg, width, height } = frame(container, spec.height || 280);
+    const natural = spec.height || 280;
+    const { svg, width, height } = frame(container, Math.max(natural, opts.availableHeight || 0));
     const m = { top: 30, right: 16, bottom: 34, left: 46 };
     const endLabelSpace = spec.series.length > 1 ? 88 : 60;
     m.right += endLabelSpace;
@@ -160,7 +162,7 @@
       }
     }
     // series
-    const colors = spec.series.map((s, i) => s.color || seriesColor(i, spec.series.length === 1 ? opts.accent : null, root));
+    const colors = spec.series.map((s, i) => s.color || seriesColor(i, opts.accent, root));
     const endLabels = [];
     spec.series.forEach((s, si) => {
       const pts = s.values.map((v, i) => [xAt(i), yAt(v)]);
@@ -217,14 +219,18 @@
     container.replaceChildren();
     const grid = htmlEl('div', 'multiples');
     container.appendChild(grid);
+    // One vertical scale for every panel: the same span (points per pixel) centered on each panel's own data,
+    // so slopes are comparable across panels even though their levels differ.
+    const span = Math.max(...spec.panels.map(p => Math.max(...p.values) - Math.min(...p.values))) * 1.7 + 2;
     spec.panels.forEach(panel => {
       const cell = htmlEl('div', 'multiple');
       cell.appendChild(htmlEl('h4', 'multiple-title', panel.name));
       const body = htmlEl('div', 'chart-body');
       cell.appendChild(body);
       grid.appendChild(cell);
-      const sub = { title: `${spec.title}: ${panel.name}`, x: spec.x, unit: spec.unit, format: spec.format, marker: spec.marker, height: 170, series: [{ name: panel.name, values: panel.values }] };
-      renderLine(body, sub, opts);
+      const mid = (Math.max(...panel.values) + Math.min(...panel.values)) / 2;
+      const sub = { title: `${spec.title}: ${panel.name}`, x: spec.x, unit: spec.unit, format: spec.format, marker: spec.marker, height: 170, yDomain: [mid - span / 2, mid + span / 2], series: [{ name: panel.name, values: panel.values }] };
+      renderLine(body, sub, Object.assign({}, opts, { availableHeight: 0 }));
     });
   }
 
@@ -238,6 +244,10 @@
     const rowH = r => Math.max(30, r.lines.length * 15 + 12);
     const heights = rows.map(rowH);
     const m = { top: spec.reference ? 26 : 10, right: 58, bottom: 26, left: Math.min(labelMax, Math.max(...rows.map(r => Math.max(...r.lines.map(l => textWidth(l, font)))))) + 14 };
+    const natural = m.top + heights.reduce((a, b) => a + b, 0) + m.bottom;
+    // When the card is taller than the chart needs, spread the rows (bars stay thin; the air grows), up to a cap.
+    const extra = Math.max(0, Math.min((opts.availableHeight || 0) - natural, rows.length * 34));
+    if (extra > 0) heights.forEach((h, i) => { heights[i] = h + extra / rows.length; });
     const height = m.top + heights.reduce((a, b) => a + b, 0) + m.bottom;
     const { svg, width } = frame(container, height);
     const pw = width - m.left - m.right;
@@ -297,8 +307,10 @@
   function renderDumbbell(container, spec, opts) {
     const root = document.documentElement;
     const font = '12.5px "Public Sans", system-ui, sans-serif';
-    const rowH = 36;
     const m = { top: 14, right: 40, bottom: 28, left: Math.max(...spec.items.map(i => textWidth(i.label, font))) + 16 };
+    const naturalRow = 36;
+    const natural = m.top + spec.items.length * naturalRow + m.bottom;
+    const rowH = naturalRow + Math.max(0, Math.min((opts.availableHeight || 0) - natural, spec.items.length * 34)) / spec.items.length;
     const height = m.top + spec.items.length * rowH + m.bottom;
     const { svg, width } = frame(container, height);
     const pw = width - m.left - m.right;
@@ -446,7 +458,7 @@
     const yAt = v => h - pad - ((v - min) / span) * (h - pad * 2);
     const svg = svgEl('svg', { width: w, height: h, viewBox: `0 0 ${w} ${h}`, class: 'spark', role: 'img', 'aria-label': `${spark.label || 'Trend'}: ${spark.x[0]} ${vals[0]} to ${spark.x[vals.length - 1]} ${vals[vals.length - 1]}` });
     const d = vals.map((v, i) => (i ? 'L' : 'M') + xAt(i).toFixed(1) + ' ' + yAt(v).toFixed(1)).join(' ');
-    svg.appendChild(svgEl('path', { d, class: 'spark-line', stroke: cssVar('--ctx', root) }));
+    svg.appendChild(svgEl('path', { d, class: 'spark-line', stroke: cssVar('--spark-line', root) || cssVar('--ctx', root) }));
     const li = vals.length - 1;
     svg.appendChild(svgEl('circle', { cx: xAt(li), cy: yAt(vals[li]), r: 3, fill: accent || cssVar('--accent', root), class: 'spark-dot' }));
     const title = svgEl('title');
@@ -458,17 +470,20 @@
   const renderers = { line: renderLine, multiples: renderMultiples, bars: renderBars, dumbbell: renderDumbbell, stack: renderStack };
 
   /* Mount: renders, attaches legend/table, and re-renders on resize + theme change. */
+  const FILLABLE = new Set(['line', 'bars', 'dumbbell']);
   function mount(container, spec, opts) {
     opts = opts || {};
-    const body = htmlEl('div', 'chart-body');
+    const fillable = FILLABLE.has(spec.kind);
+    const body = htmlEl('div', 'chart-body' + (fillable ? ' fill' : ''));
     const legendHost = htmlEl('div', 'chart-legend');
     container.appendChild(legendHost);
     container.appendChild(body);
-    let lastWidth = 0;
-    function draw() {
+    let lastWidth = 0, naturalHeight = 0;
+    function draw(availableHeight) {
       // Resolve the section accent at draw time so theme changes recolor the marks.
-      const live = Object.assign({}, opts, { accent: opts.accentVar ? cssVar(opts.accentVar) : opts.accent });
+      const live = Object.assign({}, opts, { accent: opts.accentVar ? cssVar(opts.accentVar) : opts.accent, availableHeight: availableHeight || 0 });
       const result = renderers[spec.kind](body, spec, live) || {};
+      if (!availableHeight) { const svg = body.querySelector('svg.chart-svg'); naturalHeight = svg ? +svg.getAttribute('height') : 0; }
       legendHost.replaceChildren();
       const legendItems = result.legend || (spec.kind === 'line' && spec.series.length > 1 ? spec.series.map((s, i) => ({ name: s.name, color: result.colors ? result.colors[i] : seriesColor(i), shape: 'line' })) : []);
       legendItems.forEach(item => {
@@ -481,14 +496,24 @@
       });
       legendHost.hidden = legendItems.length === 0;
     }
-    draw();
+    // Fit: when the card is stretched taller than the chart's natural height, redraw to use the room.
+    function fit() {
+      if (!fillable) return;
+      const svg = body.querySelector('svg.chart-svg');
+      const current = svg ? +svg.getAttribute('height') : 0;
+      const target = Math.max(naturalHeight, Math.round(body.clientHeight));
+      if (Math.abs(target - current) > 8) draw(target > naturalHeight ? target : 0);
+    }
+    draw(0);
+    requestAnimationFrame(fit);
     const ro = new ResizeObserver(entries => {
       const w = Math.round(entries[0].contentRect.width);
-      if (w && Math.abs(w - lastWidth) > 4) { lastWidth = w; draw(); }
+      if (w && Math.abs(w - lastWidth) > 4) { lastWidth = w; draw(0); requestAnimationFrame(fit); }
+      else fit();
     });
     ro.observe(body);
-    document.addEventListener('chalkline:theme', draw);
-    return { redraw: draw, table: () => buildTable(spec) };
+    document.addEventListener('chalkline:theme', () => { draw(0); requestAnimationFrame(fit); });
+    return { redraw: () => { draw(0); requestAnimationFrame(fit); }, table: () => buildTable(spec) };
   }
 
   window.ChalklineCharts = { mount, buildTable, fmt, sparkline };

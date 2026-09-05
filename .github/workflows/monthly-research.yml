@@ -14,7 +14,6 @@ on:
 permissions:
   contents: write
   pull-requests: write
-  id-token: write
 
 jobs:
   research:
@@ -46,7 +45,8 @@ jobs:
             and research/SCHEMA.md and follow them exactly. The edition is the current calendar month.
             Update the files in data/, run `node scripts/validate-data.mjs --links`, and fix any failures.
             Then commit on a branch named research/$(date +%Y-%m), push it, and open a pull request against
-            the default branch with: gh pr create --base main --title "Monthly research: $(date +'%B %Y')" --body-file /tmp/pr-body.md
+            the repository's default branch (find it with: gh repo view --json defaultBranchRef -q .defaultBranchRef.name) using
+            gh pr create --base "$DEFAULT_BRANCH" --title "Monthly research: $(date +'%B %Y')" --body-file /tmp/pr-body.md
             where /tmp/pr-body.md contains the summary paragraph and the verification table required by the protocol.
             If a pull request for this month already exists, push to its branch instead of opening another one.
           claude_args: |

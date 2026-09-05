@@ -6,7 +6,7 @@ The task is deliberately conservative: **a number that cannot be traced to a pri
 
 ## 0. Setup
 
-1. Clone the repository (default branch) and create a branch named `research/YYYY-MM` for the edition month.
+1. Clone the repository, check out its default branch (it may not be named `main`; check with `git remote show origin`), and create a branch named `research/YYYY-MM` for the edition month.
 2. Read `research/SCHEMA.md`, `data/meta.json`, `data/briefing.json` and the three section files (`overview.json`, `ai.json`, `math.json`) so you know what is already on the dashboard and its `asOf` dates.
 3. Run `node scripts/validate-data.mjs` to confirm the starting state is clean.
 

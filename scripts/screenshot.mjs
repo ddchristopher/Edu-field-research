@@ -53,7 +53,7 @@ for (const s of shots) {
   if (s.name === 'mobile-light') {
     // viewport-sized crops at the top and at each section instead of one huge full-page image
     for (const id of ['top', 'overview', 'ai', 'math', 'briefing']) {
-      if (id !== 'top') await page.evaluate(sel => document.querySelector(sel).scrollIntoView(), '#' + id);
+      if (id !== 'top') await page.evaluate(sel => document.querySelector(sel).scrollIntoView({ behavior: 'instant', block: 'start' }), '#' + id);
       await page.waitForTimeout(200);
       await page.screenshot({ path: resolve(outDir, `mobile-${id}.png`), fullPage: false });
     }

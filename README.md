@@ -2,7 +2,7 @@
 
 A monthly, sourced dashboard of U.S. K-12 education research, data and trends, with special sections on **AI in education** and **math education**. Every figure links to its primary source, every chart has a keyboard-readable table view, and the whole thing is refreshed by a scheduled research task on the first of each month.
 
-- Site: `index.html` (deployed to GitHub Pages from `main` by `.github/workflows/deploy-pages.yml`; the same build also publishes `offline.html`, a single-file bundle)
+- Site: `index.html` (deployed to GitHub Pages from the repository's default branch by `.github/workflows/deploy-pages.yml`; the same build also publishes `offline.html`, a single-file bundle)
 - Data: `data/*.json` (see `research/SCHEMA.md`)
 - Research protocol: `research/MONTHLY_RESEARCH_TASK.md`
 
@@ -45,7 +45,7 @@ node scripts/screenshot.mjs http://localhost:8080/ qa   # light/dark, desktop/ta
 
 Two schedulers are supported; the first is on by default.
 
-1. **Claude Code Routine (default).** A routine in the repository owner's Claude account fires on the first of each month at 13:00 UTC, opens a fresh session, attaches this repository and follows `research/MONTHLY_RESEARCH_TASK.md`: scan the release calendar, verify new figures against primary sources, update `data/`, run the validator and screenshots, and open a pull request titled `Monthly research: <Month YYYY>`. A person reviews and merges; merging to `main` deploys the site.
+1. **Claude Code Routine (default).** A routine in the repository owner's Claude account fires on the first of each month at 13:00 UTC, opens a fresh session, attaches this repository and follows `research/MONTHLY_RESEARCH_TASK.md`: scan the release calendar, verify new figures against primary sources, update `data/`, run the validator and screenshots, and open a pull request titled `Monthly research: <Month YYYY>`. A person reviews and merges; merging to the default branch deploys the site.
 2. **GitHub Actions (optional).** `.github/workflows/monthly-research.yml` runs the same protocol with `anthropics/claude-code-action` on the same schedule. It exits quietly unless an `ANTHROPIC_API_KEY` repository secret exists and Actions are allowed to create pull requests. Use one scheduler or the other to avoid duplicate PRs.
 
 Either way the contract is the same: the task edits JSON only, never the page code, and nothing reaches the dashboard without a primary source, a date and a note about definitions.
@@ -58,7 +58,7 @@ Either way the contract is the same: the task edits JSON only, never the page co
 
 ## Deploying
 
-Merge to `main` with GitHub Pages set to **Source: GitHub Actions** (Settings → Pages). The deploy workflow validates the data, builds the bundle and publishes `index.html`, `assets/`, `data/` and `offline.html`.
+Set GitHub Pages to **Source: GitHub Actions** (Settings → Pages). Every push to the repository's default branch (or a manual run of the deploy workflow) validates the data, builds the bundle and publishes `index.html`, `assets/`, `data/` and `offline.html`. The repository was created empty, so its default branch is currently `claude/k12-education-dashboard-tp4rxq`; if you rename or switch the default to `main`, nothing else needs to change.
 
 ## License
 
