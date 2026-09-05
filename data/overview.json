@@ -16,7 +16,26 @@
       },
       "asOf": "2024 assessment",
       "source": "naep2024_math_trends",
-      "note": "Flat vs 2022. Students at the 10th percentile fell 5 more points while the 90th percentile rose 3."
+      "note": "Flat vs 2022. Students at the 10th percentile fell 5 more points while the 90th percentile rose 3.",
+      "spark": {
+        "label": "NAEP grade 8 math",
+        "x": [
+          "2013",
+          "2015",
+          "2017",
+          "2019",
+          "2022",
+          "2024"
+        ],
+        "values": [
+          285,
+          282,
+          283,
+          282,
+          274,
+          274
+        ]
+      }
     },
     {
       "id": "absent_2025",
@@ -30,7 +49,26 @@
       },
       "asOf": "2024–25, 45 states",
       "source": "aei_absenteeism_2026",
-      "note": "Down less than 1 point in a year after 3- and 2-point drops; about 10.8 million students."
+      "note": "Down less than 1 point in a year after 3- and 2-point drops; about 10.8 million students.",
+      "spark": {
+        "label": "Chronic absenteeism (%)",
+        "x": [
+          "2018",
+          "2019",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "values": [
+          15,
+          15,
+          28.3,
+          25.7,
+          23.5,
+          22.6
+        ]
+      }
     },
     {
       "id": "enrollment_2024",
@@ -44,7 +82,26 @@
       },
       "asOf": "fall 2024",
       "source": "futureed_enrollment",
-      "note": "Down 1.4 million from the 2019 peak of 50.8M. NCES projects fewer than 47M by 2030."
+      "note": "Down 1.4 million from the 2019 peak of 50.8M. NCES projects fewer than 47M by 2030.",
+      "spark": {
+        "label": "Enrollment (millions)",
+        "x": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "values": [
+          50.8,
+          49.4,
+          49.4,
+          49.6,
+          49.5,
+          49.4
+        ]
+      }
     },
     {
       "id": "teacher_pay_2025",

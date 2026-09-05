@@ -434,6 +434,27 @@
     return table;
   }
 
+  /* ---------- SPARKLINE (stat tiles) ---------- */
+  function sparkline(container, spark, accent) {
+    const root = document.documentElement;
+    container.replaceChildren();
+    const w = 84, h = 30, pad = 4;
+    const vals = spark.values;
+    const min = Math.min(...vals), max = Math.max(...vals);
+    const span = max - min || 1;
+    const xAt = i => pad + (i / (vals.length - 1)) * (w - pad * 2);
+    const yAt = v => h - pad - ((v - min) / span) * (h - pad * 2);
+    const svg = svgEl('svg', { width: w, height: h, viewBox: `0 0 ${w} ${h}`, class: 'spark', role: 'img', 'aria-label': `${spark.label || 'Trend'}: ${spark.x[0]} ${vals[0]} to ${spark.x[vals.length - 1]} ${vals[vals.length - 1]}` });
+    const d = vals.map((v, i) => (i ? 'L' : 'M') + xAt(i).toFixed(1) + ' ' + yAt(v).toFixed(1)).join(' ');
+    svg.appendChild(svgEl('path', { d, class: 'spark-line', stroke: cssVar('--ctx', root) }));
+    const li = vals.length - 1;
+    svg.appendChild(svgEl('circle', { cx: xAt(li), cy: yAt(vals[li]), r: 3, fill: accent || cssVar('--accent', root), class: 'spark-dot' }));
+    const title = svgEl('title');
+    title.textContent = `${spark.x[0]}: ${vals[0]} → ${spark.x[li]}: ${vals[li]}`;
+    svg.appendChild(title);
+    container.appendChild(svg);
+  }
+
   const renderers = { line: renderLine, multiples: renderMultiples, bars: renderBars, dumbbell: renderDumbbell, stack: renderStack };
 
   /* Mount: renders, attaches legend/table, and re-renders on resize + theme change. */
@@ -468,5 +489,5 @@
     return { redraw: draw, table: () => buildTable(spec) };
   }
 
-  window.ChalklineCharts = { mount, buildTable, fmt };
+  window.ChalklineCharts = { mount, buildTable, fmt, sparkline };
 })();

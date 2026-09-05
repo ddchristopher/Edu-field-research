@@ -83,7 +83,17 @@
   function statTile(stat, sources, variant) {
     const tile = el('article', 'tile' + (variant ? ' tile-' + variant : ''));
     tile.appendChild(el('p', 'tile-label', stat.label));
-    tile.appendChild(el('p', 'tile-value', stat.display));
+    const valueRow = el('div', 'tile-value-row');
+    valueRow.appendChild(el('p', 'tile-value', stat.display));
+    if (stat.spark && Array.isArray(stat.spark.values) && stat.spark.values.length > 1) {
+      const sp = el('div', 'tile-spark');
+      sp.title = `${stat.spark.label || 'Trend'}, ${stat.spark.x[0]}–${stat.spark.x[stat.spark.x.length - 1]}`;
+      valueRow.appendChild(sp);
+      const draw = () => window.ChalklineCharts.sparkline(sp, stat.spark, getComputedStyle(tile).getPropertyValue('--section-accent-resolved').trim() || undefined);
+      draw();
+      document.addEventListener('chalkline:theme', draw);
+    }
+    tile.appendChild(valueRow);
     const meta = el('div', 'tile-meta');
     const d = deltaPill(stat.delta); if (d) meta.appendChild(d);
     if (stat.unit) meta.appendChild(el('span', 'tile-unit', stat.unit));

@@ -16,7 +16,20 @@
       },
       "asOf": "2024",
       "source": "naep2024_math_trends",
-      "note": "Down 5 more points since 2022 while the 90th percentile rose 3 (to 328)."
+      "note": "Down 5 more points since 2022 while the 90th percentile rose 3 (to 328).",
+      "spark": {
+        "label": "Grade 8 math, 10th percentile",
+        "x": [
+          "2019",
+          "2022",
+          "2024"
+        ],
+        "values": [
+          231,
+          224,
+          219
+        ]
+      }
     },
     {
       "id": "g4_math",
@@ -30,7 +43,26 @@
       },
       "asOf": "2024",
       "source": "naep2024_g48",
-      "note": "The only national gain on the 2024 Report Card; driven by middle- and higher-performing students. Alabama is the lone state above its 2019 level."
+      "note": "The only national gain on the 2024 Report Card; driven by middle- and higher-performing students. Alabama is the lone state above its 2019 level.",
+      "spark": {
+        "label": "NAEP grade 4 math",
+        "x": [
+          "2013",
+          "2015",
+          "2017",
+          "2019",
+          "2022",
+          "2024"
+        ],
+        "values": [
+          242,
+          240,
+          240,
+          241,
+          236,
+          237
+        ]
+      }
     },
     {
       "id": "timss_g8",
@@ -44,7 +76,20 @@
       },
       "asOf": "2023",
       "source": "timss2023",
-      "note": "Lowest U.S. score since TIMSS began in 1995; 19 of 45 systems scored higher. Grade 4 fell 18 points to 517."
+      "note": "Lowest U.S. score since TIMSS began in 1995; 19 of 45 systems scored higher. Grade 4 fell 18 points to 517.",
+      "spark": {
+        "label": "TIMSS grade 8 math",
+        "x": [
+          "2015",
+          "2019",
+          "2023"
+        ],
+        "values": [
+          518,
+          515,
+          488
+        ]
+      }
     },
     {
       "id": "g12_below_basic",
