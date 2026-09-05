@@ -73,8 +73,10 @@
     const pad = (max - min) * (padFrac === undefined ? 0.25 : padFrac);
     return [min - pad, max + pad];
   }
+  // Resolve against the chart's own container when given one, so a section can override
+  // --series-* locally and its charts pick the overrides up.
   function cssVar(name, el) {
-    return getComputedStyle(el || document.documentElement).getPropertyValue(name).trim();
+    return getComputedStyle(el && el.nodeType === 1 ? el : document.documentElement).getPropertyValue(name).trim();
   }
 
   /* ---------- tooltip ---------- */
@@ -123,7 +125,7 @@
 
   /* ---------- LINE ---------- */
   function renderLine(container, spec, opts) {
-    const root = document.documentElement;
+    const root = container;
     const natural = spec.height || 280;
     const { svg, width, height } = frame(container, Math.max(natural, opts.availableHeight || 0));
     const m = { top: 30, right: 16, bottom: 34, left: 46 };
@@ -236,7 +238,7 @@
 
   /* ---------- HORIZONTAL BARS ---------- */
   function renderBars(container, spec, opts) {
-    const root = document.documentElement;
+    const root = container;
     const font = '12.5px "Public Sans", system-ui, sans-serif';
     const width0 = Math.max(240, container.clientWidth || 600);
     const labelMax = Math.min(260, Math.max(110, Math.round(width0 * 0.38)));
@@ -305,7 +307,7 @@
 
   /* ---------- DUMBBELL ---------- */
   function renderDumbbell(container, spec, opts) {
-    const root = document.documentElement;
+    const root = container;
     const font = '12.5px "Public Sans", system-ui, sans-serif';
     const m = { top: 14, right: 40, bottom: 28, left: Math.max(...spec.items.map(i => textWidth(i.label, font))) + 16 };
     const naturalRow = 36;
@@ -358,7 +360,7 @@
 
   /* ---------- 100% STACK ---------- */
   function renderStack(container, spec, opts) {
-    const root = document.documentElement;
+    const root = container;
     const height = 44;
     const { svg, width } = frame(container, height);
     const total = spec.segments.reduce((a, s) => a + s.value, 0);
@@ -448,7 +450,7 @@
 
   /* ---------- SPARKLINE (stat tiles) ---------- */
   function sparkline(container, spark, accent) {
-    const root = document.documentElement;
+    const root = container;
     container.replaceChildren();
     const w = 84, h = 30, pad = 4;
     const vals = spark.values;
@@ -481,7 +483,7 @@
     let lastWidth = 0, naturalHeight = 0;
     function draw(availableHeight) {
       // Resolve the section accent at draw time so theme changes recolor the marks.
-      const live = Object.assign({}, opts, { accent: opts.accentVar ? cssVar(opts.accentVar) : opts.accent, availableHeight: availableHeight || 0 });
+      const live = Object.assign({}, opts, { accent: opts.accentVar ? cssVar(opts.accentVar, body) : opts.accent, availableHeight: availableHeight || 0 });
       const result = renderers[spec.kind](body, spec, live) || {};
       if (!availableHeight) { const svg = body.querySelector('svg.chart-svg'); naturalHeight = svg ? +svg.getAttribute('height') : 0; }
       legendHost.replaceChildren();

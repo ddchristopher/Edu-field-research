@@ -472,5 +472,149 @@
     "title": "ChatGPT for Teachers",
     "date": "2025-11-19",
     "url": "https://openai.com/index/chatgpt-for-teachers/"
+  },
+  "essa_statute": {
+    "org": "U.S. Congress",
+    "title": "Every Student Succeeds Act (S.1177, Public Law 114-95), evidence definitions at section 8101(21)(A)",
+    "date": "2015-12-10",
+    "url": "https://www.congress.gov/bill/114th-congress/senate-bill/1177"
+  },
+  "cde_essa_tiers": {
+    "org": "California Department of Education",
+    "title": "Evidence-Based Interventions Under the ESSA",
+    "date": "2026-09-05",
+    "url": "https://www.cde.ca.gov/re/es/evidence.asp"
+  },
+  "efe_home": {
+    "org": "Evidence for ESSA (Johns Hopkins Center for Research and Reform in Education)",
+    "title": "Find Evidence-Based PK-12 Programs",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/"
+  },
+  "efe_standards": {
+    "org": "Evidence for ESSA",
+    "title": "Standards and Procedures (August 2026 update)",
+    "date": "2026-08-26",
+    "url": "https://www.evidenceforessa.org/wp-content/uploads/2026/08/Standards-and-Procedures-Update-FINAL-08-26-26.pdf"
+  },
+  "efe_reading_list": {
+    "org": "Evidence for ESSA",
+    "title": "Evidence-Based Reading Programs (catalog counts, accessed Sept 5, 2026)",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/programs/reading/"
+  },
+  "efe_math_list": {
+    "org": "Evidence for ESSA",
+    "title": "Evidence-Based Math Programs (catalog counts, accessed Sept 5, 2026)",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/programs/math/"
+  },
+  "efe_attendance_list": {
+    "org": "Evidence for ESSA",
+    "title": "Evidence-Based Attendance Programs (catalog counts, accessed Sept 5, 2026)",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/programs/attendance/"
+  },
+  "efe_family_list": {
+    "org": "Evidence for ESSA",
+    "title": "Evidence-Based Family Engagement Programs (catalog counts, accessed Sept 5, 2026)",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/programs/family-engagement/"
+  },
+  "efe_sel_list": {
+    "org": "Evidence for ESSA",
+    "title": "Evidence-Based Social-Emotional Learning Programs (catalog, accessed Sept 5, 2026)",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/programs/social-emotional/"
+  },
+  "efe_saga": {
+    "org": "Evidence for ESSA",
+    "title": "Saga Math program rating",
+    "date": "2025-07-02",
+    "url": "https://www.evidenceforessa.org/program/saga-math/"
+  },
+  "efe_reading_corps": {
+    "org": "Evidence for ESSA",
+    "title": "Reading Corps program rating",
+    "date": "2024-11-04",
+    "url": "https://www.evidenceforessa.org/program/reading-corps/"
+  },
+  "efe_reading_partners": {
+    "org": "Evidence for ESSA",
+    "title": "Reading Partners program rating",
+    "date": "2025-04-04",
+    "url": "https://www.evidenceforessa.org/program/reading-partners/"
+  },
+  "efe_chapter_one": {
+    "org": "Evidence for ESSA",
+    "title": "Chapter One (formerly Innovations for Learning High Impact Tutoring) program rating",
+    "date": "2025-04-02",
+    "url": "https://www.evidenceforessa.org/program/chapter-one-formerly-innovations-for-learning-high-impact-tutoring/"
+  },
+  "efe_barr": {
+    "org": "Evidence for ESSA",
+    "title": "Building Assets Reducing Risks (BARR) – Social-Emotional Learning program rating",
+    "date": "2026-04-13",
+    "url": "https://www.evidenceforessa.org/program/building-assets-reducing-risks-barr-social-emotional-learning/"
+  },
+  "efe_everyday": {
+    "org": "Evidence for ESSA",
+    "title": "EveryDay Intervention (formerly InClass Today and EveryDay Labs) program rating",
+    "date": "2026-08-11",
+    "url": "https://www.evidenceforessa.org/program/everyday-intervention-formerly-inclass-today-and-everyday-labs/"
+  },
+  "efe_air_reading": {
+    "org": "Evidence for ESSA",
+    "title": "Air Reading program rating",
+    "date": "2026-09-05",
+    "url": "https://www.evidenceforessa.org/program/air-reading/"
+  },
+  "accelerate_home": {
+    "org": "Accelerate (National Collaborative for Accelerated Learning)",
+    "title": "Turning Evidence Into Better Student Outcomes",
+    "date": "2026-09-05",
+    "url": "https://accelerate.us/"
+  },
+  "accelerate_eir": {
+    "org": "Accelerate",
+    "title": "Accelerate Awarded $13.8 million to Support State-Led Literacy Research in partnership with the Oklahoma State Department of Education",
+    "date": "2025-12-19",
+    "url": "https://accelerate.us/eir-award-2026/"
+  },
+  "accelerate_grants_2025": {
+    "org": "Accelerate (via PR Newswire)",
+    "title": "Accelerate Awards Grants to Boost Student Outcomes with Evidence-Based Tutoring and Technology in Classrooms Nationwide",
+    "date": "2025-08-27",
+    "url": "https://www.prnewswire.com/news-releases/accelerate-awards-grants-to-boost-student-outcomes-with-evidence-based-tutoring-and-technology-in-classrooms-nationwide-302540234.html"
+  },
+  "khan_nonprofit": {
+    "org": "Khan Academy",
+    "title": "Meet Khanmigo: Khan Academy's AI-powered teaching assistant and tutor",
+    "date": "2026-09-05",
+    "url": "https://www.khanmigo.ai/"
+  },
+  "quill_nonprofit": {
+    "org": "Quill.org",
+    "title": "Quill.org Becomes a 'Non-profit Unicorn,' Generating $1 Billion in Social Impact",
+    "date": "2026-09-05",
+    "url": "https://www.quill.org/teacher-center/quillorg-becomes-a-nonprofit-unicorn-generating-1-billion-in-social-impact"
+  },
+  "wwc_home": {
+    "org": "What Works Clearinghouse, Institute of Education Sciences",
+    "title": "WWC: Find What Works!",
+    "date": "2026-09-05",
+    "url": "https://ies.ed.gov/ncee/wwc/"
+  },
+  "ies_reimagining": {
+    "org": "Institute of Education Sciences",
+    "title": "Reimagining the Institute of Education Sciences: A Strategy for Relevance and Renewal",
+    "date": "2026-02-01",
+    "url": "https://ies.ed.gov/ies/2026/02/reimagining-ies"
+  },
+  "nssa_hub": {
+    "org": "National Student Support Accelerator, Stanford University",
+    "title": "Tutoring Information Hub",
+    "date": "2026-09-05",
+    "url": "https://nssa.stanford.edu/tutoring-information-hub"
   }
 }

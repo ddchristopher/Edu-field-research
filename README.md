@@ -3,7 +3,7 @@
 A monthly, sourced dashboard of U.S. K-12 education research, data and trends, with special sections on **AI in education** and **math education**. Every figure links to its primary source, every chart has a keyboard-readable table view, and the whole thing is refreshed by a scheduled research task on the first of each month.
 
 - Site: `index.html` (deployed to GitHub Pages from the repository's default branch by `.github/workflows/deploy-pages.yml`; the same build also publishes `offline.html`, a single-file bundle)
-- Data: `data/*.json` (see `research/SCHEMA.md`)
+- Data: `data/*.json` (see `research/SCHEMA.md`); the register lives in `data/orgs.json` and ranks nothing by design
 - Research protocol: `research/MONTHLY_RESEARCH_TASK.md`
 
 ## What is on the page
@@ -14,6 +14,7 @@ A monthly, sourced dashboard of U.S. K-12 education research, data and trends, w
 | Overview | NAEP 2013–2024 small multiples, chronic absenteeism, enrollment, teacher pay and workforce, money and governance, state policy scoreboard, recovery research, public opinion and student wellbeing |
 | AI in education | Teen and student adoption (Pew, RAND, Common Sense, CDT), teacher use and guidance (Gallup/WFF, RAND), a use-versus-guidance chart, the learning-evidence ledger (RCTs and working papers), safety and integrity, federal and state policy, market moves (district moratoria, vendor launches) |
 | Math education | Grade 8 NAEP by percentile, TIMSS trend, algebra access by race, what state math laws require, recovery findings, effect sizes for tutoring and AI tutors, the advanced-math pipeline, AI meets math class |
+| Evidence register | Nonprofits whose flagship program has randomized-trial evidence, grouped by ESSA evidence tier, plus a watch lane of new approaches with the evidence that would settle each one |
 | This month | Dated ledger of releases and policy moves, upcoming releases, edition changelog |
 | Sources and method | Selection rules, how to read the figures, cadence, and the full source table |
 

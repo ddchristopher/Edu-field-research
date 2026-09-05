@@ -1,0 +1,425 @@
+{
+  "section": "register",
+  "eyebrow": "Special section",
+  "title": "Evidence register",
+  "lede": "Which organizations actually move student outcomes, and which are still finding out. This is a register, not a ranking: there is no outcome measure comparable across organizations, so entries are grouped by the strength of the evidence behind them and every effect size is quoted with the study that produced it. The second lane holds work that is genuinely new, where results are not in yet.",
+  "kpis": [
+    {
+      "id": "strong_total",
+      "label": "Program ratings at ESSA Tier 1 (Strong)",
+      "value": 80,
+      "display": "80",
+      "unit": "of 195 ratings",
+      "asOf": "Sept 5, 2026",
+      "source": [
+        "efe_reading_list",
+        "efe_math_list",
+        "efe_attendance_list",
+        "efe_family_list"
+      ],
+      "note": "Counted across the four Evidence for ESSA categories that publish tier totals: reading, math, attendance and family engagement."
+    },
+    {
+      "id": "ratings_total",
+      "label": "Program ratings in the catalog",
+      "value": 195,
+      "display": "195",
+      "unit": "four categories",
+      "asOf": "Sept 5, 2026",
+      "source": "efe_home",
+      "note": "A program rated in more than one category is counted once per category. Social-emotional learning lists 30 more programs by outcome rather than by tier."
+    },
+    {
+      "id": "reading_rated",
+      "label": "Reading programs rated",
+      "value": 113,
+      "display": "113",
+      "unit": "47 rated Strong",
+      "asOf": "Sept 5, 2026",
+      "source": "efe_reading_list",
+      "note": "23 Moderate and 43 Promising make up the rest. Reading is the deepest evidence base of any category."
+    },
+    {
+      "id": "math_rated",
+      "label": "Math programs rated",
+      "value": 54,
+      "display": "54",
+      "unit": "20 rated Strong",
+      "asOf": "Sept 5, 2026",
+      "source": "efe_math_list",
+      "note": "13 Moderate and 21 Promising. Only seven of the 54 were proven at high school level."
+    },
+    {
+      "id": "accelerate_students",
+      "label": "Students reached by Accelerate grantees",
+      "value": 500000,
+      "display": "500K+",
+      "unit": "since 2022, 29 states",
+      "asOf": "2026",
+      "source": "accelerate_home",
+      "note": "Accelerate is a national nonprofit that funds tutoring and classroom technology and pairs each grantee with an independent evaluator."
+    },
+    {
+      "id": "accelerate_rcts",
+      "label": "Randomized trials Accelerate has launched",
+      "value": 30,
+      "display": "30+",
+      "unit": "since 2022",
+      "delta": {
+        "text": "plus dozens of quasi-experimental studies",
+        "sentiment": "neutral"
+      },
+      "asOf": "2026",
+      "source": "accelerate_home",
+      "note": "An August 2025 announcement counted 21 randomized trials among more than 65 studies, so the pipeline is still growing."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "programs_rated",
+      "chart": {
+        "kind": "bars",
+        "title": "Programs rated, by category",
+        "subtitle": "Every program Evidence for ESSA has reviewed and rated in each category.",
+        "unit": "programs",
+        "format": "int",
+        "items": [
+          {
+            "label": "Reading",
+            "value": 113
+          },
+          {
+            "label": "Math",
+            "value": 54
+          },
+          {
+            "label": "Family engagement",
+            "value": 17
+          },
+          {
+            "label": "Attendance",
+            "value": 11
+          }
+        ],
+        "source": [
+          "efe_reading_list",
+          "efe_math_list",
+          "efe_family_list",
+          "efe_attendance_list",
+          "efe_sel_list"
+        ],
+        "note": "Social-emotional learning adds 30 programs, catalogued by measured outcome rather than by tier, so it is left out of the tier counts."
+      }
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "tier_mix",
+      "chart": {
+        "kind": "stack",
+        "title": "How those ratings break down",
+        "subtitle": "The 195 ratings across those four categories, by ESSA evidence tier.",
+        "unit": "programs",
+        "format": "int",
+        "segments": [
+          {
+            "label": "Strong (Tier 1)",
+            "value": 80
+          },
+          {
+            "label": "Moderate (Tier 2)",
+            "value": 37
+          },
+          {
+            "label": "Promising (Tier 3)",
+            "value": 78
+          }
+        ],
+        "source": [
+          "efe_reading_list",
+          "efe_math_list",
+          "efe_family_list",
+          "efe_attendance_list"
+        ],
+        "companion": [
+          {
+            "label": "Tier 1 requires a well-designed randomized trial",
+            "display": "Strong"
+          },
+          {
+            "label": "Tier 2 requires a quasi-experimental study",
+            "display": "Moderate"
+          },
+          {
+            "label": "Tier 3 requires a correlational study with controls",
+            "display": "Promising"
+          },
+          {
+            "label": "Tiers 1 to 3 are required for school improvement funds",
+            "display": "Title I"
+          }
+        ],
+        "note": "Tier 4, which asks only for a logic model and research under way, is not rated here."
+      }
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "The register: nonprofits with rigorous evidence",
+      "subtitle": "Organizations whose flagship program has been evaluated in a randomized trial. Effect sizes are in standard deviations (SD) and are quoted with the study that produced them; they are not comparable across different outcomes and populations.",
+      "columns": [
+        "Organization",
+        "What it does",
+        "Strongest evidence",
+        "Rating"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Ampact (Reading Corps)",
+            "AmeriCorps literacy tutors embedded in K-3 classrooms, working with 15 to 18 students for 20 minutes each a day",
+            "Two randomized studies with 798 students; average effect +0.36 SD, reaching +0.74 on letter-sound fluency in the Minnesota trial"
+          ],
+          "tier": "Strong",
+          "source": "efe_reading_corps"
+        },
+        {
+          "cells": [
+            "Chapter One",
+            "Part-time tutors push into kindergarten classrooms for 5 to 10 minute bursts during reading blocks, rather than pulling students out",
+            "Two randomized studies with 1,009 students; average effect +0.23 SD, and +0.31 on the district reading level assessment in the larger trial"
+          ],
+          "tier": "Strong",
+          "source": "efe_chapter_one"
+        },
+        {
+          "cells": [
+            "BARR Center",
+            "A ninth-grade whole-school model built on teacher teams, deliberate relationship building and weekly review of student data",
+            "Randomized trial across 11 high schools in five states; +0.21 SD on grades and course failure and +0.17 on relationships, but no gain on NWEA reading or math"
+          ],
+          "tier": "Strong",
+          "source": "efe_barr"
+        },
+        {
+          "cells": [
+            "Saga Education",
+            "In-school math tutoring for ninth and tenth graders, at least three times a week, at ratios between one to two and one to four",
+            "Three randomized trials with 5,396 students; average effect +0.14 SD, with per-study effects of +0.09, +0.14 and +0.19 for students assigned to tutoring"
+          ],
+          "tier": "Strong",
+          "source": [
+            "efe_saga",
+            "guryan_2023"
+          ]
+        },
+        {
+          "cells": [
+            "Reading Partners",
+            "Community volunteers tutor students in grades 2 to 5 one-to-one, twice a week, in a dedicated reading center inside the school",
+            "One large randomized trial by MDRC with 1,166 students; effect +0.10 SD on comprehension, against a control group that mostly received other literacy support"
+          ],
+          "tier": "Strong",
+          "source": "efe_reading_partners"
+        },
+        {
+          "cells": [
+            "Khan Academy",
+            "Free online practice, plus Khanmigo, an AI tutor configured to coach a student through a problem rather than hand over the answer",
+            "Two-year cluster randomized trial in 18 Tennessee middle schools; +1.3 national percentile ranks per term, roughly 0.06 to 0.08 SD a year, similar to Khan practice without the AI"
+          ],
+          "tier": "Not ESSA-rated",
+          "source": [
+            "nber_khanmigo_2026",
+            "khan_nonprofit"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "The watch lane: new approaches, results pending",
+      "subtitle": "Work that is deliberately unproven. Each entry names the evidence that would settle it, so a reader can tell promise from proof.",
+      "columns": [
+        "Effort",
+        "What is being tried",
+        "What would settle it",
+        "Status"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Accelerate and the Oklahoma State Department of Education",
+            "A $13.76 million federal grant funds high-impact literacy tutoring for about 6,000 K-5 students reading below benchmark, across urban and rural districts",
+            "A multi-arm randomized trial comparing virtual against in-person delivery, group size and dosage, with cost analysis built in and Mathematica evaluating"
+          ],
+          "tier": "Trial running",
+          "source": "accelerate_eir"
+        },
+        {
+          "cells": [
+            "Accelerate's tutoring grants",
+            "Up to $250,000 each for Carnegie Learning, Chapter One, Math-A-Matics Tutoring and Tutored by Teachers to run tutoring inside the school day",
+            "Which students benefit most, in which subjects and grades, and whether group size or session length is what drives the effect"
+          ],
+          "tier": "Trial running",
+          "source": "accelerate_grants_2025"
+        },
+        {
+          "cells": [
+            "Accelerate's classroom technology grants",
+            "Eight organizations including the nonprofit Quill.org and Third Space Learning, each paired with an independent research partner and given $150,000 to $200,000",
+            "Whether early student progress shows up in achievement, and what quality standards should govern classroom AI"
+          ],
+          "tier": "Trial running",
+          "source": [
+            "accelerate_grants_2025",
+            "quill_nonprofit"
+          ]
+        },
+        {
+          "cells": [
+            "Khan Academy's engagement problem",
+            "The AI tutor only works when students open it: the median student used it on a third of practice days and in 17% of sessions after making a mistake",
+            "Designs that raise voluntary use without raising cost, since the trial's effects tracked usage rather than the technology itself"
+          ],
+          "tier": "Measured",
+          "source": "nber_khanmigo_2026"
+        },
+        {
+          "cells": [
+            "Air Reading",
+            "Live virtual literacy tutoring for grades 1 to 6, already rated Strong, now being deployed at state scale as part of the Oklahoma study",
+            "Whether a Strong rating survives state-scale delivery, and what it costs per student next to in-person tutoring"
+          ],
+          "tier": "Scaling",
+          "source": [
+            "efe_air_reading",
+            "accelerate_eir"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "How to read this register",
+      "items": [
+        {
+          "headline": "The tiers come from federal law, not from us.",
+          "detail": "The Every Student Succeeds Act defines four tiers: strong evidence from a randomized trial, moderate from a quasi-experiment, promising from a correlational study with controls, and a fourth tier that asks only for a logic model. Interventions paid for with Title I school improvement money must reach Tiers 1 to 3.",
+          "source": [
+            "essa_statute",
+            "cde_essa_tiers"
+          ]
+        },
+        {
+          "headline": "There is no honest way to rank these organizations.",
+          "detail": "Effect sizes come from different outcomes, grade bands and populations, so +0.36 on letter-sound fluency in kindergarten is not better or worse than +0.14 on a high school math test. Sorting by tier and reading the study is the only defensible comparison.",
+          "source": "efe_standards"
+        },
+        {
+          "headline": "A rating describes a program, not an organization.",
+          "detail": "Evidence for ESSA rates a named program in a named category. BARR alone holds Strong ratings in reading, math, attendance and social-emotional learning, while an organization with one rated program may run several unrated ones.",
+          "source": "efe_home"
+        },
+        {
+          "headline": "Absence of a rating is not evidence of absence.",
+          "detail": "Khan Academy has a two-year randomized trial behind it but no ESSA rating, because nobody has submitted it. Newer and smaller organizations are systematically underrepresented in every clearinghouse.",
+          "source": "nber_khanmigo_2026"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "The evidence infrastructure",
+      "items": [
+        {
+          "id": "efe_standards_update",
+          "label": "Evidence for ESSA standards last revised",
+          "display": "Aug 2026",
+          "value": 2026,
+          "asOf": "Aug 26, 2026",
+          "source": "efe_standards",
+          "note": "Run by the Center for Research and Reform in Education at Johns Hopkins with a technical work group; programs are submitted for review."
+        },
+        {
+          "id": "attendance_rated",
+          "label": "Attendance programs with an ESSA rating",
+          "display": "11",
+          "value": 11,
+          "delta": {
+            "text": "5 Strong, 6 Promising",
+            "sentiment": "neutral"
+          },
+          "asOf": "Sept 5, 2026",
+          "source": "efe_attendance_list",
+          "note": "The thinnest evidence base of any category, against the largest problem: 22.6% of students were chronically absent in 2024-25."
+        },
+        {
+          "id": "everyday_attendance",
+          "label": "Largest attendance trial in the catalog",
+          "display": "38,584",
+          "value": 38584,
+          "unit": "students, effect +0.16 SD",
+          "asOf": "2026",
+          "source": "efe_everyday",
+          "note": "Two randomized trials of mailed absence reports to parents, in Philadelphia and a California county. Run by EveryDay Intervention, whose corporate form this register does not verify."
+        },
+        {
+          "id": "wwc_status",
+          "label": "The federal clearinghouse",
+          "display": "Under review",
+          "value": 1,
+          "asOf": "Feb 2026",
+          "source": [
+            "wwc_home",
+            "ies_reimagining"
+          ],
+          "note": "The What Works Clearinghouse remains the federal evidence review, but the Institute of Education Sciences published a restructuring strategy in February 2026 amid the department's wider reorganization."
+        }
+      ]
+    },
+    {
+      "type": "chips",
+      "size": "full",
+      "title": "Where these ratings come from",
+      "items": [
+        {
+          "label": "Evidence for ESSA",
+          "display": "Johns Hopkins",
+          "source": "efe_home",
+          "note": "Rates named PK-12 programs against the ESSA tiers across six categories, with the underlying studies described on each program page."
+        },
+        {
+          "label": "What Works Clearinghouse",
+          "display": "Federal",
+          "source": "wwc_home",
+          "note": "The Institute of Education Sciences review, running since 2002, reporting effect sizes and improvement indices."
+        },
+        {
+          "label": "National Student Support Accelerator",
+          "display": "Stanford",
+          "source": "nssa_hub",
+          "note": "Tutoring-specific standards, a provider directory and the research base behind high-impact tutoring."
+        },
+        {
+          "label": "Accelerate",
+          "display": "Nonprofit funder",
+          "source": "accelerate_home",
+          "note": "Funds tutoring and classroom technology, pairs each grantee with an independent evaluator, and publishes what the trials find."
+        },
+        {
+          "label": "ESSA itself",
+          "display": "Statute",
+          "source": "essa_statute",
+          "note": "Section 8101(21)(A) is where the four tiers are defined and where the funding requirement comes from."
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ const root = resolve(new URL('..', import.meta.url).pathname);
 const read = p => readFileSync(resolve(root, p), 'utf8');
 const artifact = process.argv.includes('--artifact');
 const data = {};
-for (const f of ['meta', 'sources', 'overview', 'ai', 'math', 'briefing']) data[f] = JSON.parse(read(`data/${f}.json`));
+for (const f of ['meta', 'sources', 'overview', 'ai', 'math', 'orgs', 'briefing']) data[f] = JSON.parse(read(`data/${f}.json`));
 let html = read('index.html');
 html = html.replace('<link rel="stylesheet" href="assets/styles.css">', () => `<style>\n${read('assets/styles.css')}\n</style>`);
 const inline = `<script type="application/json" id="chalkline-data">${JSON.stringify(data).replace(/<\/script/gi, '<\\/script')}</script>`;

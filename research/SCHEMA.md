@@ -18,11 +18,11 @@ All dashboard content lives in `data/*.json`. The page (`assets/app.js`) renders
 
 An object keyed by a short stable id (`snake_case`, ASCII). Each value: `org` (publisher), `title` (exact title), `date` (ISO `YYYY-MM-DD` or `YYYY-MM`), `url` (https). Every `source` reference elsewhere must resolve to a key here. A `source` field may be a single key or an array of keys when a claim draws on two documents (for example a state test release and its companion end-of-course release); list the primary document first.
 
-## Section files (`overview.json`, `ai.json`, `math.json`)
+## Section files (`overview.json`, `ai.json`, `math.json`, `orgs.json`)
 
 ```
 {
-  "section": "overview" | "ai" | "math",
+  "section": "overview" | "ai" | "math" | "register",
   "eyebrow": string,          // small label above the title
   "title": string,
   "lede": string,             // 2–4 sentence synthesis
@@ -53,7 +53,7 @@ Every block has `type`, `size` (`sm`=2, `md`=3, `lg`=4, `full`=6 of a six-column
 - `stats`: `{ "type": "stats", "title", "items": Stat[] }`
 - `findings`: `{ "type": "findings", "title", "items": [{ "headline", "detail", "source" }] }`
 - `chips`: `{ "type": "chips", "title", "items": [{ "label", "display", "note", "source" }] }`
-- `table`: `{ "type": "table", "title", "subtitle", "columns": string[], "rows": [{ "cells": string[], "source" }] }`
+- `table`: `{ "type": "table", "title", "subtitle", "columns": string[], "rows": [{ "cells": string[], "tier"?, "source" }] }`. A row's optional `tier` renders as a pill in its own column, placed after the cells and before the source; count it in `columns`.
 
 ### Chart
 
@@ -65,7 +65,7 @@ Common fields: `kind`, `title`, `subtitle`, `unit`, `format` (`percent` | `curre
 | `multiples` | `x`, `panels: [{ name, values }]`, optional `marker`; one small line chart per panel |
 | `bars` | `items: [{ label, value, group?, source?, display? }]`, optional `reference: { value, label }`, `xDomain`; horizontal bars, colored by `group` when present |
 | `dumbbell` | `items: [{ label, a, b }]`, `aLabel`, `bLabel`, optional `xDomain` |
-| `stack` | `segments: [{ label, value, neutral? }]` summing to ~100, optional `companion: [{ label, display }]` |
+| `stack` | `segments: [{ label, value, neutral? }]`, optional `companion: [{ label, display }]`. Percent stacks must sum to ~100; set `format: "int"` to stack raw counts instead, which are drawn proportionally |
 
 Rules: arrays stay aligned and chronological; values are numbers, never strings; keep a series to at most three named lines; when two series come from different surveys say so in the subtitle and give each bar its own `source`.
 
@@ -79,3 +79,22 @@ Rules: arrays stay aligned and chronological; values are numbers, never strings;
 | `items` | yes | Newest first: `{ date, tag: "AI"|"Math"|"Data"|"Policy", headline, detail, source }` |
 | `upcoming` | yes | `{ date (YYYY-MM or YYYY-MM-DD), what, why, source? }` |
 | `changelog` | yes | `{ edition, date, changes: string[] }` |
+
+## The evidence register (`orgs.json`)
+
+The register carries two tables and follows one rule: **it ranks nothing.** Effect sizes come
+from different outcomes, grades and populations, so they are never sorted against each other or
+combined into a score. Entries are grouped by evidence tier and every figure is quoted with the
+study that produced it.
+
+- **The register lane** holds nonprofits whose flagship program has been evaluated in a randomized
+  trial. Each row names the design, the sample and the effect, and carries a `tier` of `Strong`,
+  `Moderate`, `Promising` or `Not ESSA-rated`.
+- **The watch lane** holds work that is deliberately unproven. Each row must name, in its third
+  cell, the evidence that would settle the question. Its `tier` is a status: `Trial running`,
+  `Scaling` or `Measured`.
+
+Add an organization only when a rating or a study can be cited directly. Do not repeat an
+organization's self-reported impact claims; where reach or finance figures are used they come
+from a filing or an independent source. If an organization's corporate form is not verified, say
+so rather than calling it a nonprofit.

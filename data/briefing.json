@@ -214,7 +214,8 @@
       "date": "2026-09-05",
       "changes": [
         "Inaugural edition compiled from primary sources published through September 4, 2026.",
-        "Baseline series established: NAEP 2013–2024, chronic absenteeism 2018–2025, enrollment 2019–2024, TIMSS 2015–2023."
+        "Baseline series established: NAEP 2013–2024, chronic absenteeism 2018–2025, enrollment 2019–2024, TIMSS 2015–2023.",
+        "Added the evidence register: nonprofits with randomized-trial evidence, sorted by ESSA tier, plus a watch lane of approaches still under evaluation."
       ]
     }
   ]

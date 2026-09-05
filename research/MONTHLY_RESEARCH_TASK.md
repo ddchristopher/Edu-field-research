@@ -38,6 +38,9 @@ Check each recurring source for anything published since the previous edition's 
 | CDC | Youth Risk Behavior Survey (biennial) | Summer of even years |
 | NBER, EdWorkingPapers, arXiv, journals | Rigorous studies of AI tutoring, high-dosage tutoring, math interventions | Rolling |
 | State education agencies | Spring assessment results (Texas, Florida, Mississippi, Louisiana, Tennessee, California, etc.) | June–September |
+| Evidence for ESSA (Johns Hopkins) | New and revised program ratings; category counts; standards updates | Rolling |
+| What Works Clearinghouse | Intervention reports and practice guides; IES restructuring news | Rolling |
+| Accelerate, NSSA, MDRC, Mathematica, AIR | Tutoring and intervention trials, grantee cohorts, results releases | Rolling |
 | Large districts (NYC, LAUSD, Chicago, Miami-Dade, Houston) | AI, phone and screen policies; closures | Rolling |
 | Major AI vendors (OpenAI, Google, Anthropic, Microsoft, Khan Academy) | K-12 product launches, pricing, safety changes | Rolling |
 
@@ -63,6 +66,8 @@ Section checklists:
 
 **AI in education.** Student use (Pew, RAND, Common Sense, CDT), teacher use and guidance (Gallup/WFF, RAND, EdWeek), district policy and training, learning-outcome studies (RCTs first, then quasi-experimental; record effect sizes and designs), integrity and detection, safety (companions, deepfakes, chatbot laws), federal actions (executive orders, task force, Presidential AI Challenge, ED guidance), state laws and guidance counts, large-district policies, vendor moves that change what students or teachers can access.
 
+**Evidence register.** New or revised Evidence for ESSA ratings for nonprofit-run programs; category and tier counts; newly published randomized trials of nonprofit programs; grantee cohorts and results from Accelerate and similar funders; changes to the clearinghouses themselves. Move an entry from the watch lane to the register only when a completed evaluation is published, and say what it found even when the finding is null. Never rank organizations or compute a composite score.
+
 **Math education.** NAEP and TIMSS/PISA math (averages and percentiles), achievement-level shares, recovery in math versus reading, state numeracy laws (EdWeek tracker categories and counts), Algebra I access and automatic enrollment, AP Precalculus/Calculus participation, tutoring evidence, AI-in-math studies, math teacher shortages and professional development, attitudes toward math, major philanthropic or federal math initiatives, notable state results (for example Texas STAAR).
 
 ## 3. Update the data files
@@ -70,7 +75,7 @@ Section checklists:
 Follow `research/SCHEMA.md` exactly. In order:
 
 1. `data/sources.json`: add a source entry for every new citation (short stable key, organization, exact title, ISO date, URL). Do not delete sources still cited.
-2. Section files: update `kpis` values, `display`, `delta`, `asOf`, `note` and `source`; extend chart series by appending new x labels and values (keep arrays aligned); revise or replace `findings`, `stats`, `chips` and `table` items. Keep block `size` values so that each row of blocks still sums to six columns (sm=2, md=3, lg=4, full=6).
+2. Section files (`overview.json`, `ai.json`, `math.json`, `orgs.json`): update `kpis` values, `display`, `delta`, `asOf`, `note` and `source`; extend chart series by appending new x labels and values (keep arrays aligned); revise or replace `findings`, `stats`, `chips` and `table` items. Keep block `size` values so that each row of blocks still sums to six columns (sm=2, md=3, lg=4, full=6).
 3. `data/briefing.json`: set `edition` to the new month; rewrite `summary` (three sentences, the month's most important developments across the three sections); add new `items` newest first (each with `date`, `tag` in {AI, Math, Data, Policy}, `headline`, `detail`, `source`); prune items older than about four months unless they remain the current source of a headline figure; refresh `upcoming`; append a `changelog` entry listing what changed.
 4. `data/meta.json`: set `edition`, `generatedAt` (today) and `nextScheduledRun` (the first of next month).
 

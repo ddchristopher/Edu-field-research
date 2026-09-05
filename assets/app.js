@@ -2,7 +2,7 @@
 (function () {
   const $ = (sel, root) => (root || document).querySelector(sel);
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined && text !== null) n.textContent = text; return n; };
-  const SECTION_ACCENT = { overview: '--accent', ai: '--ai', math: '--math' };
+  const SECTION_ACCENT = { overview: '--accent', ai: '--ai', math: '--math', register: '--register' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   function fmtDate(iso, opts) {
@@ -22,7 +22,7 @@
   async function loadData() {
     const inline = document.getElementById('chalkline-data');
     if (inline) return JSON.parse(inline.textContent);
-    const files = ['meta', 'sources', 'overview', 'ai', 'math', 'briefing'];
+    const files = ['meta', 'sources', 'overview', 'ai', 'math', 'orgs', 'briefing'];
     const out = {};
     await Promise.all(files.map(async f => {
       const res = await fetch(`data/${f}.json`, { cache: 'no-cache' });
@@ -198,6 +198,12 @@
     block.rows.forEach(r => {
       const tr = el('tr');
       r.cells.forEach((c, i) => tr.appendChild(el(i === 0 ? 'th' : 'td', null, c)));
+      if (r.tier) {
+        const td = el('td', 'tier-cell');
+        const slug = r.tier.toLowerCase().replace(/[^a-z]+/g, '-');
+        td.appendChild(el('span', 'tier-pill tier-' + slug, r.tier));
+        tr.appendChild(td);
+      }
       const td = el('td'); sourceIds(r.source).forEach((id, i) => { if (i) td.appendChild(document.createTextNode('; ')); td.appendChild(sourceLink(id, sources)); }); tr.appendChild(td);
       tbody.appendChild(tr);
     });
@@ -319,6 +325,7 @@
       renderSection(data.overview, data.sources);
       renderSection(data.ai, data.sources);
       renderSection(data.math, data.sources);
+      renderSection(data.orgs, data.sources);
       renderBriefing(data.briefing, data.sources);
       renderSources(data.sources, data.meta);
       document.body.classList.add('is-ready');

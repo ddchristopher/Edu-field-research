@@ -12,7 +12,7 @@ const fail = m => problems.push('FAIL ' + m);
 const sources = read('sources.json');
 const meta = read('meta.json');
 const briefing = read('briefing.json');
-const sections = ['overview.json', 'ai.json', 'math.json'].map(read);
+const sections = ['overview.json', 'ai.json', 'math.json', 'orgs.json'].map(read);
 const usedSources = new Set();
 const isoDate = /^\d{4}-\d{2}(-\d{2})?$/;
 
@@ -47,8 +47,9 @@ function checkChart(c, where) {
   } else if (c.kind === 'dumbbell') {
     c.items.forEach(i => { if (typeof i.a !== 'number' || typeof i.b !== 'number') fail(`${where}: dumbbell '${i.label}' needs numeric a and b`); });
   } else if (c.kind === 'stack') {
+    // Percent stacks must sum to ~100; count stacks are proportional, so any total is fine.
     const total = c.segments.reduce((a, s) => a + s.value, 0);
-    if (Math.abs(total - 100) > 1.5) warn(`${where}: stack segments total ${total}, expected ~100`);
+    if (c.format !== 'int' && Math.abs(total - 100) > 1.5) warn(`${where}: stack segments total ${total}, expected ~100`);
   } else fail(`${where}: unknown chart kind '${c.kind}'`);
 }
 for (const sec of sections) {
@@ -63,7 +64,11 @@ for (const sec of sections) {
     else if (b.type === 'stats') b.items.forEach((s, j) => checkStat(s, `${bw}.items[${j}]`));
     else if (b.type === 'findings') b.items.forEach((f, j) => { if (!f.headline || !f.detail) fail(`${bw}.items[${j}]: finding needs headline and detail`); checkSource(f.source, `${bw}.items[${j}]`); });
     else if (b.type === 'chips') b.items.forEach((c, j) => { if (!c.label || !c.display) fail(`${bw}.items[${j}]: chip needs label and display`); checkSource(c.source, `${bw}.items[${j}]`); });
-    else if (b.type === 'table') b.rows.forEach((r, j) => { if (r.cells.length !== b.columns.length) fail(`${bw}.rows[${j}]: ${r.cells.length} cells for ${b.columns.length} columns`); checkSource(r.source, `${bw}.rows[${j}]`); });
+    else if (b.type === 'table') b.rows.forEach((r, j) => {
+      const width = r.cells.length + (r.tier ? 1 : 0);
+      if (width !== b.columns.length) fail(`${bw}.rows[${j}]: ${width} cells for ${b.columns.length} columns`);
+      checkSource(r.source, `${bw}.rows[${j}]`);
+    });
     else fail(`${bw}: unknown block type '${b.type}'`);
   });
   // row fill check: sizes should sum to multiples of 6 in sequence
