@@ -420,11 +420,19 @@
         },
         {
           "cells": [
-            "AI assistant on math problems (Liu et al., 2026)",
-            "Three randomized experiments",
+            "AI assistance on math and reading tasks (Liu et al., 2026)",
+            "Three randomized experiments, 1,222 participants",
             "Higher assisted performance, then lower persistence and unassisted performance: students finish faster and learn less."
           ],
           "source": "liu_2026"
+        },
+        {
+          "cells": [
+            "Generative AI on ALEKS math problems (Rismanchian et al., 2026)",
+            "Quasi-experimental analysis of 3.2 million student interactions",
+            "Students who used generative AI spent less time on problems and built less of the knowledge the problems are designed to teach."
+          ],
+          "source": "rismanchian_2026"
         },
         {
           "cells": [

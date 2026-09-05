@@ -390,15 +390,15 @@
     "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4895486"
   },
   "liu_2026": {
-    "org": "arXiv (Liu et al.)",
-    "title": "Faster Completion, Less Learning: Generative AI Reduced Study Time on Math Problems and the Knowledge They Build",
-    "date": "2026-05-20",
-    "url": "https://arxiv.org/abs/2605.21629"
+    "org": "arXiv (Liu, Christian, Dumbalska, Bakker and Dubey)",
+    "title": "AI Assistance Reduces Persistence and Hurts Independent Performance",
+    "date": "2026-04-06",
+    "url": "https://arxiv.org/abs/2604.04721"
   },
   "nwea_algebra_2025": {
     "org": "NWEA",
     "title": "NWEA Study Finds Unequal Access to Algebra Limits Advanced Math Pathways",
-    "date": "2025-09-09",
+    "date": "2025-11-18",
     "url": "https://www.nwea.org/news-center/press-releases/nwea-study-finds-unequal-access-to-algebra-limits-advanced-math-pathways/"
   },
   "edweek_precalc_2025": {
@@ -422,13 +422,13 @@
   "gallup_math_2025": {
     "org": "Gallup (Math Matters Study, with the Gates Foundation)",
     "title": "Math Moves Americans, Mentally and Emotionally",
-    "date": "2025-06-09",
+    "date": "2025-05-27",
     "url": "https://news.gallup.com/poll/690956/math-moves-americans-mentally-emotionally.aspx"
   },
   "gates_math_2022": {
     "org": "K-12 Dive (Gates Foundation announcement)",
     "title": "Gates Foundation's new formula: $1.1B to boost math instruction",
-    "date": "2022-10-17",
+    "date": "2022-10-18",
     "url": "https://www.k12dive.com/news/gates-foundations-new-formula-11b-to-boost-math-instruction/634436/"
   },
   "uchicago_hdt_2024": {
@@ -460,5 +460,17 @@
     "title": "Trump signs $79B education funding bill into law",
     "date": "2026-02-03",
     "url": "https://www.k12dive.com/news/maybe-hed-house-advances-education-departments-fy-26-budget/811259/"
+  },
+  "rismanchian_2026": {
+    "org": "arXiv (Rismanchian et al.)",
+    "title": "Faster Completion, Less Learning: Generative AI Reduced Study Time on Math Problems and the Knowledge They Build",
+    "date": "2026-05-20",
+    "url": "https://arxiv.org/abs/2605.21629"
+  },
+  "openai_teachers_2026": {
+    "org": "OpenAI",
+    "title": "ChatGPT for Teachers",
+    "date": "2025-11-19",
+    "url": "https://openai.com/index/chatgpt-for-teachers/"
   }
 }

@@ -322,9 +322,9 @@
         },
         {
           "cells": [
-            "AI assistance on math and reading tasks (Liu et al., May 2026)",
-            "Three randomized experiments",
-            "AI help raised in-task performance but cut study time and reduced persistence and performance on later unassisted tasks: faster completion, less learning."
+            "AI assistance on math and reading tasks (Liu et al., Apr 2026)",
+            "Three randomized experiments, 1,222 participants",
+            "AI help raised in-task performance but cut persistence and later unassisted performance: students finish faster and learn less."
           ],
           "source": "liu_2026"
         },
@@ -383,12 +383,12 @@
         },
         {
           "id": "deepfakes",
-          "label": "Students who know of an explicit deepfake of someone at their school",
-          "display": "40%",
-          "value": 40,
+          "label": "Students who know of a deepfake depicting someone at their school",
+          "display": "36%",
+          "value": 36,
           "asOf": "2024–25",
           "source": "cdt_2025",
-          "note": "29% of teachers say the same. 86% of students and 85% of teachers used AI in 2024–25; half of students used it for school."
+          "note": "27% of teachers say the same. 86% of students and 85% of teachers used AI in 2024–25; half of students used it for school."
         },
         {
           "id": "turnitin",
@@ -422,7 +422,7 @@
         },
         {
           "headline": "Companion chatbots got their first rulebooks.",
-          "detail": "California's SB 243 (effective Jan 1, 2026) requires disclosure, self-harm protocols and three-hour break reminders for minors; 12 states had companion-chatbot laws by mid-2026.",
+          "detail": "California's SB 243 (effective Jan 1, 2026) requires disclosure, self-harm protocols and three-hour break reminders for minors; 12 states enacted companion-chatbot laws in 2026, most taking effect in 2027.",
           "source": "ca_sb243"
         },
         {
@@ -432,7 +432,7 @@
         },
         {
           "headline": "Public support is cooling.",
-          "detail": "PDK found support for teachers using AI to prepare lessons fell to 49% (62% in 2024) and for AI tutoring to 60% (65%); 68% of parents oppose giving student data to AI software.",
+          "detail": "PDK found support for teachers using AI to prepare lessons fell to 49% (62% in 2024) and for AI tutoring to 60% (65%); 68% of the public oppose giving student data to AI software.",
           "source": "pdk_2025"
         }
       ]
@@ -459,8 +459,11 @@
         },
         {
           "headline": "The labs are courting teachers directly.",
-          "detail": "Anthropic launched a free Claude for Teachers tier for verified U.S. K-12 educators on July 14, 2026 and a district-managed tier on August 28, with no training on teacher data. OpenAI offers ChatGPT for Teachers free to verified U.S. K-12 educators through June 2027.",
-          "source": "anthropic_claude_teachers_2026"
+          "detail": "Anthropic launched a free Claude for Teachers tier for verified U.S. K-12 educators on July 14, 2026 and a district-managed tier on August 28, with no training on teacher data. OpenAI's ChatGPT for Teachers is free to verified U.S. K-12 educators through June 2028.",
+          "source": [
+            "anthropic_claude_teachers_2026",
+            "openai_teachers_2026"
+          ]
         },
         {
           "headline": "AI literacy is becoming routine.",
