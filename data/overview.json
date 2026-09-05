@@ -371,7 +371,10 @@
           46,
           52
         ],
-        "source": "futureed_enrollment",
+        "source": [
+          "futureed_enrollment",
+          "nces_digest_enrollment"
+        ],
         "note": "NCES counts; FutureEd analysis updated July 2026. Kindergarten alone lost 237,000 students (−6%) between 2019 and 2024 while high school grew 2%."
       }
     },
@@ -660,7 +663,11 @@
           "display": "87%",
           "value": 87.4,
           "asOf": "2022–23",
-          "source": "nces_grad",
+          "source": [
+            "nces_grad",
+            "collegeboard_sat_2025",
+            "act_2025"
+          ],
           "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2025 averages: SAT 1029, ACT 19.4."
         }
       ]

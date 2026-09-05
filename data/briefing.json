@@ -22,7 +22,10 @@
       "tag": "AI",
       "headline": "Schools scramble after Gemini in Classroom opens to all ages",
       "detail": "Google's August 10 change lets admins enable Gemini for K-12 students of any age; safety vendors describe 'whack-a-mole' monitoring and Common Sense had flagged age-inappropriate responses.",
-      "source": "edweek_gemini_2026"
+      "source": [
+        "google_gemini_classroom_2026",
+        "edweek_gemini_2026"
+      ]
     },
     {
       "date": "2026-08-31",

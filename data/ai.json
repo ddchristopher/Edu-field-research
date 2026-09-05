@@ -15,7 +15,10 @@
         "sentiment": "neutral"
       },
       "asOf": "Sept–Oct 2025",
-      "source": "pew_teens_ai_2026",
+      "source": [
+        "pew_teens_ai_2026",
+        "pew_chatgpt_2025"
+      ],
       "note": "The 2025 question covers any chatbot; the 2023 (13%) and 2024 (26%) figures asked only about ChatGPT."
     },
     {
@@ -96,7 +99,10 @@
         "sentiment": "neutral"
       },
       "asOf": "Aug 21, 2026",
-      "source": "aifored_guidance",
+      "source": [
+        "aifored_guidance",
+        "futureed_ai_tracker_2026"
+      ],
       "note": "Roughly 100 state bills touching student AI use were tracked in 2026 sessions; 77 bills in 27 states per FutureEd."
     }
   ],
@@ -423,7 +429,10 @@
         {
           "headline": "The White House made AI education a priority.",
           "detail": "Executive Order 14277 (April 23, 2025) created a Task Force on AI Education and the Presidential AI Challenge. The first challenge drew 20,000+ students from all 50 states; six national champion teams were honored June 9, 2026.",
-          "source": "wh_ai_challenge_2026"
+          "source": [
+            "eo14277",
+            "wh_ai_challenge_2026"
+          ]
         },
         {
           "headline": "States moved from guidance to law in 2026.",
@@ -465,7 +474,10 @@
         {
           "headline": "Google turned Gemini on for students of all ages.",
           "detail": "Since August 10, 2026, Gemini in Google Classroom is available to K-12 students whose admins enable it, not only those 18 and older. EdWeek reports schools were 'caught flat-footed', and Common Sense had flagged age-inappropriate responses in January.",
-          "source": "edweek_gemini_2026"
+          "source": [
+            "google_gemini_classroom_2026",
+            "edweek_gemini_2026"
+          ]
         },
         {
           "headline": "The labs are courting teachers directly.",
