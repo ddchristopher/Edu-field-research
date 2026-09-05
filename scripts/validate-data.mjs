@@ -23,9 +23,9 @@ for (const [id, s] of Object.entries(sources)) {
   if (s.url && !/^https?:\/\//.test(s.url)) fail(`sources.${id} url not http(s): ${s.url}`);
 }
 function checkSource(ref, where) {
-  if (!ref) return fail(`${where}: missing source`);
-  usedSources.add(ref);
-  if (!sources[ref]) fail(`${where}: unknown source id '${ref}'`);
+  const ids = Array.isArray(ref) ? ref : ref ? [ref] : [];
+  if (!ids.length) return fail(`${where}: missing source`);
+  ids.forEach(id => { usedSources.add(id); if (!sources[id]) fail(`${where}: unknown source id '${id}'`); });
 }
 function checkStat(s, where) {
   for (const k of ['label', 'display', 'source']) if (!s[k]) fail(`${where}: stat missing ${k}`);

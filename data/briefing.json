@@ -4,17 +4,17 @@
   "summary": "The school year opened with a pullback: New York City and Los Angeles, the two largest districts, restricted student-facing generative AI within days of each other, even as Google switched Gemini on for students of all ages and Anthropic and OpenAI extended free tools to teachers. The first rigorous multi-year trial of an AI math tutor (Khanmigo) found small gains limited by how rarely students actually engaged it. Meanwhile the attendance recovery has slowed to less than a point a year, state math laws reached 22 states, and the OECD's PISA 2025 results land on September 8.",
   "items": [
     {
-      "date": "2026-09-04",
+      "date": "2026-09-03",
       "tag": "AI",
       "headline": "LAUSD blocks generative AI on district devices for all students",
-      "detail": "The restriction covers 2026–27 while a new Generative AI Ad Hoc Committee drafts guardrails, due to the board by year-end. It reverses a policy that let students 13+ use approved tools after digital-citizenship training.",
+      "detail": "The restriction covers 2026–27 while a new Generative AI Ad Hoc Committee drafts guardrails, with recommendations due to the board by the end of the school year. It reverses a policy that let students 13 and older use approved tools after digital-citizenship training.",
       "source": "lausd_ai_2026"
     },
     {
       "date": "2026-09-02",
       "tag": "AI",
       "headline": "New York City declares a one-year moratorium on student-facing generative AI, 2-K through grade 8",
-      "detail": "Nearly 600,000 students are covered; about 40 tools lose AI functions; exceptions for students with disabilities and English learners. High schools get twice-yearly AI critical-thinking modules, limited pilots and new screen-time limits.",
+      "detail": "Nearly 600,000 students are covered and AI features are switched off in the classroom tools they use, with exceptions for students with disabilities and English learners. High schools get twice-yearly AI critical-thinking modules, limited pilots and new screen-time limits.",
       "source": "nyc_ai_moratorium_2026"
     },
     {
@@ -84,8 +84,11 @@
       "date": "2026-06-16",
       "tag": "Math",
       "headline": "Texas STAAR: Algebra I up 7 points; grade-8 math access doubles",
-      "detail": "54% of Algebra I test-takers met grade level; 32% of 7th graders took the grade-8 math test, up from 16% in 2023.",
-      "source": "tea_staar_eoc_2026"
+      "detail": "54% of Algebra I test-takers met grade level in the end-of-course results released June 10; the grades 3–8 release shows 32% of 7th graders took the grade-8 math test, up from 16% in 2023.",
+      "source": [
+        "tea_staar_2026",
+        "tea_staar_eoc_2026"
+      ]
     },
     {
       "date": "2026-06-09",

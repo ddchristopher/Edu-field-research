@@ -371,7 +371,10 @@
         {
           "headline": "Texas shows what acceleration looks like.",
           "detail": "In 2026, 54% of Algebra I test-takers met grade level (+7 points), and 32% of 7th graders took the grade-8 math STAAR, double the 16% of 2023.",
-          "source": "tea_staar_eoc_2026"
+          "source": [
+            "tea_staar_eoc_2026",
+            "tea_staar_2026"
+          ]
         },
         {
           "headline": "Secondary math is the next frontier.",

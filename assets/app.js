@@ -63,12 +63,17 @@
     a.title = `${s.title} (${fmtDate(s.date)})`;
     return a;
   }
-  function sourceLine(id, sources, asOf) {
-    const s = sources[id];
+  function sourceIds(ref) { return Array.isArray(ref) ? ref : ref ? [ref] : []; }
+  function sourceLine(ref, sources, asOf) {
+    const ids = sourceIds(ref);
     const p = el('p', 'source-line');
-    p.appendChild(el('span', 'source-prefix', 'Source'));
-    p.appendChild(sourceLink(id, sources));
-    if (s) p.appendChild(el('span', 'source-date', ` · ${fmtDate(s.date)}`));
+    p.appendChild(el('span', 'source-prefix', ids.length > 1 ? 'Sources' : 'Source'));
+    ids.forEach((id, i) => {
+      if (i) p.appendChild(document.createTextNode('; '));
+      p.appendChild(sourceLink(id, sources));
+      const s = sources[id];
+      if (s) p.appendChild(el('span', 'source-date', ` (${fmtDate(s.date)})`));
+    });
     if (asOf) p.appendChild(el('span', 'source-date', ` · data as of ${asOf}`));
     return p;
   }
@@ -174,7 +179,7 @@
       li.appendChild(el('span', 'chip-label', c.label));
       li.appendChild(el('span', 'chip-value', c.display));
       if (c.note) li.appendChild(el('span', 'chip-note', c.note));
-      li.appendChild(sourceLink(c.source, sources, 'source-link chip-source'));
+      sourceIds(c.source).forEach((id, i) => { if (i) li.appendChild(document.createTextNode('; ')); li.appendChild(sourceLink(id, sources, 'source-link chip-source')); });
       list.appendChild(li);
     });
     card.appendChild(list);
@@ -193,7 +198,7 @@
     block.rows.forEach(r => {
       const tr = el('tr');
       r.cells.forEach((c, i) => tr.appendChild(el(i === 0 ? 'th' : 'td', null, c)));
-      const td = el('td'); td.appendChild(sourceLink(r.source, sources)); tr.appendChild(td);
+      const td = el('td'); sourceIds(r.source).forEach((id, i) => { if (i) td.appendChild(document.createTextNode('; ')); td.appendChild(sourceLink(id, sources)); }); tr.appendChild(td);
       tbody.appendChild(tr);
     });
     table.appendChild(tbody); wrap.appendChild(table); card.appendChild(wrap);

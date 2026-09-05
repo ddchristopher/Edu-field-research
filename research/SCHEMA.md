@@ -16,7 +16,7 @@ All dashboard content lives in `data/*.json`. The page (`assets/app.js`) renders
 
 ## `sources.json`
 
-An object keyed by a short stable id (`snake_case`, ASCII). Each value: `org` (publisher), `title` (exact title), `date` (ISO `YYYY-MM-DD` or `YYYY-MM`), `url` (https). Every `source` reference elsewhere must resolve to a key here.
+An object keyed by a short stable id (`snake_case`, ASCII). Each value: `org` (publisher), `title` (exact title), `date` (ISO `YYYY-MM-DD` or `YYYY-MM`), `url` (https). Every `source` reference elsewhere must resolve to a key here. A `source` field may be a single key or an array of keys when a claim draws on two documents (for example a state test release and its companion end-of-course release); list the primary document first.
 
 ## Section files (`overview.json`, `ai.json`, `math.json`)
 

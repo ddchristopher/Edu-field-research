@@ -1,79 +1,464 @@
 {
-  "naep2024_g48": {"org": "NAGB / NCES", "title": "The Nation's Report Card 2024: Reading and Mathematics, Grades 4 and 8 (press release)", "date": "2025-01-29", "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html"},
-  "naep2024_takeaways": {"org": "NAGB", "title": "10 Takeaways from the 2024 NAEP Results", "date": "2025-01-29", "url": "https://www.nagb.gov/powered-by-naep/the-2024-nations-report-card/10-takeaways-from-2024-naep-results.html"},
-  "naep2024_math_trends": {"org": "NCES", "title": "NAEP Mathematics 2024: National Trends and Student Skills (grade 8)", "date": "2025-01-29", "url": "https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/national-trends/?grade=8"},
-  "naep_nation_scores": {"org": "NCES", "title": "NAEP Data: National Average Scores by Year (mathematics and reading, grades 4 and 8)", "date": "2025-01-29", "url": "https://www.nationsreportcard.gov/mathematics/nation/scores/?grade=8"},
-  "naep2024_g12": {"org": "NAGB / NCES", "title": "Nation's Report Card: 2024 Grade 12 Mathematics and Reading, Grade 8 Science (press release)", "date": "2025-09-09", "url": "https://www.nagb.gov/news-and-events/news-releases/2025/declines-in-8th-grade-science-and-12th-grade-math-and-reading.html"},
-  "naep2026_schedule": {"org": "IES / NCES", "title": "What's on the Horizon for the 2026 Nation's Report Card", "date": "2026-01-15", "url": "https://ies.ed.gov/learn/blog/whats-horizon-2026-nations-report-card"},
-  "timss2023": {"org": "NCES", "title": "TIMSS 2023 U.S. Results (press release)", "date": "2024-12-04", "url": "https://ies.ed.gov/learn/press-release/mathematics-scores-u-s-fourth-and-eighth-graders-decline-international-mathematics-and-science"},
-  "pisa_schedule": {"org": "OECD / NCES", "title": "PISA 2025 results release schedule", "date": "2026-09-08", "url": "https://nces.ed.gov/surveys/pisa/schedule.asp"},
-  "aei_absenteeism_2026": {"org": "American Enterprise Institute (Nat Malkus)", "title": "From Attendance Crisis to Chronic Condition? Tracking Post-Pandemic Chronic Absenteeism into 2025", "date": "2026-06-30", "url": "https://www.aei.org/research-products/report/from-attendance-crisis-to-chronic-condition-tracking-post-pandemic-chronic-absenteeism-into-2025/"},
-  "r2l_tracker": {"org": "AEI Return to Learn Tracker", "title": "Chronic Absenteeism: 2017–2026 (updated Aug 28, 2026)", "date": "2026-08-28", "url": "https://www.returntolearntracker.net/"},
-  "futureed_enrollment": {"org": "FutureEd (NCES data)", "title": "K-12 Public School Enrollment Declines, Explained (updated July 2, 2026)", "date": "2026-07-02", "url": "https://www.future-ed.org/k-12-public-school-enrollment-declines-explained/"},
-  "nces_digest_enrollment": {"org": "NCES Digest of Education Statistics", "title": "Table 203.10: Enrollment in public elementary and secondary schools, by level and grade", "date": "2025-12-01", "url": "https://nces.ed.gov/programs/digest/d24/tables/dt24_203.10.asp"},
-  "reason_closures_2026": {"org": "Reason Foundation", "title": "Fourteen school districts announce plans to shutter 147 schools in 2026", "date": "2026-08-01", "url": "https://reason.org/education-newsletter/fourteen-school-districts-announce-plans-to-shutter-147-schools-in-2026/"},
-  "nea_pay_2026": {"org": "National Education Association", "title": "Educator Pay Data 2026 (2024–25 salaries)", "date": "2026-04-28", "url": "https://www.nea.org/resource-library/educator-pay-and-student-spending-how-does-your-state-rank"},
-  "lpi_shortages_2026": {"org": "Learning Policy Institute", "title": "An Overview of Teacher Shortages: 2026", "date": "2026-06-01", "url": "https://learningpolicyinstitute.org/product/state-teacher-shortages-2026-factsheet"},
-  "lpi_subjects_2025": {"org": "Learning Policy Institute", "title": "Teacher Shortages by Subjects Across States (fact sheet)", "date": "2025-07-01", "url": "https://learningpolicyinstitute.org/product/teacher-shortages-subjects-across-states-factsheet"},
-  "rand_teacher_2026": {"org": "RAND", "title": "Teacher Well-Being, Pay, and Intentions to Leave in 2026: Selected Findings from the 2026 State of the American Teacher Survey", "date": "2026-06-16", "url": "https://www.rand.org/pubs/research_reports/RRA4404-2.html"},
-  "census_finance_2024": {"org": "U.S. Census Bureau", "title": "Public School Spending Per Pupil Reaches Historic High in 2024 (Annual Survey of School System Finances, FY 2024)", "date": "2026-05-07", "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"},
-  "fy26_approps": {"org": "NAESP", "title": "Congress Rejects Deep Cuts, Safeguards Key K-12 Funding in FY26 Deal", "date": "2026-02-04", "url": "https://www.naesp.org/blog/congress-rejects-deep-cuts-safeguards-key-k-12-funding-in-fy26-deal/"},
-  "ed_iaa_2026": {"org": "K-12 Dive", "title": "The Education Dept now has 14 interagency agreements. Here are the changes.", "date": "2026-06-17", "url": "https://www.k12dive.com/news/the-education-dept-now-has-14-interagency-agreements-here-are-the-changes/823181/"},
-  "edchoice_abcs_2026": {"org": "EdChoice", "title": "The 2026 ABCs of School Choice", "date": "2026-01-28", "url": "https://www.edchoice.org/the-2026-abcs-of-school-choice-is-available-now/"},
-  "irs_fstc_2026": {"org": "Internal Revenue Service", "title": "More than half the U.S. states signed up to participate in the federal scholarship tax credit program", "date": "2026-04-16", "url": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill"},
-  "jhu_homeschool_2025": {"org": "Johns Hopkins Institute for Education Policy (Homeschool Hub)", "title": "Homeschool Growth: 2024–2025", "date": "2025-11-01", "url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/homeschool-growth-2024-2025/"},
-  "ncsl_phones_2026": {"org": "National Conference of State Legislatures", "title": "Enacted State Legislation: Cellphone Use in Schools", "date": "2026-07-15", "url": "https://www.ncsl.org/education/enacted-state-legislation-cellphone-use-in-schools"},
-  "edweek_sor_tracker": {"org": "Education Week", "title": "Which States Have Passed 'Science of Reading' Laws? What's in Them? (tracker, updated Aug 4, 2026)", "date": "2026-08-04", "url": "https://www.edweek.org/teaching-learning/which-states-have-passed-science-of-reading-laws-whats-in-them/2022/07"},
-  "edweek_math_tracker": {"org": "Education Week", "title": "Which States Are Overhauling Math Education? See Our Tracker (updated Aug 31, 2026)", "date": "2026-08-31", "url": "https://www.edweek.org/teaching-learning/which-states-are-overhauling-math-education-see-our-tracker/2026/07"},
-  "pdk_2025": {"org": "PDK International", "title": "The 57th Annual PDK Poll of the Public's Attitudes Toward the Public Schools", "date": "2025-08-26", "url": "https://pdkpoll.org/2025-poll-results/"},
-  "gallup_k12_2025": {"org": "Gallup", "title": "Record-Low 35% in U.S. Satisfied With K-12 Education Quality", "date": "2025-09-16", "url": "https://news.gallup.com/poll/695174/record-low-satisfied-education-quality.aspx"},
-  "nces_grad": {"org": "NCES", "title": "Fast Facts: High school graduation rates (ACGR)", "date": "2025-05-01", "url": "https://nces.ed.gov/fastfacts/display.asp?id=805"},
-  "cdc_yrbs_2023": {"org": "CDC", "title": "2023 Youth Risk Behavior Survey Results", "date": "2024-08-06", "url": "https://www.cdc.gov/yrbs/results/2023-yrbs-results.html"},
-  "nwea_recovery_2026": {"org": "NWEA", "title": "From Loss to Recovery: Diverging Paths and Uneven Gains Across Schools", "date": "2026-02-24", "url": "https://www.nwea.org/news-center/press-releases/new-nwea-study-finds-uneven-academic-recovery-only-one-in-three-schools-recovered-in-math-or-reading/"},
-  "nwea_absenteeism_2026": {"org": "NWEA (via Education Week)", "title": "Chronic Absenteeism Is Linked to Slower Academic Recovery in Math, Reading", "date": "2026-07-15", "url": "https://www.edweek.org/leadership/chronic-absenteeism-is-linked-to-slower-academic-recovery-in-math-reading/2026/07"},
-  "scorecard_2026": {"org": "Education Scorecard (Harvard CEPR, Stanford EOP, Dartmouth)", "title": "From Learning Recession to Learning Recovery (May 2026 report)", "date": "2026-05-13", "url": "https://educationscorecard.org/wp-content/uploads/2026/05/Education_Scorecard_May_2026_Report.pdf"},
-  "ca_ssl_2025": {"org": "Curriculum Associates", "title": "State of Student Learning 2025", "date": "2025-07-30", "url": "https://www.curriculumassociates.com/research-and-efficacy/annual-report-the-state-of-student-learning-in-2025"},
-  "collegeboard_sat_2025": {"org": "College Board", "title": "SAT Suite Annual Report, Class of 2025", "date": "2025-09-25", "url": "https://reports.collegeboard.org/sat-suite-program-results"},
-  "act_2025": {"org": "ACT", "title": "Class of 2025 national ACT results", "date": "2025-10-15", "url": "https://www.act.org/content/act/en/research/reports/act-publications/condition-of-college-and-career-readiness.html"},
-
-  "pew_teens_ai_2026": {"org": "Pew Research Center", "title": "How Teens Use and View AI", "date": "2026-02-24", "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/02/PI_2026.02.24_Teens-and-AI_REPORT.pdf"},
-  "pew_chatgpt_2025": {"org": "Pew Research Center", "title": "About a quarter of U.S. teens have used ChatGPT for schoolwork, double the share in 2023", "date": "2025-01-15", "url": "https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/"},
-  "rand_ai_2025": {"org": "RAND", "title": "AI Use in Schools Is Quickly Increasing but Guidance Lags Behind: Findings from the RAND Survey Panels", "date": "2025-09-30", "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html"},
-  "rand_youth_ai_2026": {"org": "RAND", "title": "More Students Use AI for Homework, and More Believe It Harms Critical Thinking (American Youth Panel)", "date": "2026-03-17", "url": "https://www.rand.org/pubs/research_reports/RRA4742-1.html"},
-  "rand_training_2025": {"org": "RAND", "title": "More Districts Are Training Teachers on Artificial Intelligence (American School District Panel)", "date": "2025-04-08", "url": "https://www.rand.org/pubs/research_reports/RRA956-31.html"},
-  "gallup_ai_2025": {"org": "Gallup / Walton Family Foundation", "title": "Three in 10 Teachers Use AI Weekly, Saving Six Weeks a Year", "date": "2025-06-24", "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx"},
-  "gallup_ai_2026": {"org": "Gallup / Walton Family Foundation", "title": "Most Teachers Receive No Formal Guidance on AI Use", "date": "2026-05-26", "url": "https://news.gallup.com/poll/710534/teachers-receive-no-formal-guidance.aspx"},
-  "cdt_2025": {"org": "Center for Democracy & Technology", "title": "Hand in Hand: Schools' Embrace of AI Connected to Increased Risks to Students", "date": "2025-10-08", "url": "https://cdt.org/wp-content/uploads/2025/10/FINAL-CDT-2025-Hand-in-Hand-Polling-100225-accessible.pdf"},
-  "csm_companions_2025": {"org": "Common Sense Media", "title": "Talk, Trust, and Trade-Offs: How and Why Teens Use AI Companions", "date": "2025-07-16", "url": "https://www.commonsensemedia.org/research/talk-trust-and-trade-offs-how-and-why-teens-use-ai-companions"},
-  "csm_census_2026": {"org": "Common Sense Media", "title": "Common Sense Media Census: AI Use by Tweens and Teens (2026)", "date": "2026-06-08", "url": "https://www.commonsensemedia.org/research/a-comprehensive-report-on-teens-tweens-and-ai"},
-  "aifored_guidance": {"org": "AI for Education", "title": "State AI Guidance for K12 Schools (updated Aug 21, 2026)", "date": "2026-08-21", "url": "https://www.aiforeducation.io/ai-resources/state-ai-guidance"},
-  "excelined_ai_2026": {"org": "ExcelinEd", "title": "State K-12 AI Policy in 2026: Milestones, Momentum and Missing Links", "date": "2026-05-26", "url": "https://excelined.org/2026/05/26/state-k-12-ai-policy-in-2026-milestones/"},
-  "futureed_ai_tracker_2026": {"org": "FutureEd", "title": "Legislative Tracker: 2026 State AI in Education Bills", "date": "2026-06-01", "url": "https://www.future-ed.org/legislative-tracker-2026-state-ai-in-education-bills/"},
-  "eo14277": {"org": "The White House", "title": "Executive Order 14277: Advancing Artificial Intelligence Education for American Youth", "date": "2025-04-23", "url": "https://www.presidency.ucsb.edu/documents/executive-order-14277-advancing-artificial-intelligence-education-for-american-youth"},
-  "wh_ai_challenge_2026": {"org": "The White House", "title": "First Lady Honors America's Next Generation of Top AI Talent at Presidential AI Challenge Awards Ceremony", "date": "2026-06-09", "url": "https://www.whitehouse.gov/briefings-statements/2026/06/first-lady-melania-trump-honors-americas-next-generation-of-top-ai-talent-at-historic-presidential-ai-challenge-awards-ceremony/"},
-  "aft_academy_2025": {"org": "American Federation of Teachers", "title": "AFT to Launch National Academy for AI Instruction with Microsoft, OpenAI, Anthropic and UFT", "date": "2025-07-08", "url": "https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united"},
-  "nyc_ai_moratorium_2026": {"org": "NYC Mayor's Office", "title": "Mayor Mamdani and Chancellor Samuels Put Students First with Nation's Broadest Generative AI Moratorium in Schools", "date": "2026-09-02", "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"},
-  "lausd_ai_2026": {"org": "K-12 Dive", "title": "LAUSD restricts all students from using AI tools", "date": "2026-09-04", "url": "https://www.k12dive.com/news/lausd-restricts-all-students-from-using-ai-tools/829612/"},
-  "google_gemini_classroom_2026": {"org": "Google Workspace Updates", "title": "Gemini in Google Classroom is expanding to users of all ages", "date": "2026-08-10", "url": "https://workspaceupdates.googleblog.com/2026/08/gemini-in-google-classroom-is-expanding-to-users-of-all-ages-with-contextualized-Gemini-starter-prompts-for-students.html"},
-  "edweek_gemini_2026": {"org": "Education Week", "title": "Schools Caught Flat-Footed After Google Makes Gemini Chatbot Available to All Students", "date": "2026-09-02", "url": "https://www.edweek.org/technology/schools-caught-flat-footed-after-google-makes-gemini-chatbot-available-to-all-students/2026/09"},
-  "anthropic_claude_teachers_2026": {"org": "EdTech Innovation Hub (on Anthropic announcement)", "title": "Anthropic opens free Claude for Teachers enterprise access to U.S. schools and districts", "date": "2026-08-28", "url": "https://www.edtechinnovationhub.com/news/anthropic-opens-free-claude-for-teachers-enterprise-access-to-us-schools-and-districts"},
-  "turnitin_2026": {"org": "Turnitin", "title": "Turnitin Data Shows Transparency About AI Use Benefits Students and Educators", "date": "2026-02-24", "url": "https://www.turnitin.com/press/turnitin-data-shows-transparency-about-ai-use-benefits-students-and-educators"},
-  "edweek_ai_literacy_2026": {"org": "EdWeek Research Center", "title": "Are AI Literacy Lessons Now the Norm? What New Survey Data Show", "date": "2026-03-10", "url": "https://www.edweek.org/technology/are-ai-literacy-lessons-now-the-norm-what-new-survey-data-show/2026/03"},
-  "edweek_math_ai_pd_2025": {"org": "EdWeek Research Center", "title": "Why Some Math Teachers Don't Want Professional Development on AI", "date": "2025-04-15", "url": "https://www.edweek.org/technology/why-some-math-teachers-dont-want-professional-development-on-ai/2025/04"},
-  "multistate_chatbots_2026": {"org": "MultiState.ai", "title": "State AI Companion Chatbot Laws: 12 States Enact Regulations", "date": "2026-07-01", "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws"},
-  "ca_sb243": {"org": "California State Senate (Sen. Padilla)", "title": "First-in-the-Nation AI Chatbot Safeguards Signed into Law (SB 243)", "date": "2025-10-13", "url": "https://sd18.senate.ca.gov/news/first-nation-ai-chatbot-safeguards-signed-law"},
-  "nber_khanmigo_2026": {"org": "NBER (Oreopoulos & Low)", "title": "One Click Away: AI Tutoring with Khanmigo in a Two-Year School Experiment (Working Paper 35620)", "date": "2026-08-17", "url": "https://www.nber.org/papers/w35620"},
-  "tutor_copilot_2024": {"org": "Stanford (Wang et al.)", "title": "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise", "date": "2024-10-04", "url": "https://arxiv.org/abs/2410.03017"},
-  "bastani_2024": {"org": "Wharton / Penn (Bastani et al.)", "title": "Generative AI Can Harm Learning", "date": "2024-07-15", "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4895486"},
-  "liu_2026": {"org": "arXiv (Liu et al.)", "title": "Faster Completion, Less Learning: Generative AI Reduced Study Time on Math Problems and the Knowledge They Build", "date": "2026-05-20", "url": "https://arxiv.org/abs/2605.21629"},
-
-  "nwea_algebra_2025": {"org": "NWEA", "title": "NWEA Study Finds Unequal Access to Algebra Limits Advanced Math Pathways", "date": "2025-09-09", "url": "https://www.nwea.org/news-center/press-releases/nwea-study-finds-unequal-access-to-algebra-limits-advanced-math-pathways/"},
-  "edweek_precalc_2025": {"org": "Education Week", "title": "By the Numbers: See How AP Precalculus Expanded Access to Advanced Math", "date": "2025-08-12", "url": "https://www.edweek.org/teaching-learning/by-the-numbers-see-how-ap-precalculus-expanded-access-to-advanced-math/2025/08"},
-  "tea_staar_2026": {"org": "Texas Education Agency", "title": "TEA Releases Spring 2026 STAAR Results for Grades 3–8", "date": "2026-06-16", "url": "https://tea.texas.gov/about-tea/newsroom/tea-releases-spring-2026-staarr-results-grades-3-8"},
-  "tea_staar_eoc_2026": {"org": "Texas Education Agency", "title": "TEA Releases Spring 2026 STAAR End-of-Course Assessment Results", "date": "2026-06-10", "url": "https://tea.texas.gov/about-tea/newsroom/tea-releases-spring-2026-staarr-end-course-assessment-results"},
-  "gallup_math_2025": {"org": "Gallup (Math Matters Study, with the Gates Foundation)", "title": "Math Moves Americans, Mentally and Emotionally", "date": "2025-06-09", "url": "https://news.gallup.com/poll/690956/math-moves-americans-mentally-emotionally.aspx"},
-  "gates_math_2022": {"org": "K-12 Dive (Gates Foundation announcement)", "title": "Gates Foundation's new formula: $1.1B to boost math instruction", "date": "2022-10-17", "url": "https://www.k12dive.com/news/gates-foundations-new-formula-11b-to-boost-math-instruction/634436/"},
-  "uchicago_hdt_2024": {"org": "University of Chicago Education Lab", "title": "National study finds in-school tutoring programs are successfully accelerating student learning", "date": "2024-03-27", "url": "https://educationlab.uchicago.edu/2024/03/national-study-finds-in-school-tutoring-programs-are-successfully-accelerating-student-learning-reversing-pandemic-era-learning-loss/"},
-  "guryan_2023": {"org": "American Economic Review (Guryan et al.)", "title": "Not Too Late: Improving Academic Outcomes among Adolescents", "date": "2023-03-01", "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20210434"},
-  "edweek_secondary_math_2026": {"org": "Education Week", "title": "Elementary Math Has Been in Focus. But Middle and High School Students' Struggles Are Daunting", "date": "2026-05-19", "url": "https://www.edweek.org/teaching-learning/elementary-math-has-been-in-focus-but-middle-and-high-school-students-struggles-are-daunting/2026/05"}
+  "naep2024_g48": {
+    "org": "NAGB / NCES",
+    "title": "The Nation's Report Card 2024: Reading and Mathematics, Grades 4 and 8 (press release)",
+    "date": "2025-01-29",
+    "url": "https://www.nagb.gov/news-and-events/news-releases/2025/nations-report-card-decline-in-reading-progress-in-math.html"
+  },
+  "naep2024_takeaways": {
+    "org": "NAGB",
+    "title": "10 Takeaways from the 2024 NAEP Results",
+    "date": "2025-01-29",
+    "url": "https://www.nagb.gov/powered-by-naep/the-2024-nations-report-card/10-takeaways-from-2024-naep-results.html"
+  },
+  "naep2024_math_trends": {
+    "org": "NCES",
+    "title": "NAEP Mathematics 2024: National Trends and Student Skills (grade 8)",
+    "date": "2025-01-29",
+    "url": "https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/national-trends/?grade=8"
+  },
+  "naep_nation_scores": {
+    "org": "NCES",
+    "title": "NAEP 2024 Mathematics and Reading, Grades 4 and 8: National Trends (values from the NAEP Data Service, 2013–2024)",
+    "date": "2025-01-29",
+    "url": "https://www.nationsreportcard.gov/reports/mathematics/2024/g4_8/national-trends/?grade=4"
+  },
+  "naep2024_g12": {
+    "org": "NAGB / NCES",
+    "title": "Nation's Report Card: 2024 Grade 12 Mathematics and Reading, Grade 8 Science (press release)",
+    "date": "2025-09-09",
+    "url": "https://www.nagb.gov/news-and-events/news-releases/2025/declines-in-8th-grade-science-and-12th-grade-math-and-reading.html"
+  },
+  "naep2026_schedule": {
+    "org": "IES / NCES",
+    "title": "What's on the Horizon for the 2026 Nation's Report Card",
+    "date": "2026-01-15",
+    "url": "https://ies.ed.gov/learn/blog/whats-horizon-2026-nations-report-card"
+  },
+  "timss2023": {
+    "org": "NCES",
+    "title": "TIMSS 2023 U.S. Results (press release)",
+    "date": "2024-12-04",
+    "url": "https://ies.ed.gov/learn/press-release/mathematics-scores-u-s-fourth-and-eighth-graders-decline-international-mathematics-and-science"
+  },
+  "pisa_schedule": {
+    "org": "OECD / NCES",
+    "title": "PISA 2025 results release schedule",
+    "date": "2026-09-08",
+    "url": "https://nces.ed.gov/surveys/pisa/schedule.asp"
+  },
+  "aei_absenteeism_2026": {
+    "org": "American Enterprise Institute (Nat Malkus)",
+    "title": "From Attendance Crisis to Chronic Condition? Tracking Post-Pandemic Chronic Absenteeism into 2025",
+    "date": "2026-06-30",
+    "url": "https://www.aei.org/research-products/report/from-attendance-crisis-to-chronic-condition-tracking-post-pandemic-chronic-absenteeism-into-2025/"
+  },
+  "r2l_tracker": {
+    "org": "AEI Return to Learn Tracker",
+    "title": "Chronic Absenteeism: 2017–2026 (updated Aug 28, 2026)",
+    "date": "2026-08-28",
+    "url": "https://www.returntolearntracker.net/"
+  },
+  "futureed_enrollment": {
+    "org": "FutureEd (NCES data)",
+    "title": "K-12 Public School Enrollment Declines, Explained (updated July 2, 2026)",
+    "date": "2026-07-02",
+    "url": "https://www.future-ed.org/k-12-public-school-enrollment-declines-explained/"
+  },
+  "nces_digest_enrollment": {
+    "org": "NCES Digest of Education Statistics",
+    "title": "Table 203.10: Enrollment in public elementary and secondary schools, by level and grade",
+    "date": "2025-12-01",
+    "url": "https://nces.ed.gov/programs/digest/d24/tables/dt24_203.10.asp"
+  },
+  "reason_closures_2026": {
+    "org": "Reason Foundation",
+    "title": "Fourteen school districts announce plans to shutter 147 schools in 2026",
+    "date": "2026-08-01",
+    "url": "https://reason.org/education-newsletter/fourteen-school-districts-announce-plans-to-shutter-147-schools-in-2026/"
+  },
+  "nea_pay_2026": {
+    "org": "National Education Association",
+    "title": "Educator Pay Data 2026 (2024–25 salaries)",
+    "date": "2026-04-28",
+    "url": "https://www.nea.org/resource-library/educator-pay-and-student-spending-how-does-your-state-rank"
+  },
+  "lpi_shortages_2026": {
+    "org": "Learning Policy Institute",
+    "title": "An Overview of Teacher Shortages: 2026",
+    "date": "2026-06-01",
+    "url": "https://learningpolicyinstitute.org/product/state-teacher-shortages-2026-factsheet"
+  },
+  "lpi_subjects_2025": {
+    "org": "Learning Policy Institute",
+    "title": "Teacher Shortages by Subjects Across States (fact sheet)",
+    "date": "2025-07-01",
+    "url": "https://learningpolicyinstitute.org/product/teacher-shortages-subjects-across-states-factsheet"
+  },
+  "rand_teacher_2026": {
+    "org": "RAND",
+    "title": "Teacher Well-Being, Pay, and Intentions to Leave in 2026: Selected Findings from the 2026 State of the American Teacher Survey",
+    "date": "2026-06-16",
+    "url": "https://www.rand.org/pubs/research_reports/RRA4404-2.html"
+  },
+  "census_finance_2024": {
+    "org": "U.S. Census Bureau",
+    "title": "Public School Spending Per Pupil Reaches Historic High in 2024 (Annual Survey of School System Finances, FY 2024)",
+    "date": "2026-05-07",
+    "url": "https://www.census.gov/newsroom/press-releases/2026/school-system-finances.html"
+  },
+  "fy26_approps": {
+    "org": "NAESP",
+    "title": "Congress Rejects Deep Cuts, Safeguards Key K-12 Funding in FY26 Deal",
+    "date": "2026-02-04",
+    "url": "https://www.naesp.org/blog/congress-rejects-deep-cuts-safeguards-key-k-12-funding-in-fy26-deal/"
+  },
+  "ed_iaa_2026": {
+    "org": "K-12 Dive",
+    "title": "The Education Dept now has 14 interagency agreements. Here are the changes.",
+    "date": "2026-06-17",
+    "url": "https://www.k12dive.com/news/the-education-dept-now-has-14-interagency-agreements-here-are-the-changes/823181/"
+  },
+  "edchoice_abcs_2026": {
+    "org": "EdChoice",
+    "title": "The 2026 ABCs of School Choice",
+    "date": "2026-01-28",
+    "url": "https://www.edchoice.org/the-2026-abcs-of-school-choice-is-available-now/"
+  },
+  "irs_fstc_2026": {
+    "org": "Internal Revenue Service",
+    "title": "More than half the U.S. states signed up to participate in the federal scholarship tax credit program",
+    "date": "2026-04-16",
+    "url": "https://www.irs.gov/newsroom/more-than-half-the-us-states-signed-up-to-participate-in-the-federal-scholarship-tax-credit-program-enacted-under-the-one-big-beautiful-bill"
+  },
+  "jhu_homeschool_2025": {
+    "org": "Johns Hopkins Institute for Education Policy (Homeschool Hub)",
+    "title": "Homeschool Growth: 2024–2025",
+    "date": "2025-11-01",
+    "url": "https://education.jhu.edu/edpolicy/policy-research-initiatives/homeschool-hub/homeschool-growth-2024-2025/"
+  },
+  "ncsl_phones_2026": {
+    "org": "National Conference of State Legislatures",
+    "title": "Enacted State Legislation: Cellphone Use in Schools",
+    "date": "2026-07-15",
+    "url": "https://www.ncsl.org/education/enacted-state-legislation-cellphone-use-in-schools"
+  },
+  "edweek_sor_tracker": {
+    "org": "Education Week",
+    "title": "Which States Have Passed 'Science of Reading' Laws? What's in Them? (tracker, updated Aug 4, 2026)",
+    "date": "2026-08-04",
+    "url": "https://www.edweek.org/teaching-learning/which-states-have-passed-science-of-reading-laws-whats-in-them/2022/07"
+  },
+  "edweek_math_tracker": {
+    "org": "Education Week",
+    "title": "Which States Are Overhauling Math Education? See Our Tracker (updated Aug 31, 2026)",
+    "date": "2026-08-31",
+    "url": "https://www.edweek.org/teaching-learning/which-states-are-overhauling-math-education-see-our-tracker/2026/07"
+  },
+  "pdk_2025": {
+    "org": "PDK International",
+    "title": "The 57th Annual PDK Poll of the Public's Attitudes Toward the Public Schools",
+    "date": "2025-08-26",
+    "url": "https://pdkpoll.org/2025-poll-results/"
+  },
+  "gallup_k12_2025": {
+    "org": "Gallup",
+    "title": "Record-Low 35% in U.S. Satisfied With K-12 Education Quality",
+    "date": "2025-09-16",
+    "url": "https://news.gallup.com/poll/695174/record-low-satisfied-education-quality.aspx"
+  },
+  "nces_grad": {
+    "org": "NCES",
+    "title": "Fast Facts: High school graduation rates (ACGR)",
+    "date": "2025-05-01",
+    "url": "https://nces.ed.gov/fastfacts/display.asp?id=805"
+  },
+  "cdc_yrbs_2023": {
+    "org": "CDC",
+    "title": "2023 Youth Risk Behavior Survey Results",
+    "date": "2024-08-06",
+    "url": "https://www.cdc.gov/yrbs/results/2023-yrbs-results.html"
+  },
+  "nwea_recovery_2026": {
+    "org": "NWEA",
+    "title": "From Loss to Recovery: Diverging Paths and Uneven Gains Across Schools",
+    "date": "2026-02-24",
+    "url": "https://www.nwea.org/news-center/press-releases/new-nwea-study-finds-uneven-academic-recovery-only-one-in-three-schools-recovered-in-math-or-reading/"
+  },
+  "nwea_absenteeism_2026": {
+    "org": "NWEA (via Education Week)",
+    "title": "Chronic Absenteeism Is Linked to Slower Academic Recovery in Math, Reading",
+    "date": "2026-07-15",
+    "url": "https://www.edweek.org/leadership/chronic-absenteeism-is-linked-to-slower-academic-recovery-in-math-reading/2026/07"
+  },
+  "scorecard_2026": {
+    "org": "Education Scorecard (Harvard CEPR, Stanford EOP, Dartmouth)",
+    "title": "From Learning Recession to Learning Recovery (May 2026 report)",
+    "date": "2026-05-13",
+    "url": "https://educationscorecard.org/wp-content/uploads/2026/05/Education_Scorecard_May_2026_Report.pdf"
+  },
+  "ca_ssl_2025": {
+    "org": "Curriculum Associates",
+    "title": "State of Student Learning 2025",
+    "date": "2025-07-30",
+    "url": "https://www.curriculumassociates.com/research-and-efficacy/annual-report-the-state-of-student-learning-in-2025"
+  },
+  "collegeboard_sat_2025": {
+    "org": "College Board",
+    "title": "SAT Suite Annual Report, Class of 2025",
+    "date": "2025-09-25",
+    "url": "https://reports.collegeboard.org/sat-suite-program-results"
+  },
+  "act_2025": {
+    "org": "ACT",
+    "title": "Class of 2025 national ACT results",
+    "date": "2025-10-15",
+    "url": "https://www.act.org/content/act/en/research/reports/act-publications/condition-of-college-and-career-readiness.html"
+  },
+  "pew_teens_ai_2026": {
+    "org": "Pew Research Center",
+    "title": "How Teens Use and View AI",
+    "date": "2026-02-24",
+    "url": "https://www.pewresearch.org/wp-content/uploads/sites/20/2026/02/PI_2026.02.24_Teens-and-AI_REPORT.pdf"
+  },
+  "pew_chatgpt_2025": {
+    "org": "Pew Research Center",
+    "title": "About a quarter of U.S. teens have used ChatGPT for schoolwork, double the share in 2023",
+    "date": "2025-01-15",
+    "url": "https://www.pewresearch.org/short-reads/2025/01/15/about-a-quarter-of-us-teens-have-used-chatgpt-for-schoolwork-double-the-share-in-2023/"
+  },
+  "rand_ai_2025": {
+    "org": "RAND",
+    "title": "AI Use in Schools Is Quickly Increasing but Guidance Lags Behind: Findings from the RAND Survey Panels",
+    "date": "2025-09-30",
+    "url": "https://www.rand.org/pubs/research_reports/RRA4180-1.html"
+  },
+  "rand_youth_ai_2026": {
+    "org": "RAND",
+    "title": "More Students Use AI for Homework, and More Believe It Harms Critical Thinking (American Youth Panel)",
+    "date": "2026-03-17",
+    "url": "https://www.rand.org/pubs/research_reports/RRA4742-1.html"
+  },
+  "rand_training_2025": {
+    "org": "RAND",
+    "title": "More Districts Are Training Teachers on Artificial Intelligence (American School District Panel)",
+    "date": "2025-04-08",
+    "url": "https://www.rand.org/pubs/research_reports/RRA956-31.html"
+  },
+  "gallup_ai_2025": {
+    "org": "Gallup / Walton Family Foundation",
+    "title": "Three in 10 Teachers Use AI Weekly, Saving Six Weeks a Year",
+    "date": "2025-06-24",
+    "url": "https://news.gallup.com/poll/691967/three-teachers-weekly-saving-six-weeks-year.aspx"
+  },
+  "gallup_ai_2026": {
+    "org": "Gallup / Walton Family Foundation",
+    "title": "Most Teachers Receive No Formal Guidance on AI Use",
+    "date": "2026-05-26",
+    "url": "https://news.gallup.com/poll/710534/teachers-receive-no-formal-guidance.aspx"
+  },
+  "cdt_2025": {
+    "org": "Center for Democracy & Technology",
+    "title": "Hand in Hand: Schools' Embrace of AI Connected to Increased Risks to Students",
+    "date": "2025-10-08",
+    "url": "https://cdt.org/wp-content/uploads/2025/10/FINAL-CDT-2025-Hand-in-Hand-Polling-100225-accessible.pdf"
+  },
+  "csm_companions_2025": {
+    "org": "Common Sense Media",
+    "title": "Talk, Trust, and Trade-Offs: How and Why Teens Use AI Companions",
+    "date": "2025-07-16",
+    "url": "https://www.commonsensemedia.org/research/talk-trust-and-trade-offs-how-and-why-teens-use-ai-companions"
+  },
+  "csm_census_2026": {
+    "org": "Common Sense Media",
+    "title": "Common Sense Media Census: AI Use by Tweens and Teens (2026)",
+    "date": "2026-06-08",
+    "url": "https://www.commonsensemedia.org/research/a-comprehensive-report-on-teens-tweens-and-ai"
+  },
+  "aifored_guidance": {
+    "org": "AI for Education",
+    "title": "State AI Guidance for K12 Schools (updated Aug 21, 2026)",
+    "date": "2026-08-21",
+    "url": "https://www.aiforeducation.io/ai-resources/state-ai-guidance"
+  },
+  "excelined_ai_2026": {
+    "org": "ExcelinEd",
+    "title": "State K-12 AI Policy in 2026: Milestones, Momentum and Missing Links",
+    "date": "2026-05-26",
+    "url": "https://excelined.org/2026/05/26/state-k-12-ai-policy-in-2026-milestones/"
+  },
+  "futureed_ai_tracker_2026": {
+    "org": "FutureEd",
+    "title": "Legislative Tracker: 2026 State AI in Education Bills",
+    "date": "2026-06-01",
+    "url": "https://www.future-ed.org/legislative-tracker-2026-state-ai-in-education-bills/"
+  },
+  "eo14277": {
+    "org": "The White House",
+    "title": "Executive Order 14277: Advancing Artificial Intelligence Education for American Youth",
+    "date": "2025-04-23",
+    "url": "https://www.presidency.ucsb.edu/documents/executive-order-14277-advancing-artificial-intelligence-education-for-american-youth"
+  },
+  "wh_ai_challenge_2026": {
+    "org": "The White House",
+    "title": "First Lady Honors America's Next Generation of Top AI Talent at Presidential AI Challenge Awards Ceremony",
+    "date": "2026-06-09",
+    "url": "https://www.whitehouse.gov/briefings-statements/2026/06/first-lady-melania-trump-honors-americas-next-generation-of-top-ai-talent-at-historic-presidential-ai-challenge-awards-ceremony/"
+  },
+  "aft_academy_2025": {
+    "org": "American Federation of Teachers",
+    "title": "AFT to Launch National Academy for AI Instruction with Microsoft, OpenAI, Anthropic and UFT",
+    "date": "2025-07-08",
+    "url": "https://www.aft.org/press-release/aft-launch-national-academy-ai-instruction-microsoft-openai-anthropic-and-united"
+  },
+  "nyc_ai_moratorium_2026": {
+    "org": "NYC Mayor's Office",
+    "title": "Mayor Mamdani and Chancellor Samuels Put Students First with Nation's Broadest Generative AI Moratorium in Schools",
+    "date": "2026-09-02",
+    "url": "https://www.nyc.gov/mayors-office/news/2026/09/mayor-mamdani-and-chancellor-samuels-put-students-first-with-nat"
+  },
+  "lausd_ai_2026": {
+    "org": "K-12 Dive",
+    "title": "LAUSD restricts all students from using AI tools",
+    "date": "2026-09-03",
+    "url": "https://www.k12dive.com/news/lausd-restricts-all-students-from-using-ai-tools/829612/"
+  },
+  "google_gemini_classroom_2026": {
+    "org": "Google Workspace Updates",
+    "title": "Gemini in Google Classroom is expanding to users of all ages",
+    "date": "2026-08-10",
+    "url": "https://workspaceupdates.googleblog.com/2026/08/gemini-in-google-classroom-is-expanding-to-users-of-all-ages-with-contextualized-Gemini-starter-prompts-for-students.html"
+  },
+  "edweek_gemini_2026": {
+    "org": "Education Week",
+    "title": "Schools Caught Flat-Footed After Google Makes Gemini Chatbot Available to All Students",
+    "date": "2026-09-02",
+    "url": "https://www.edweek.org/technology/schools-caught-flat-footed-after-google-makes-gemini-chatbot-available-to-all-students/2026/09"
+  },
+  "anthropic_claude_teachers_2026": {
+    "org": "EdTech Innovation Hub (on Anthropic announcement)",
+    "title": "Anthropic opens free Claude for Teachers enterprise access to U.S. schools and districts",
+    "date": "2026-08-28",
+    "url": "https://www.edtechinnovationhub.com/news/anthropic-opens-free-claude-for-teachers-enterprise-access-to-us-schools-and-districts"
+  },
+  "turnitin_2026": {
+    "org": "Turnitin",
+    "title": "Turnitin Data Shows Transparency About AI Use Benefits Students and Educators",
+    "date": "2026-02-24",
+    "url": "https://www.turnitin.com/press/turnitin-data-shows-transparency-about-ai-use-benefits-students-and-educators"
+  },
+  "edweek_ai_literacy_2026": {
+    "org": "EdWeek Research Center",
+    "title": "Are AI Literacy Lessons Now the Norm? What New Survey Data Show",
+    "date": "2026-03-10",
+    "url": "https://www.edweek.org/technology/are-ai-literacy-lessons-now-the-norm-what-new-survey-data-show/2026/03"
+  },
+  "edweek_math_ai_pd_2025": {
+    "org": "EdWeek Research Center",
+    "title": "Why Some Math Teachers Don't Want Professional Development on AI",
+    "date": "2025-04-15",
+    "url": "https://www.edweek.org/technology/why-some-math-teachers-dont-want-professional-development-on-ai/2025/04"
+  },
+  "multistate_chatbots_2026": {
+    "org": "MultiState.ai",
+    "title": "State AI Companion Chatbot Laws: 12 States Enact Regulations",
+    "date": "2026-07-01",
+    "url": "https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws"
+  },
+  "ca_sb243": {
+    "org": "California State Senate (Sen. Padilla)",
+    "title": "First-in-the-Nation AI Chatbot Safeguards Signed into Law (SB 243)",
+    "date": "2025-10-13",
+    "url": "https://sd18.senate.ca.gov/news/first-nation-ai-chatbot-safeguards-signed-law"
+  },
+  "nber_khanmigo_2026": {
+    "org": "NBER (Oreopoulos & Low)",
+    "title": "One Click Away: AI Tutoring with Khanmigo in a Two-Year School Experiment (Working Paper 35620)",
+    "date": "2026-08-17",
+    "url": "https://www.nber.org/papers/w35620"
+  },
+  "tutor_copilot_2024": {
+    "org": "Stanford (Wang et al.)",
+    "title": "Tutor CoPilot: A Human-AI Approach for Scaling Real-Time Expertise",
+    "date": "2024-10-04",
+    "url": "https://arxiv.org/abs/2410.03017"
+  },
+  "bastani_2024": {
+    "org": "Wharton / Penn (Bastani et al.)",
+    "title": "Generative AI Can Harm Learning",
+    "date": "2024-07-15",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4895486"
+  },
+  "liu_2026": {
+    "org": "arXiv (Liu et al.)",
+    "title": "Faster Completion, Less Learning: Generative AI Reduced Study Time on Math Problems and the Knowledge They Build",
+    "date": "2026-05-20",
+    "url": "https://arxiv.org/abs/2605.21629"
+  },
+  "nwea_algebra_2025": {
+    "org": "NWEA",
+    "title": "NWEA Study Finds Unequal Access to Algebra Limits Advanced Math Pathways",
+    "date": "2025-09-09",
+    "url": "https://www.nwea.org/news-center/press-releases/nwea-study-finds-unequal-access-to-algebra-limits-advanced-math-pathways/"
+  },
+  "edweek_precalc_2025": {
+    "org": "Education Week",
+    "title": "By the Numbers: See How AP Precalculus Expanded Access to Advanced Math",
+    "date": "2025-08-12",
+    "url": "https://www.edweek.org/teaching-learning/by-the-numbers-see-how-ap-precalculus-expanded-access-to-advanced-math/2025/08"
+  },
+  "tea_staar_2026": {
+    "org": "Texas Education Agency",
+    "title": "TEA Releases Spring 2026 STAAR Results for Grades 3–8",
+    "date": "2026-06-16",
+    "url": "https://tea.texas.gov/about-tea/newsroom/tea-releases-spring-2026-staarr-results-grades-3-8"
+  },
+  "tea_staar_eoc_2026": {
+    "org": "Texas Education Agency",
+    "title": "TEA Releases Spring 2026 STAAR End-of-Course Assessment Results",
+    "date": "2026-06-10",
+    "url": "https://tea.texas.gov/about-tea/newsroom/tea-releases-spring-2026-staarr-end-course-assessment-results"
+  },
+  "gallup_math_2025": {
+    "org": "Gallup (Math Matters Study, with the Gates Foundation)",
+    "title": "Math Moves Americans, Mentally and Emotionally",
+    "date": "2025-06-09",
+    "url": "https://news.gallup.com/poll/690956/math-moves-americans-mentally-emotionally.aspx"
+  },
+  "gates_math_2022": {
+    "org": "K-12 Dive (Gates Foundation announcement)",
+    "title": "Gates Foundation's new formula: $1.1B to boost math instruction",
+    "date": "2022-10-17",
+    "url": "https://www.k12dive.com/news/gates-foundations-new-formula-11b-to-boost-math-instruction/634436/"
+  },
+  "uchicago_hdt_2024": {
+    "org": "University of Chicago Education Lab",
+    "title": "National study finds in-school tutoring programs are successfully accelerating student learning",
+    "date": "2024-03-27",
+    "url": "https://educationlab.uchicago.edu/2024/03/national-study-finds-in-school-tutoring-programs-are-successfully-accelerating-student-learning-reversing-pandemic-era-learning-loss/"
+  },
+  "guryan_2023": {
+    "org": "American Economic Review (Guryan et al.)",
+    "title": "Not Too Late: Improving Academic Outcomes among Adolescents",
+    "date": "2023-03-01",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.20210434"
+  },
+  "edweek_secondary_math_2026": {
+    "org": "Education Week",
+    "title": "Elementary Math Has Been in Focus. But Middle and High School Students' Struggles Are Daunting",
+    "date": "2026-05-19",
+    "url": "https://www.edweek.org/teaching-learning/elementary-math-has-been-in-focus-but-middle-and-high-school-students-struggles-are-daunting/2026/05"
+  },
+  "naep2024_reading_trends": {
+    "org": "NCES",
+    "title": "NAEP Reading 2024: National Trends and Student Skills (grades 4 and 8)",
+    "date": "2025-01-29",
+    "url": "https://www.nationsreportcard.gov/reports/reading/2024/g4_8/national-trends/?grade=8"
+  },
+  "fy26_signed_k12dive": {
+    "org": "K-12 Dive",
+    "title": "Trump signs $79B education funding bill into law",
+    "date": "2026-02-03",
+    "url": "https://www.k12dive.com/news/maybe-hed-house-advances-education-departments-fy-26-budget/811259/"
+  }
 }

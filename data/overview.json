@@ -49,7 +49,7 @@
       },
       "asOf": "2024–25, 45 states",
       "source": "aei_absenteeism_2026",
-      "note": "Down less than 1 point in a year after 3- and 2-point drops; about 10.8 million students.",
+      "note": "Down less than 1 point in a year after drops of nearly 3 and just over 2 points; about 29% of students are in districts on pace to halve 2022 rates by 2027.",
       "spark": {
         "label": "Chronic absenteeism (%)",
         "x": [
@@ -214,8 +214,11 @@
             ]
           }
         ],
-        "source": "naep_nation_scores",
-        "note": "Rounded national averages; NCES computes reported differences from unrounded scores (for example, grade 4 math is reported as +2 vs 2022 and −3 vs 2019)."
+        "source": [
+          "naep_nation_scores",
+          "naep2024_reading_trends"
+        ],
+        "note": "Rounded national averages from the NAEP Data Service; NCES computes reported differences from unrounded scores (for example, grade 4 math is reported as +2 vs 2022 and −3 vs 2019)."
       }
     },
     {
@@ -500,15 +503,16 @@
         },
         {
           "id": "starting_pay",
-          "label": "Districts offering a starting salary of at least $50,000",
-          "display": "35%",
-          "value": 35,
+          "label": "States where the average starting salary tops $50,000",
+          "display": "15",
+          "value": 15,
           "delta": {
-            "text": "up from 30%",
+            "text": "up from 13 states",
             "sentiment": "good"
           },
           "asOf": "2024–25",
-          "source": "nea_pay_2026"
+          "source": "nea_pay_2026",
+          "note": "National average starting salary: $48,112. U.S. public schools employed 3,231,992 teachers in 2024–25, about 15.1 students per teacher."
         }
       ]
     },
@@ -520,7 +524,10 @@
         {
           "headline": "FY 2026 federal funding held steady.",
           "detail": "The deal signed February 3, 2026 gives the Education Department $79B in discretionary funds; Title I and IDEA each gained $20M, and a provision bars transferring ED funds to other agencies unless Congress specifies it.",
-          "source": "fy26_approps"
+          "source": [
+            "fy26_approps",
+            "fy26_signed_k12dive"
+          ]
         },
         {
           "headline": "The Department keeps handing off programs.",
@@ -630,7 +637,7 @@
             "text": "record low",
             "sentiment": "bad"
           },
-          "asOf": "Aug 2025",
+          "asOf": "Aug 2025 fieldwork",
           "source": "gallup_k12_2025",
           "note": "Parents rate their own child's school far higher: 74% satisfied."
         },
