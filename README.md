@@ -17,6 +17,21 @@ A monthly, sourced dashboard of U.S. K-12 education research, data and trends, w
 | This month | Dated ledger of releases and policy moves, upcoming releases, edition changelog |
 | Sources and method | Selection rules, how to read the figures, cadence, and the full source table |
 
+## One-time setup: turn on GitHub Pages
+
+The deploy workflow cannot enable Pages itself (creating a Pages site needs
+`Administration: write`, which the workflow's `GITHUB_TOKEN` never has). An admin
+turns it on once:
+
+1. Open <https://github.com/ddchristopher/Edu-field-research/settings/pages>
+2. Under **Build and deployment**, set **Source** to **GitHub Actions**.
+3. Re-run the latest **Deploy to GitHub Pages** run, or push any commit.
+
+The site then publishes to <https://ddchristopher.github.io/Edu-field-research/>
+on every push to the default branch. Until Pages is on, the deploy run fails at
+`actions/configure-pages` with "Get Pages site failed"; the build steps before it
+(validation and bundling) still pass.
+
 ## Running locally
 
 The page fetches `data/*.json`, so serve the folder rather than opening the file directly:
@@ -58,7 +73,8 @@ Either way the contract is the same: the task edits JSON only, never the page co
 
 ## Deploying
 
-Set GitHub Pages to **Source: GitHub Actions** (Settings → Pages). Every push to the repository's default branch (or a manual run of the deploy workflow) validates the data, builds the bundle and publishes `index.html`, `assets/`, `data/` and `offline.html`. The repository was created empty, so its default branch is currently `claude/k12-education-dashboard-tp4rxq`; if you rename or switch the default to `main`, nothing else needs to change.
+Set GitHub Pages to **Source: GitHub Actions** (Settings → Pages; see the one-time
+setup section above). Every push to the repository's default branch (or a manual run of the deploy workflow) validates the data, builds the bundle and publishes `index.html`, `assets/`, `data/` and `offline.html`. The repository was created empty, so its default branch is currently `claude/k12-education-dashboard-tp4rxq`; if you rename or switch the default to `main`, nothing else needs to change.
 
 ## License
 
