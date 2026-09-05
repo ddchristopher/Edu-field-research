@@ -466,7 +466,9 @@
     container.appendChild(body);
     let lastWidth = 0;
     function draw() {
-      const result = renderers[spec.kind](body, spec, opts) || {};
+      // Resolve the section accent at draw time so theme changes recolor the marks.
+      const live = Object.assign({}, opts, { accent: opts.accentVar ? cssVar(opts.accentVar) : opts.accent });
+      const result = renderers[spec.kind](body, spec, live) || {};
       legendHost.replaceChildren();
       const legendItems = result.legend || (spec.kind === 'line' && spec.series.length > 1 ? spec.series.map((s, i) => ({ name: s.name, color: result.colors ? result.colors[i] : seriesColor(i), shape: 'line' })) : []);
       legendItems.forEach(item => {

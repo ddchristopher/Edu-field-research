@@ -115,14 +115,14 @@
   }
 
   /* ---------- blocks ---------- */
-  function renderChartBlock(block, sources, accent) {
+  function renderChartBlock(block, sources, accent) { // accent is the CSS variable name for the section, e.g. '--ai'
     const spec = block.chart;
     const card = el('section', `block block-chart size-${block.size || 'md'}`);
     card.id = 'chart-' + block.id;
     card.appendChild(blockHeader(spec.title, spec.subtitle));
     const host = el('div', 'chart');
     card.appendChild(host);
-    const handle = window.ChalklineCharts.mount(host, spec, { accent, sources });
+    const handle = window.ChalklineCharts.mount(host, spec, { accentVar: accent, sources });
     if (spec.companion) {
       const list = el('dl', 'companion');
       spec.companion.forEach(c => { const dt = el('dt', null, c.label); const dd = el('dd', null, c.display); list.appendChild(dd); list.appendChild(dt); });
@@ -209,7 +209,7 @@
   /* ---------- sections ---------- */
   function renderSection(data, sources) {
     const accentVar = SECTION_ACCENT[data.section];
-    const accent = getComputedStyle(document.documentElement).getPropertyValue(accentVar).trim();
+    const accent = accentVar;
     const sec = $(`#${data.section}`);
     sec.replaceChildren();
     const head = el('header', 'section-head');
