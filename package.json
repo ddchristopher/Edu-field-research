@@ -1,0 +1,18 @@
+{
+  "name": "chalkline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A monthly, sourced dashboard of U.S. K-12 education research, data and trends, with special sections on AI in education and math education.",
+  "type": "module",
+  "scripts": {
+    "serve": "npx serve . -l 8080",
+    "validate": "node scripts/validate-data.mjs",
+    "validate:links": "node scripts/validate-data.mjs --links",
+    "build": "node scripts/build-single.mjs",
+    "screenshot": "node scripts/screenshot.mjs http://localhost:8080/ qa"
+  },
+  "devDependencies": {
+    "playwright": "^1.56.1"
+  },
+  "license": "MIT"
+}

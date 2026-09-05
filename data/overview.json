@@ -1,0 +1,605 @@
+{
+  "section": "overview",
+  "eyebrow": "The landscape",
+  "title": "Where U.S. K-12 stands",
+  "lede": "Five school years after the pandemic closures, achievement is still below 2019 in every NAEP grade and subject, the lowest-performing students are falling furthest behind, and attendance recovery has nearly stalled. Enrollment is shrinking, teacher pay is rising in nominal terms, and federal governance is being reorganized in real time.",
+  "kpis": [
+    {
+      "id": "naep_g8_math",
+      "label": "Grade 8 math, NAEP average",
+      "value": 274,
+      "display": "274",
+      "unit": "scale score (0–500)",
+      "delta": {
+        "text": "−8 vs 2019",
+        "sentiment": "bad"
+      },
+      "asOf": "2024 assessment",
+      "source": "naep2024_math_trends",
+      "note": "Flat vs 2022. Students at the 10th percentile fell 5 more points while the 90th percentile rose 3."
+    },
+    {
+      "id": "absent_2025",
+      "label": "Chronically absent students",
+      "value": 22.6,
+      "display": "22.6%",
+      "unit": "share missing 10%+ of days",
+      "delta": {
+        "text": "+7.6 pts vs 2019",
+        "sentiment": "bad"
+      },
+      "asOf": "2024–25, 45 states",
+      "source": "aei_absenteeism_2026",
+      "note": "Down less than 1 point in a year after 3- and 2-point drops; about 10.8 million students."
+    },
+    {
+      "id": "enrollment_2024",
+      "label": "Public school enrollment",
+      "value": 49.4,
+      "display": "49.4M",
+      "unit": "students, fall 2024",
+      "delta": {
+        "text": "−2.8% since 2019",
+        "sentiment": "neutral"
+      },
+      "asOf": "fall 2024",
+      "source": "futureed_enrollment",
+      "note": "Down 1.4 million from the 2019 peak of 50.8M. NCES projects fewer than 47M by 2030."
+    },
+    {
+      "id": "teacher_pay_2025",
+      "label": "Average teacher salary",
+      "value": 74495,
+      "display": "$74,495",
+      "unit": "2024–25",
+      "delta": {
+        "text": "+3.5% nominal",
+        "sentiment": "good"
+      },
+      "asOf": "2024–25",
+      "source": "nea_pay_2026",
+      "note": "Starting salary $48,112 (+3.4%); after inflation, starting pay grew just 0.7%."
+    },
+    {
+      "id": "shortage_2026",
+      "label": "Teaching positions unfilled or not fully certified",
+      "value": 425412,
+      "display": "425K",
+      "unit": "positions, 2025–26",
+      "delta": {
+        "text": "≈1 in 8 positions",
+        "sentiment": "bad"
+      },
+      "asOf": "2025–26",
+      "source": "lpi_shortages_2026",
+      "note": "387,843 teachers not fully certified for their assignment (50 states + DC) plus 37,569 vacancies (29 states + DC)."
+    },
+    {
+      "id": "spend_2024",
+      "label": "Current spending per pupil",
+      "value": 17619,
+      "display": "$17,619",
+      "unit": "FY 2024, public schools",
+      "delta": {
+        "text": "+6.6% vs FY 2023",
+        "sentiment": "neutral"
+      },
+      "asOf": "fiscal 2024",
+      "source": "census_finance_2024",
+      "note": "Record high in nominal terms. New York spends most ($31,918); Idaho least ($11,060)."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chart",
+      "size": "lg",
+      "id": "naep_trends",
+      "chart": {
+        "kind": "multiples",
+        "title": "NAEP average scores, 2013–2024",
+        "subtitle": "The 'learning recession' predates the pandemic: scores peaked around 2013 and every grade and subject is now below 2019.",
+        "unit": "NAEP scale score",
+        "x": [
+          "2013",
+          "2015",
+          "2017",
+          "2019",
+          "2022",
+          "2024"
+        ],
+        "marker": {
+          "x": "2019",
+          "label": "Pre-pandemic"
+        },
+        "panels": [
+          {
+            "name": "Grade 4 math",
+            "values": [
+              242,
+              240,
+              240,
+              241,
+              236,
+              237
+            ]
+          },
+          {
+            "name": "Grade 8 math",
+            "values": [
+              285,
+              282,
+              283,
+              282,
+              274,
+              274
+            ]
+          },
+          {
+            "name": "Grade 4 reading",
+            "values": [
+              222,
+              223,
+              222,
+              220,
+              217,
+              215
+            ]
+          },
+          {
+            "name": "Grade 8 reading",
+            "values": [
+              268,
+              265,
+              267,
+              263,
+              260,
+              258
+            ]
+          }
+        ],
+        "source": "naep_nation_scores",
+        "note": "Rounded national averages; NCES computes reported differences from unrounded scores (for example, grade 4 math is reported as +2 vs 2022 and −3 vs 2019)."
+      }
+    },
+    {
+      "type": "findings",
+      "size": "sm",
+      "title": "What the 2024 Report Card says",
+      "items": [
+        {
+          "headline": "No subject or grade is back to 2019.",
+          "detail": "Only two states beat their own pre-pandemic score anywhere: Louisiana (grade 4 reading) and Alabama (grade 4 math).",
+          "source": "naep2024_g48"
+        },
+        {
+          "headline": "Reading fell again in both grades.",
+          "detail": "33% of 8th graders read below NAEP Basic, the largest share ever; about 40% of 4th graders are below Basic, the most since 2002.",
+          "source": "naep2024_g48"
+        },
+        {
+          "headline": "The gap between top and bottom is widening.",
+          "detail": "The lowest performers score about 100 points below the highest; gaps have grown for roughly a decade.",
+          "source": "naep2024_takeaways"
+        },
+        {
+          "headline": "Seniors hit record lows.",
+          "detail": "Grade 12 math and reading each fell 3 points from 2019; 45% of seniors are below Basic in math and 33% are academically prepared for college math (37% in 2019).",
+          "source": "naep2024_g12"
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "absenteeism",
+      "chart": {
+        "kind": "line",
+        "title": "Chronic absenteeism, 2018–2025",
+        "subtitle": "Share of K-12 public school students missing 10% or more of the school year (45 states with 2025 data).",
+        "unit": "%",
+        "x": [
+          "2018",
+          "2019",
+          "2022",
+          "2023",
+          "2024",
+          "2025"
+        ],
+        "series": [
+          {
+            "name": "Chronically absent",
+            "values": [
+              15,
+              15,
+              28.3,
+              25.7,
+              23.5,
+              22.6
+            ]
+          }
+        ],
+        "baseline": {
+          "value": 15,
+          "label": "Pre-pandemic baseline (15%)"
+        },
+        "yDomain": [
+          0,
+          32
+        ],
+        "source": "aei_absenteeism_2026",
+        "note": "2020 and 2021 omitted: remote instruction made attendance data unreliable. School years are labeled by their spring."
+      }
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "Attendance signals",
+      "items": [
+        {
+          "id": "absent_on_pace",
+          "label": "Students in districts on pace to halve 2022 absenteeism by 2027",
+          "display": "29%",
+          "value": 29,
+          "delta": {
+            "text": "down from 34% a year earlier",
+            "sentiment": "bad"
+          },
+          "asOf": "2024–25",
+          "source": "aei_absenteeism_2026",
+          "note": "18 states have formally adopted the halve-by-2027 target."
+        },
+        {
+          "id": "absent_30plus",
+          "label": "States with rates of 30% or higher",
+          "display": "4",
+          "value": 4,
+          "asOf": "2024–25",
+          "source": "aei_absenteeism_2026",
+          "note": "Alaska, District of Columbia, Oregon, New Mexico."
+        },
+        {
+          "id": "absent_2026_early",
+          "label": "First states reporting 2025–26 rates",
+          "display": "6 of 6 fell",
+          "value": 6,
+          "asOf": "Aug 28, 2026",
+          "source": "r2l_tracker",
+          "note": "CO, CT, GA, LA, MA, RI; Rhode Island is within half a point of its pre-pandemic baseline."
+        },
+        {
+          "id": "absent_recovery_drag",
+          "label": "Learning lost to elevated absenteeism",
+          "display": "1–2 weeks/yr",
+          "value": 1.5,
+          "asOf": "2022–2025",
+          "source": "scorecard_2026",
+          "note": "Recovery would have been 0.03–0.05 grade levels larger had attendance returned to 2019 levels."
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "enrollment",
+      "chart": {
+        "kind": "line",
+        "title": "Public school enrollment, fall 2019–2024",
+        "subtitle": "Millions of PK-12 students in public schools. Falling births, more homeschooling and private choice, and migration all contribute.",
+        "unit": "M",
+        "x": [
+          "2019",
+          "2020",
+          "2021",
+          "2022",
+          "2023",
+          "2024"
+        ],
+        "series": [
+          {
+            "name": "Enrollment (millions)",
+            "values": [
+              50.8,
+              49.4,
+              49.4,
+              49.6,
+              49.5,
+              49.4
+            ]
+          }
+        ],
+        "yDomain": [
+          46,
+          52
+        ],
+        "source": "futureed_enrollment",
+        "note": "NCES counts; FutureEd analysis updated July 2026. Kindergarten alone lost 237,000 students (−6%) between 2019 and 2024 while high school grew 2%."
+      }
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "Where students are going",
+      "items": [
+        {
+          "id": "closures_2026",
+          "label": "Schools slated to close in 2026 across 14 districts",
+          "display": "147",
+          "value": 147,
+          "asOf": "2026",
+          "source": "reason_closures_2026",
+          "note": "Enrollment fell in 40 states between 2019 and 2024; 16 states lost 5% or more."
+        },
+        {
+          "id": "homeschool_growth",
+          "label": "Homeschool enrollment growth, 2024–25",
+          "display": "+4.9%",
+          "value": 4.9,
+          "delta": {
+            "text": "≈2.5× the pre-pandemic pace",
+            "sentiment": "neutral"
+          },
+          "asOf": "2024–25",
+          "source": "jhu_homeschool_2025",
+          "note": "Ten reporting states hit record homeschool counts."
+        },
+        {
+          "id": "choice_participation",
+          "label": "Students in private school choice programs",
+          "display": "1.5M+",
+          "value": 1500000,
+          "asOf": "2026",
+          "source": "edchoice_abcs_2026",
+          "note": "75 programs in 34 states, DC and Puerto Rico; about 2.8% of all students."
+        },
+        {
+          "id": "fstc_states",
+          "label": "States opted into the federal scholarship tax credit",
+          "display": "27",
+          "value": 27,
+          "asOf": "Apr 2026",
+          "source": "irs_fstc_2026",
+          "note": "Dollar-for-dollar credit up to $1,700 for donations to scholarship organizations, starting Jan 1, 2027."
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "teacher_pay_states",
+      "chart": {
+        "kind": "bars",
+        "title": "Average teacher salary, highest and lowest states",
+        "subtitle": "2024–25, not adjusted for cost of living. National average: $74,495.",
+        "unit": "$",
+        "format": "currency",
+        "items": [
+          {
+            "label": "California",
+            "value": 103552
+          },
+          {
+            "label": "New York",
+            "value": 98655
+          },
+          {
+            "label": "Washington",
+            "value": 96589
+          },
+          {
+            "label": "Louisiana",
+            "value": 56785
+          },
+          {
+            "label": "Florida",
+            "value": 56663
+          },
+          {
+            "label": "Mississippi",
+            "value": 54975
+          }
+        ],
+        "reference": {
+          "value": 74495,
+          "label": "U.S. average"
+        },
+        "source": "nea_pay_2026"
+      }
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "The teaching workforce",
+      "items": [
+        {
+          "id": "teacher_stress",
+          "label": "Teachers reporting frequent job-related stress",
+          "display": "55%",
+          "value": 55,
+          "delta": {
+            "text": "vs 34% of similar working adults",
+            "sentiment": "bad"
+          },
+          "asOf": "Jan–Feb 2026",
+          "source": "rand_teacher_2026",
+          "note": "Down from 62% in 2025, but still far above comparable adults on every well-being indicator."
+        },
+        {
+          "id": "teacher_leave",
+          "label": "Teachers intending to leave the profession",
+          "display": "18%",
+          "value": 18,
+          "asOf": "2026",
+          "source": "rand_teacher_2026",
+          "note": "About one in four plan to stay as long as they are able; 30% hold a job outside their school system."
+        },
+        {
+          "id": "math_shortage_states",
+          "label": "States reporting math teacher shortages",
+          "display": "40",
+          "value": 40,
+          "asOf": "2025",
+          "source": "lpi_subjects_2025",
+          "note": "Math, special education and science are the three most common shortage areas; 48 states report at least one."
+        },
+        {
+          "id": "starting_pay",
+          "label": "Districts offering a starting salary of at least $50,000",
+          "display": "35%",
+          "value": 35,
+          "delta": {
+            "text": "up from 30%",
+            "sentiment": "good"
+          },
+          "asOf": "2024–25",
+          "source": "nea_pay_2026"
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Money and governance",
+      "items": [
+        {
+          "headline": "FY 2026 federal funding held steady.",
+          "detail": "The deal signed February 3, 2026 gives the Education Department $79B in discretionary funds; Title I and IDEA each gained $20M, and a provision bars transferring ED funds to other agencies unless Congress specifies it.",
+          "source": "fy26_approps"
+        },
+        {
+          "headline": "The Department keeps handing off programs.",
+          "detail": "Fourteen interagency agreements with six agencies were announced between May 2025 and June 16, 2026, moving Title I administration, special education, CTE and civil rights work to Labor, HHS, Justice and others. Several are being challenged in court.",
+          "source": "ed_iaa_2026"
+        },
+        {
+          "headline": "Per-pupil spending hit a record.",
+          "detail": "Current spending rose 6.6% to $17,619 in FY 2024, the last year with pandemic relief. Instruction was 58.8% of current spending.",
+          "source": "census_finance_2024"
+        },
+        {
+          "headline": "Universal choice is now the norm in a fifth of states.",
+          "detail": "Roughly 18 states offer universal or near-universal private-choice eligibility; Arizona's ESA program alone tops 99,000 students. Half the states have already opted into the 2027 federal tax-credit scholarship.",
+          "source": "irs_fstc_2026"
+        }
+      ]
+    },
+    {
+      "type": "chips",
+      "size": "md",
+      "title": "State policy scoreboard",
+      "items": [
+        {
+          "label": "Cellphone laws",
+          "display": "42 states + DC + PR",
+          "source": "ncsl_phones_2026",
+          "note": "Enacted legislation on student phone use, from bell-to-bell bans to guidance and pouch funding (NCSL, July 2026)."
+        },
+        {
+          "label": "Science of reading",
+          "display": "43 states + DC",
+          "source": "edweek_sor_tracker",
+          "note": "Laws or policies requiring evidence-based reading instruction since 2013 (EdWeek, Aug 2026)."
+        },
+        {
+          "label": "Math instruction laws",
+          "display": "22 states",
+          "source": "edweek_math_tracker",
+          "note": "Since 2022; nine states acted in 2026 alone (EdWeek, Aug 2026)."
+        },
+        {
+          "label": "K-12 AI guidance",
+          "display": "35 states + PR",
+          "source": "aifored_guidance",
+          "note": "Official state guidance or policy on AI in schools (AI for Education, Aug 21, 2026)."
+        },
+        {
+          "label": "Companion chatbot laws",
+          "display": "12 states",
+          "source": "multistate_chatbots_2026",
+          "note": "Laws regulating AI companion chatbots, most with minor-specific protections (through mid-2026)."
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Recovery, five years on",
+      "items": [
+        {
+          "headline": "One school in three has recovered in a subject; one in seven in both.",
+          "detail": "NWEA's study of 5 million students in 9,326 schools defines recovery as fall 2024 achievement at or above fall 2019. High-poverty schools are less likely to be recovered but have made the largest gains.",
+          "source": "nwea_recovery_2026"
+        },
+        {
+          "headline": "The recovery is U-shaped by income.",
+          "detail": "The highest- and lowest-income districts improved most from 2022 to 2025; middle-income districts (30–70% subsidized lunch) improved least, largely because federal relief was concentrated at the extremes.",
+          "source": "scorecard_2026"
+        },
+        {
+          "headline": "Reading shows its first turnaround.",
+          "detail": "Math rebounded immediately after 2022 while reading kept falling through 2024; 2025 brought the first reading gains, all in states implementing comprehensive science-of-reading reforms (DC, IN, KY, MD, MN, MS, LA, TN).",
+          "source": "scorecard_2026"
+        },
+        {
+          "headline": "108 'districts on the rise' outpace their peers.",
+          "detail": "Districts that gained at least 0.3 grade levels in both subjects relative to matched peers in their own state, showing demographics are not destiny.",
+          "source": "scorecard_2026"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "Public mood and student wellbeing",
+      "items": [
+        {
+          "id": "pdk_local",
+          "label": "Americans giving their community's schools an A or B",
+          "display": "43%",
+          "value": 43,
+          "delta": {
+            "text": "lowest since 2004; 13% for the nation's schools",
+            "sentiment": "bad"
+          },
+          "asOf": "June 2025",
+          "source": "pdk_2025",
+          "note": "86% support some form of school cellphone ban; 64% say teacher pay is too low; 66% oppose closing the Education Department."
+        },
+        {
+          "id": "gallup_sat",
+          "label": "Americans satisfied with K-12 education quality",
+          "display": "35%",
+          "value": 35,
+          "delta": {
+            "text": "record low",
+            "sentiment": "bad"
+          },
+          "asOf": "Aug 2025",
+          "source": "gallup_k12_2025",
+          "note": "Parents rate their own child's school far higher: 74% satisfied."
+        },
+        {
+          "id": "yrbs_sad",
+          "label": "High schoolers with persistent sadness or hopelessness",
+          "display": "39.7%",
+          "value": 39.7,
+          "delta": {
+            "text": "down from 42% in 2021",
+            "sentiment": "good"
+          },
+          "asOf": "2023 (latest YRBS)",
+          "source": "cdc_yrbs_2023",
+          "note": "20.4% seriously considered suicide; 53% of girls reported persistent sadness. 2025 YRBS results are pending."
+        },
+        {
+          "id": "grad_rate",
+          "label": "Four-year high school graduation rate",
+          "display": "87%",
+          "value": 87.4,
+          "asOf": "2022–23",
+          "source": "nces_grad",
+          "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2025 averages: SAT 1029, ACT 19.4."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,473 @@
+{
+  "section": "ai",
+  "eyebrow": "Special section",
+  "title": "AI in education",
+  "lede": "In two years generative AI went from novelty to daily habit: most teens now use chatbots for schoolwork and most teachers use AI for their jobs. Guidance, training and evidence lag far behind use. The 2026–27 school year opens with the nation's two largest districts pulling student-facing AI back while Google, OpenAI and Anthropic push classroom tools out.",
+  "kpis": [
+    {
+      "id": "teens_chatbot_school",
+      "label": "Teens who have used AI chatbots for schoolwork",
+      "value": 54,
+      "display": "54%",
+      "unit": "ages 13–17",
+      "delta": {
+        "text": "26% used ChatGPT for school in 2024",
+        "sentiment": "neutral"
+      },
+      "asOf": "Sept–Oct 2025",
+      "source": "pew_teens_ai_2026",
+      "note": "The 2025 question covers any chatbot; the 2023 (13%) and 2024 (26%) figures asked only about ChatGPT."
+    },
+    {
+      "id": "students_homework_ai",
+      "label": "Students (grade 6+) using AI for homework help",
+      "value": 62,
+      "display": "62%",
+      "unit": "middle school through college",
+      "delta": {
+        "text": "up from 48% in May 2025",
+        "sentiment": "neutral"
+      },
+      "asOf": "Dec 2025",
+      "source": "rand_youth_ai_2026",
+      "note": "RAND American Youth Panel, 1,214 respondents ages 12–29. Middle and high schoolers drove the increase."
+    },
+    {
+      "id": "teachers_use_ai",
+      "label": "Teachers using AI tools for their work",
+      "value": 60,
+      "display": "60%",
+      "unit": "public K-12 teachers",
+      "delta": {
+        "text": "30% use it weekly",
+        "sentiment": "neutral"
+      },
+      "asOf": "Mar–Apr 2025",
+      "source": "gallup_ai_2025",
+      "note": "Weekly users estimate they save 5.9 hours a week, about six weeks per school year."
+    },
+    {
+      "id": "teachers_formal_guidance",
+      "label": "Teachers who received formal AI guidance",
+      "value": 18,
+      "display": "18%",
+      "unit": "written policy or official guidance",
+      "delta": {
+        "text": "34% received none at all",
+        "sentiment": "bad"
+      },
+      "asOf": "Feb–Mar 2026",
+      "source": "gallup_ai_2026",
+      "note": "2,069 teachers. Fewer than 1 in 10 got formal guidance on any specific task; 69% got none on using AI for tutoring."
+    },
+    {
+      "id": "students_harm_belief",
+      "label": "Students who say more AI use will harm critical thinking",
+      "value": 67,
+      "display": "67%",
+      "unit": "grade 6 through college",
+      "delta": {
+        "text": "up more than 10 pts in 10 months",
+        "sentiment": "bad"
+      },
+      "asOf": "Dec 2025",
+      "source": "rand_youth_ai_2026",
+      "note": "61% of parents and 55% of high schoolers agreed in spring 2025; only 22% of district leaders did."
+    },
+    {
+      "id": "states_ai_guidance",
+      "label": "States with official K-12 AI guidance",
+      "value": 35,
+      "display": "35 + PR",
+      "unit": "state education agencies",
+      "delta": {
+        "text": "7 states enacted AI laws in 2026",
+        "sentiment": "neutral"
+      },
+      "asOf": "Aug 21, 2026",
+      "source": "aifored_guidance",
+      "note": "Roughly 100 state bills touching student AI use were tracked in 2026 sessions; 77 bills in 27 states per FutureEd."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "teen_uses",
+      "chart": {
+        "kind": "bars",
+        "title": "What teens use AI chatbots for",
+        "subtitle": "Share of U.S. teens ages 13–17 who have ever used chatbots to…",
+        "unit": "%",
+        "format": "percent",
+        "items": [
+          {
+            "label": "Search for information",
+            "value": 57
+          },
+          {
+            "label": "Get help with schoolwork",
+            "value": 54
+          },
+          {
+            "label": "Fun or entertainment",
+            "value": 47
+          },
+          {
+            "label": "Summarize an article, book or video",
+            "value": 42
+          },
+          {
+            "label": "Create or edit images or videos",
+            "value": 38
+          },
+          {
+            "label": "Get news",
+            "value": 19
+          },
+          {
+            "label": "Casual conversation",
+            "value": 16
+          },
+          {
+            "label": "Emotional support or advice",
+            "value": 12
+          }
+        ],
+        "source": "pew_teens_ai_2026",
+        "note": "Survey of 1,458 teens, Sept 25–Oct 9, 2025; margin of error ±3.3 points."
+      }
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "schoolwork_share",
+      "chart": {
+        "kind": "stack",
+        "title": "How much schoolwork gets chatbot help",
+        "subtitle": "Share of all U.S. teens ages 13–17.",
+        "unit": "%",
+        "format": "percent",
+        "segments": [
+          {
+            "label": "All or most",
+            "value": 10
+          },
+          {
+            "label": "Some",
+            "value": 21
+          },
+          {
+            "label": "A little",
+            "value": 23
+          },
+          {
+            "label": "Don't use chatbots this way",
+            "value": 45,
+            "neutral": true
+          }
+        ],
+        "source": "pew_teens_ai_2026",
+        "companion": [
+          {
+            "label": "Have used chatbots to research a topic",
+            "display": "48%"
+          },
+          {
+            "label": "…to solve a math problem",
+            "display": "43%"
+          },
+          {
+            "label": "…to edit something they wrote",
+            "display": "35%"
+          },
+          {
+            "label": "Say students at their school cheat with AI at least somewhat often",
+            "display": "59%"
+          },
+          {
+            "label": "Say chatbots were extremely or very helpful for schoolwork",
+            "display": "26%"
+          }
+        ]
+      }
+    },
+    {
+      "type": "chart",
+      "size": "lg",
+      "id": "use_vs_guidance",
+      "chart": {
+        "kind": "bars",
+        "title": "Use is racing ahead of guidance",
+        "subtitle": "Reported use of AI versus the share receiving policy, training or explicit instruction. Different surveys, 2025–26; hover for each source.",
+        "unit": "%",
+        "format": "percent",
+        "legend": true,
+        "items": [
+          {
+            "label": "Students using AI for homework (Dec 2025)",
+            "value": 62,
+            "group": "Use",
+            "source": "rand_youth_ai_2026"
+          },
+          {
+            "label": "Teachers using AI for work (spring 2025)",
+            "value": 60,
+            "group": "Use",
+            "source": "gallup_ai_2025"
+          },
+          {
+            "label": "ELA, math & science teachers using AI for school (2024–25)",
+            "value": 53,
+            "group": "Use",
+            "source": "rand_ai_2025"
+          },
+          {
+            "label": "Principals with a school or district AI policy",
+            "value": 45,
+            "group": "Guidance",
+            "source": "rand_ai_2025"
+          },
+          {
+            "label": "Districts training students on AI (spring 2025)",
+            "value": 35,
+            "group": "Guidance",
+            "source": "rand_ai_2025"
+          },
+          {
+            "label": "Teachers with an AI academic-integrity policy",
+            "value": 34,
+            "group": "Guidance",
+            "source": "rand_ai_2025"
+          },
+          {
+            "label": "Teachers with formal AI guidance (2026)",
+            "value": 18,
+            "group": "Guidance",
+            "source": "gallup_ai_2026"
+          },
+          {
+            "label": "Students explicitly taught to use AI for schoolwork",
+            "value": 19,
+            "group": "Guidance",
+            "source": "rand_ai_2025",
+            "display": "<20%"
+          }
+        ],
+        "source": "rand_ai_2025",
+        "note": "RAND reports that over 80% of students say teachers did not explicitly teach them how to use AI for schoolwork; the bar shows the complement as an upper bound."
+      }
+    },
+    {
+      "type": "stats",
+      "size": "sm",
+      "title": "Teachers' side",
+      "items": [
+        {
+          "id": "time_saved",
+          "label": "Hours saved per week by weekly AI users",
+          "display": "5.9",
+          "value": 5.9,
+          "asOf": "2025",
+          "source": "gallup_ai_2025",
+          "note": "Majorities of 60–84% say AI saves time on each of nine task types; 7% or fewer say it costs time."
+        },
+        {
+          "id": "informal_guidance",
+          "label": "Teachers with only informal AI guidance",
+          "display": "48%",
+          "value": 48,
+          "asOf": "2026",
+          "source": "gallup_ai_2026",
+          "note": "Most guidance neither encourages nor discourages use; 10% are discouraged from AI grading, the highest of any task."
+        },
+        {
+          "id": "training_gap",
+          "label": "Low- vs high-poverty districts that had trained teachers on AI",
+          "display": "67% vs 39%",
+          "value": 67,
+          "asOf": "fall 2024",
+          "source": "rand_training_2025",
+          "note": "Leaders expected nearly all low-poverty districts, but only six in ten high-poverty districts, to have trained teachers by 2025–26."
+        },
+        {
+          "id": "math_teachers_pd",
+          "label": "Math teachers with no PD on using AI to teach math",
+          "display": "≈7 in 10",
+          "value": 70,
+          "asOf": "Feb 2025",
+          "source": "edweek_math_ai_pd_2025",
+          "note": "Of those, a little more than a third do not want it, mostly because they think AI should not be used to teach math."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "lg",
+      "title": "What the learning evidence says",
+      "subtitle": "Rigorous studies of AI in instruction, newest first. Effect sizes are in standard deviations (SD) unless noted; 0.10 SD is roughly a few months of typical learning.",
+      "columns": [
+        "Study",
+        "Design",
+        "Finding"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Khanmigo AI tutor in middle-school math (Oreopoulos & Low, NBER, Aug 2026)",
+            "Two-year cluster RCT, 18 Tennessee middle schools, daily remedial math; tutor set to coach, not answer",
+            "+1.3 national percentile ranks per term (≈0.06–0.08 SD per year; 0.14 SD implied for a full year of active use). Gains resemble Khan practice without AI. Median student messaged the tutor on a third of practice days and in 17% of sessions with a mistake."
+          ],
+          "source": "nber_khanmigo_2026"
+        },
+        {
+          "cells": [
+            "AI assistance on math and reading tasks (Liu et al., May 2026)",
+            "Three randomized experiments",
+            "AI help raised in-task performance but cut study time and reduced persistence and performance on later unassisted tasks: faster completion, less learning."
+          ],
+          "source": "liu_2026"
+        },
+        {
+          "cells": [
+            "Students' own accounts (RAND American Youth Panel, Mar 2026)",
+            "Nationally representative survey, n=1,214",
+            "Use for homework rose from 48% to 62% during 2025; 67% believe heavy use harms critical thinking. RAND urges rules that separate 'cognitive offloading' from 'cognitive augmentation'."
+          ],
+          "source": "rand_youth_ai_2026"
+        },
+        {
+          "cells": [
+            "Tutor CoPilot (Stanford, Oct 2024)",
+            "RCT with ~900 human tutors and 1,800 K-12 students; AI assists the tutor in real time",
+            "+4 percentage points in topic mastery overall; up to +9 points for students of lower-rated tutors. About $20 per tutor per year."
+          ],
+          "source": "tutor_copilot_2024"
+        },
+        {
+          "cells": [
+            "Generative AI Can Harm Learning (Bastani et al., 2024)",
+            "RCT, ~1,000 high-school math students in Türkiye",
+            "Unrestricted GPT-4 raised practice scores 48% but exam scores fell 17% when access was removed; a guardrailed 'GPT Tutor' (+127% on practice) showed no exam harm."
+          ],
+          "source": "bastani_2024"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "sm",
+      "title": "Safety and integrity",
+      "items": [
+        {
+          "id": "companions",
+          "label": "Teens who have used AI companions",
+          "display": "72%",
+          "value": 72,
+          "asOf": "2025",
+          "source": "csm_companions_2025",
+          "note": "Half use them regularly; a third have chosen an AI over a person for a serious conversation. Common Sense rates companions unsafe for under-18s."
+        },
+        {
+          "id": "kids_ai_use",
+          "label": "Kids 9–17 who use or interact with AI",
+          "display": "86%",
+          "value": 86,
+          "delta": {
+            "text": "24% daily",
+            "sentiment": "neutral"
+          },
+          "asOf": "2026",
+          "source": "csm_census_2026",
+          "note": "Three-quarters say school discussed AI rules; just over half were taught how to use AI safely. Nearly half have never discussed AI safety with a parent."
+        },
+        {
+          "id": "deepfakes",
+          "label": "Students who know of an explicit deepfake of someone at their school",
+          "display": "40%",
+          "value": 40,
+          "asOf": "2024–25",
+          "source": "cdt_2025",
+          "note": "29% of teachers say the same. 86% of students and 85% of teachers used AI in 2024–25; half of students used it for school."
+        },
+        {
+          "id": "turnitin",
+          "label": "Submissions that are 80%+ AI-written",
+          "display": "14.8%",
+          "value": 14.8,
+          "delta": {
+            "text": "3.3% when detection launched in 2023",
+            "sentiment": "bad"
+          },
+          "asOf": "Oct 2025–Feb 2026",
+          "source": "turnitin_2026",
+          "note": "English-language submissions to Turnitin's detector; the company stresses scores are probabilistic, not verdicts. Half of students worry about false accusations (RAND)."
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Policy: federal, state, union",
+      "items": [
+        {
+          "headline": "The White House made AI education a priority.",
+          "detail": "Executive Order 14277 (April 23, 2025) created a Task Force on AI Education and the Presidential AI Challenge. The first challenge drew 20,000+ students from all 50 states; six national champion teams were honored June 9, 2026.",
+          "source": "wh_ai_challenge_2026"
+        },
+        {
+          "headline": "States moved from guidance to law in 2026.",
+          "detail": "35 states plus Puerto Rico have official K-12 AI guidance. New 2026 laws include Oregon's design rules for minors (SB 1546), Washington's harm-reporting requirement (HB 2225), Virginia's guidance-and-training mandate (SB 394), Maryland's teacher PD (SB 720) and Utah's middle-school AI literacy standards (HB 273).",
+          "source": "excelined_ai_2026"
+        },
+        {
+          "headline": "Companion chatbots got their first rulebooks.",
+          "detail": "California's SB 243 (effective Jan 1, 2026) requires disclosure, self-harm protocols and three-hour break reminders for minors; 12 states had companion-chatbot laws by mid-2026.",
+          "source": "ca_sb243"
+        },
+        {
+          "headline": "The AFT built a $23M training academy with the labs.",
+          "detail": "The National Academy for AI Instruction (Microsoft, OpenAI, Anthropic, UFT) offers free AI training to all 1.8 million AFT members, starting with New York City educators in fall 2025.",
+          "source": "aft_academy_2025"
+        },
+        {
+          "headline": "Public support is cooling.",
+          "detail": "PDK found support for teachers using AI to prepare lessons fell to 49% (62% in 2024) and for AI tutoring to 60% (65%); 68% of parents oppose giving student data to AI software.",
+          "source": "pdk_2025"
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "The market: push and pullback",
+      "items": [
+        {
+          "headline": "New York City paused student-facing AI through 8th grade.",
+          "detail": "A one-year moratorium for 2026–27 covers 2-K through grade 8, nearly 600,000 students; about 40 classroom tools lose AI functions, with exceptions for students with disabilities and English learners. High schoolers get twice-yearly AI critical-thinking modules and limited pilots.",
+          "source": "nyc_ai_moratorium_2026"
+        },
+        {
+          "headline": "Los Angeles followed within days.",
+          "detail": "LAUSD restricted generative AI on district devices for all students for 2026–27 while a new ad hoc committee drafts guardrails, due by the end of the school year. It follows a June vote limiting classroom screen time.",
+          "source": "lausd_ai_2026"
+        },
+        {
+          "headline": "Google turned Gemini on for students of all ages.",
+          "detail": "Since August 10, 2026, Gemini in Google Classroom is available to K-12 students whose admins enable it, not only those 18 and older. EdWeek reports schools were 'caught flat-footed', and Common Sense had flagged age-inappropriate responses in January.",
+          "source": "edweek_gemini_2026"
+        },
+        {
+          "headline": "The labs are courting teachers directly.",
+          "detail": "Anthropic launched a free Claude for Teachers tier for verified U.S. K-12 educators on July 14, 2026 and a district-managed tier on August 28, with no training on teacher data. OpenAI offers ChatGPT for Teachers free to verified U.S. K-12 educators through June 2027.",
+          "source": "anthropic_claude_teachers_2026"
+        },
+        {
+          "headline": "AI literacy is becoming routine.",
+          "detail": "Nearly 8 in 10 educators say high schoolers in their district get lessons on what AI is and how to use it responsibly, according to an EdWeek Research Center survey of 499 teachers, principals and district leaders.",
+          "source": "edweek_ai_literacy_2026"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chalkline</title>
+  <meta name="description" content="A monthly, sourced reading of U.S. K-12 education research, data and trends, with special sections on AI in education and math education.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232a78d6'/%3E%3Cpath d='M7 23 L25 9' stroke='%23fff' stroke-width='3.2' stroke-linecap='round'/%3E%3Ccircle cx='7' cy='23' r='3' fill='%23fff'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Public+Sans:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="visually-hidden" href="#overview">Skip to content</a>
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <a class="brand" href="#top" aria-label="Chalkline home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="7" fill="var(--accent)"/><path d="M7 23 L25 9" stroke="#fff" stroke-width="3.2" stroke-linecap="round"/><circle cx="7" cy="23" r="3" fill="#fff"/></svg>
+        <span class="brand-name">Chalkline</span>
+        <span class="brand-edition" id="edition">Loading…</span>
+      </a>
+      <nav class="nav" aria-label="Sections">
+        <a href="#overview">Overview</a>
+        <a href="#ai">AI in education</a>
+        <a href="#math">Math</a>
+        <a href="#briefing">This month</a>
+        <a href="#sources">Sources &amp; method</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Theme">
+        <svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <span id="theme-label">Auto</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow hero-eyebrow">The month in brief</p>
+          <h1>Where American K-12 education stands right now</h1>
+          <p class="hero-summary" id="hero-summary">Loading the latest research…</p>
+        </div>
+        <aside class="hero-side" aria-label="About this dashboard">
+          <p><strong id="brand-tagline">A monthly, sourced reading of U.S. K-12 education research, data and trends.</strong></p>
+          <p id="updated">Updated —</p>
+          <p>Every figure links to its primary source. Charts have a keyboard-readable table view. Sections: national landscape, AI in education, math education.</p>
+        </aside>
+      </div>
+    </section>
+
+    <div class="wrap load-error" id="load-error" hidden>
+      <strong>The data files could not be loaded.</strong>
+      <span id="load-error-msg"></span>
+      If you opened this file directly from disk, serve the folder instead (for example <code>npx serve .</code>) or open <code>dist/index.html</code>, which bundles the data.
+    </div>
+
+    <section class="panel wrap" id="overview" aria-labelledby="overview-title"></section>
+    <section class="panel wrap" id="ai" aria-labelledby="ai-title"></section>
+    <section class="panel wrap" id="math" aria-labelledby="math-title"></section>
+
+    <section class="panel wrap" id="briefing">
+      <header class="section-head">
+        <p class="eyebrow">Monthly briefing</p>
+        <h2 class="section-title">What changed: <span id="briefing-edition"></span></h2>
+        <p class="lede">A dated ledger of the research, data releases and policy moves behind this edition, newest first, plus the releases to watch next.</p>
+      </header>
+      <div class="briefing-grid">
+        <ol class="timeline" id="timeline"></ol>
+        <div>
+          <div class="side-card">
+            <h3>Coming up</h3>
+            <ul class="upcoming" id="upcoming"></ul>
+          </div>
+          <div class="side-card">
+            <h3>Edition changelog</h3>
+            <ul class="changelog" id="changelog"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel wrap" id="sources">
+      <header class="section-head">
+        <p class="eyebrow">Sources &amp; method</p>
+        <h2 class="section-title">How this dashboard is built</h2>
+        <p class="lede">Chalkline is compiled by a scheduled monthly research task and reviewed for accuracy before publication. <span id="source-count"></span> sources are cited in this edition.</p>
+      </header>
+      <div class="method">
+        <div class="block">
+          <h3>Selection rules</h3>
+          <ul>
+            <li>Primary sources first: federal statistics (NCES, NAEP, Census), peer-reviewed or working-paper research, and nationally representative surveys (RAND, Pew, Gallup).</li>
+            <li>Trade press (Education Week, K-12 Dive, Chalkbeat) is cited for news and trackers, never as the origin of a statistic when the primary source is public.</li>
+            <li>Every number carries the population, the date and the survey window it applies to; changing definitions are flagged in notes.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Reading the figures</h3>
+          <ul>
+            <li>NAEP scores are rounded; NCES computes reported changes from unrounded values, so a difference of rounded scores can differ by a point.</li>
+            <li>Survey estimates carry sampling error (typically ±2 to ±4 points). Comparisons across different surveys are labeled as such.</li>
+            <li>School years are labeled by their spring (2025 means 2024–25) unless stated.</li>
+          </ul>
+        </div>
+        <div class="block">
+          <h3>Update cadence</h3>
+          <p id="cadence"></p>
+          <p style="margin-top:8px">The task protocol, data schema and validator live in the repository: <a id="repo-link" href="#">source on GitHub</a>. Data files: <a href="data/overview.json">overview</a>, <a href="data/ai.json">AI</a>, <a href="data/math.json">math</a>, <a href="data/briefing.json">briefing</a>, <a href="data/sources.json">sources</a>.</p>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table class="sources-table">
+          <thead><tr><th>Date</th><th>Organization</th><th>Title</th><th>Key</th></tr></thead>
+          <tbody id="sources-body"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer wrap">
+    <span>Chalkline · U.S. K-12 research dashboard</span>
+    <span>Figures are quoted as published by the cited sources; interpretation and synthesis are editorial.</span>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <script src="assets/charts.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

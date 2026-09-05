@@ -1,0 +1,215 @@
+{
+  "edition": "September 2026",
+  "generated": "2026-09-05",
+  "summary": "The school year opened with a pullback: New York City and Los Angeles, the two largest districts, restricted student-facing generative AI within days of each other, even as Google switched Gemini on for students of all ages and Anthropic and OpenAI extended free tools to teachers. The first rigorous multi-year trial of an AI math tutor (Khanmigo) found small gains limited by how rarely students actually engaged it. Meanwhile the attendance recovery has slowed to less than a point a year, state math laws reached 22 states, and the OECD's PISA 2025 results land on September 8.",
+  "items": [
+    {
+      "date": "2026-09-04",
+      "tag": "AI",
+      "headline": "LAUSD blocks generative AI on district devices for all students",
+      "detail": "The restriction covers 2026–27 while a new Generative AI Ad Hoc Committee drafts guardrails, due to the board by year-end. It reverses a policy that let students 13+ use approved tools after digital-citizenship training.",
+      "source": "lausd_ai_2026"
+    },
+    {
+      "date": "2026-09-02",
+      "tag": "AI",
+      "headline": "New York City declares a one-year moratorium on student-facing generative AI, 2-K through grade 8",
+      "detail": "Nearly 600,000 students are covered; about 40 tools lose AI functions; exceptions for students with disabilities and English learners. High schools get twice-yearly AI critical-thinking modules, limited pilots and new screen-time limits.",
+      "source": "nyc_ai_moratorium_2026"
+    },
+    {
+      "date": "2026-09-02",
+      "tag": "AI",
+      "headline": "Schools scramble after Gemini in Classroom opens to all ages",
+      "detail": "Google's August 10 change lets admins enable Gemini for K-12 students of any age; safety vendors describe 'whack-a-mole' monitoring and Common Sense had flagged age-inappropriate responses.",
+      "source": "edweek_gemini_2026"
+    },
+    {
+      "date": "2026-08-31",
+      "tag": "Math",
+      "headline": "EdWeek's math tracker counts 22 states with math laws since 2022",
+      "detail": "Nine state actions in 2026 alone, including automatic enrollment in advanced math in Arizona, Georgia and Iowa. Screening and intervention requirements are the most common elements.",
+      "source": "edweek_math_tracker"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "Data",
+      "headline": "First six states report 2025–26 chronic absenteeism; all declined",
+      "detail": "Colorado, Connecticut, Georgia, Louisiana, Massachusetts and Rhode Island posted declines; Rhode Island is within half a point of its pre-pandemic rate.",
+      "source": "r2l_tracker"
+    },
+    {
+      "date": "2026-08-28",
+      "tag": "AI",
+      "headline": "Anthropic adds a district-managed tier to Claude for Teachers",
+      "detail": "The free individual tier for verified U.S. K-12 educators launched July 14 with standards-aligned lesson planning, nine ed-tech integrations and no model training on teacher data.",
+      "source": "anthropic_claude_teachers_2026"
+    },
+    {
+      "date": "2026-08-21",
+      "tag": "Policy",
+      "headline": "35 states plus Puerto Rico now have official K-12 AI guidance",
+      "detail": "AI for Education's tracker update; ExcelinEd counts seven states with enacted K-12 AI laws in 2026 and 20+ with active bills.",
+      "source": "aifored_guidance"
+    },
+    {
+      "date": "2026-08-17",
+      "tag": "Math",
+      "headline": "NBER: two-year Khanmigo trial finds small math gains, low engagement",
+      "detail": "In 18 Tennessee middle schools, assignment to Khan Academy with the AI tutor raised math achievement 1.3 percentile ranks per term (0.06–0.08 SD a year), similar to Khan practice without AI. 96% tried the tutor; the median student used it on a third of practice days.",
+      "source": "nber_khanmigo_2026"
+    },
+    {
+      "date": "2026-07-15",
+      "tag": "Data",
+      "headline": "NWEA links chronic absenteeism to slower recovery, especially in math",
+      "detail": "Across 2,000 districts from 2019 to 2024, high-absenteeism districts were about 50% further from recovery in math than in reading.",
+      "source": "nwea_absenteeism_2026"
+    },
+    {
+      "date": "2026-06-30",
+      "tag": "Data",
+      "headline": "AEI: absenteeism improved less than a point in 2024–25",
+      "detail": "22.6% of students were chronically absent across 45 states, down from 23.5%; only 29% of students are in districts on pace to halve 2022 rates by 2027.",
+      "source": "aei_absenteeism_2026"
+    },
+    {
+      "date": "2026-06-16",
+      "tag": "Policy",
+      "headline": "Education Department reaches 14 interagency agreements",
+      "detail": "Four new agreements move special-education programming to HHS and civil-rights, privacy and desegregation work to Justice; Title I administration is shifting to Labor.",
+      "source": "ed_iaa_2026"
+    },
+    {
+      "date": "2026-06-16",
+      "tag": "Math",
+      "headline": "Texas STAAR: Algebra I up 7 points; grade-8 math access doubles",
+      "detail": "54% of Algebra I test-takers met grade level; 32% of 7th graders took the grade-8 math test, up from 16% in 2023.",
+      "source": "tea_staar_eoc_2026"
+    },
+    {
+      "date": "2026-06-09",
+      "tag": "AI",
+      "headline": "White House honors first Presidential AI Challenge champions",
+      "detail": "Six national champion teams; more than 20,000 students from all 50 states, DC, Puerto Rico and 49 DoDEA schools participated.",
+      "source": "wh_ai_challenge_2026"
+    },
+    {
+      "date": "2026-06-08",
+      "tag": "AI",
+      "headline": "Common Sense census: 86% of kids 9–17 use AI, 24% daily",
+      "detail": "Three-quarters say school has discussed AI rules; just over half were taught to use it safely; nearly half have never discussed AI safety with a parent.",
+      "source": "csm_census_2026"
+    },
+    {
+      "date": "2026-05-26",
+      "tag": "AI",
+      "headline": "Gallup: only 18% of teachers get formal AI guidance",
+      "detail": "34% receive none; 48% only informal guidance. Fewer than 1 in 10 have formal guidance for any specific task.",
+      "source": "gallup_ai_2026"
+    },
+    {
+      "date": "2026-05-13",
+      "tag": "Data",
+      "headline": "Education Scorecard finds a U-shaped recovery and a 'learning recession' dating to 2013",
+      "detail": "Math rebounded immediately after 2022; reading turned up in 2025 only in science-of-reading states; middle-income districts lag; 108 'districts on the rise' identified.",
+      "source": "scorecard_2026"
+    },
+    {
+      "date": "2026-05-07",
+      "tag": "Data",
+      "headline": "Census: per-pupil spending hit a record $17,619 in FY 2024",
+      "detail": "Up 6.6% from FY 2023, the final year of federal pandemic relief. Instruction was 58.8% of current spending.",
+      "source": "census_finance_2024"
+    },
+    {
+      "date": "2026-04-28",
+      "tag": "Data",
+      "headline": "NEA: average teacher salary reaches $74,495; starting pay $48,112",
+      "detail": "Nominal gains of 3.5% and 3.4%; after inflation, starting pay rose 0.7%. 35% of districts now start at $50,000 or more.",
+      "source": "nea_pay_2026"
+    },
+    {
+      "date": "2026-03-17",
+      "tag": "AI",
+      "headline": "RAND: student AI homework use jumps to 62%; 67% fear harm to critical thinking",
+      "detail": "Use rose 14 points between May and December 2025, driven by middle and high schoolers.",
+      "source": "rand_youth_ai_2026"
+    },
+    {
+      "date": "2026-02-24",
+      "tag": "AI",
+      "headline": "Pew: 54% of teens use chatbots for schoolwork; 59% see AI cheating as common",
+      "detail": "One in ten do all or most schoolwork with chatbot help; 43% have used one to solve a math problem.",
+      "source": "pew_teens_ai_2026"
+    },
+    {
+      "date": "2026-02-24",
+      "tag": "Data",
+      "headline": "NWEA: one school in three recovered in a subject, one in seven in both",
+      "detail": "Study of 5 million students in 9,326 schools; high-poverty schools made the largest gains but are least likely to be recovered.",
+      "source": "nwea_recovery_2026"
+    },
+    {
+      "date": "2026-02-03",
+      "tag": "Policy",
+      "headline": "FY 2026 deal funds Education at $79B; Title I and IDEA up $20M each",
+      "detail": "Level funding for most K-12 programs; a provision blocks transferring ED funds to other agencies without congressional direction.",
+      "source": "fy26_approps"
+    }
+  ],
+  "upcoming": [
+    {
+      "date": "2026-09-08",
+      "what": "PISA 2025 results (OECD)",
+      "why": "First international comparison since 2022, when U.S. 15-year-olds scored 465 in math against an OECD average of 472. Science is the focal domain.",
+      "source": "pisa_schedule"
+    },
+    {
+      "date": "2026-09-30",
+      "what": "FY 2027 federal appropriations deadline",
+      "why": "Determines Title I, IDEA and the Education Department's operating funds; the FY26 law limits transfers to other agencies.",
+      "source": "fy26_approps"
+    },
+    {
+      "date": "2026-10",
+      "what": "ACT and SAT reports for the class of 2026",
+      "why": "Class of 2025 averages were ACT 19.4 and SAT 1029; watch the math sections.",
+      "source": "collegeboard_sat_2025"
+    },
+    {
+      "date": "2026-11",
+      "what": "AEI Return to Learn: additional 2025–26 state absenteeism data",
+      "why": "Whether the sub-1-point improvement of 2024–25 becomes the new normal.",
+      "source": "r2l_tracker"
+    },
+    {
+      "date": "2027-01",
+      "what": "NAEP 2026 reading and math (grades 4 and 8)",
+      "why": "The first Nation's Report Card since 2024 and the first fully post-relief snapshot; U.S. history and civics follow in summer 2027.",
+      "source": "naep2026_schedule"
+    },
+    {
+      "date": "2027-04",
+      "what": "NEA Educator Pay Data 2027",
+      "why": "Whether real starting salaries keep pace with inflation.",
+      "source": "nea_pay_2026"
+    },
+    {
+      "date": "2027-05",
+      "what": "Education Scorecard (fifth edition) and NCES Condition of Education",
+      "why": "District-level recovery through spring 2026 and the official enrollment and staffing counts.",
+      "source": "scorecard_2026"
+    }
+  ],
+  "changelog": [
+    {
+      "edition": "September 2026",
+      "date": "2026-09-05",
+      "changes": [
+        "Inaugural edition compiled from primary sources published through September 4, 2026.",
+        "Baseline series established: NAEP 2013–2024, chronic absenteeism 2018–2025, enrollment 2019–2024, TIMSS 2015–2023."
+      ]
+    }
+  ]
+}

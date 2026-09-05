@@ -1,0 +1,54 @@
+# Optional GitHub-native scheduler for the monthly research task.
+# The default scheduler is a Claude Code Routine (see README). Enable this workflow
+# instead by adding an ANTHROPIC_API_KEY repository secret and allowing GitHub Actions
+# to create pull requests (Settings > Actions > General > Workflow permissions).
+# Without the secret the job exits quietly.
+
+name: Monthly research (GitHub Actions)
+
+on:
+  schedule:
+    - cron: '0 13 1 * *'   # 1st of every month, 13:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  id-token: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    env:
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Skip when no API key is configured
+        if: env.ANTHROPIC_API_KEY == ''
+        run: echo "ANTHROPIC_API_KEY is not set; the Claude Code Routine handles the monthly refresh. Nothing to do."
+
+      - uses: actions/setup-node@v4
+        if: env.ANTHROPIC_API_KEY != ''
+        with:
+          node-version: 22
+
+      - name: Run the monthly research task
+        if: env.ANTHROPIC_API_KEY != ''
+        uses: anthropics/claude-code-action@v1
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          prompt: |
+            You are running the Chalkline monthly research task. Read research/MONTHLY_RESEARCH_TASK.md
+            and research/SCHEMA.md and follow them exactly. The edition is the current calendar month.
+            Update the files in data/, run `node scripts/validate-data.mjs --links`, and fix any failures.
+            Then commit on a branch named research/$(date +%Y-%m), push it, and open a pull request against
+            the default branch with: gh pr create --base main --title "Monthly research: $(date +'%B %Y')" --body-file /tmp/pr-body.md
+            where /tmp/pr-body.md contains the summary paragraph and the verification table required by the protocol.
+            If a pull request for this month already exists, push to its branch instead of opening another one.
+          claude_args: |
+            --max-turns 60
+            --allowedTools "WebSearch,WebFetch,Read,Edit,Write,Glob,Grep,Bash(git:*),Bash(gh:*),Bash(node:*),Bash(npx:*),Bash(date:*),Bash(mkdir:*),Bash(cat:*),Bash(ls:*)"

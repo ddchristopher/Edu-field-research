@@ -1,0 +1,490 @@
+{
+  "section": "math",
+  "eyebrow": "Special section",
+  "title": "Math education",
+  "lede": "Math was hit hardest by the pandemic and is recovering fastest, but the average hides a split: top students have regained their footing while the lowest performers keep sliding to record lows on both NAEP and TIMSS. States are answering with numeracy laws modeled on reading reforms, and AI tutors are arriving with modest, engagement-limited evidence.",
+  "kpis": [
+    {
+      "id": "g8_math_p10",
+      "label": "Grade 8 math, 10th percentile score",
+      "value": 219,
+      "display": "219",
+      "unit": "NAEP scale score",
+      "delta": {
+        "text": "−12 vs 2019",
+        "sentiment": "bad"
+      },
+      "asOf": "2024",
+      "source": "naep2024_math_trends",
+      "note": "Down 5 more points since 2022 while the 90th percentile rose 3 (to 328)."
+    },
+    {
+      "id": "g4_math",
+      "label": "Grade 4 math, NAEP average",
+      "value": 237,
+      "display": "237",
+      "unit": "NAEP scale score",
+      "delta": {
+        "text": "+2 vs 2022, −3 vs 2019",
+        "sentiment": "neutral"
+      },
+      "asOf": "2024",
+      "source": "naep2024_g48",
+      "note": "The only national gain on the 2024 Report Card; driven by middle- and higher-performing students. Alabama is the lone state above its 2019 level."
+    },
+    {
+      "id": "timss_g8",
+      "label": "Grade 8 math, TIMSS",
+      "value": 488,
+      "display": "488",
+      "unit": "TIMSS scale score",
+      "delta": {
+        "text": "−27 vs 2019",
+        "sentiment": "bad"
+      },
+      "asOf": "2023",
+      "source": "timss2023",
+      "note": "Lowest U.S. score since TIMSS began in 1995; 19 of 45 systems scored higher. Grade 4 fell 18 points to 517."
+    },
+    {
+      "id": "g12_below_basic",
+      "label": "Seniors below NAEP Basic in math",
+      "value": 45,
+      "display": "45%",
+      "unit": "grade 12",
+      "delta": {
+        "text": "highest ever recorded",
+        "sentiment": "bad"
+      },
+      "asOf": "2024",
+      "source": "naep2024_g12",
+      "note": "22% at or above Proficient (−2). 33% of seniors were prepared for entry-level college math, down from 37%."
+    },
+    {
+      "id": "math_laws",
+      "label": "States with math laws or policies since 2022",
+      "value": 22,
+      "display": "22",
+      "unit": "per EdWeek tracker",
+      "delta": {
+        "text": "9 state actions in 2026",
+        "sentiment": "neutral"
+      },
+      "asOf": "Aug 2026",
+      "source": "edweek_math_tracker",
+      "note": "Screening (13 states) and intervention (11) lead; 10 states auto-enroll qualifying students in advanced math."
+    },
+    {
+      "id": "algebra_access",
+      "label": "Schools offering Algebra I by 8th grade",
+      "value": 58,
+      "display": "58%",
+      "unit": "NWEA sample",
+      "delta": {
+        "text": "3 in 5 schools",
+        "sentiment": "neutral"
+      },
+      "asOf": "2025",
+      "source": "nwea_algebra_2025",
+      "note": "Where offered, over half of Asian students enroll versus 22% of Latino and 17% of Black students."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chart",
+      "size": "lg",
+      "id": "g8_percentiles",
+      "chart": {
+        "kind": "dumbbell",
+        "title": "Grade 8 math by percentile, 2019 to 2024",
+        "subtitle": "NAEP scale scores. The lowest performers lost the most and kept losing after 2022; the top has nearly recovered.",
+        "unit": "NAEP scale score",
+        "aLabel": "2019",
+        "bLabel": "2024",
+        "items": [
+          {
+            "label": "90th percentile",
+            "a": 333,
+            "b": 328
+          },
+          {
+            "label": "75th percentile",
+            "a": 309,
+            "b": 303
+          },
+          {
+            "label": "Average",
+            "a": 282,
+            "b": 274
+          },
+          {
+            "label": "25th percentile",
+            "a": 255,
+            "b": 245
+          },
+          {
+            "label": "10th percentile",
+            "a": 231,
+            "b": 219
+          }
+        ],
+        "xDomain": [
+          200,
+          350
+        ],
+        "source": "naep2024_math_trends",
+        "note": "Between 2022 and 2024 the 90th and 75th percentiles rose 3 and 2 points while the 10th and 25th fell 5 and 3. The gap between the 90th and 10th percentiles is now 109 points."
+      }
+    },
+    {
+      "type": "stats",
+      "size": "sm",
+      "title": "Achievement levels",
+      "items": [
+        {
+          "id": "g8_proficient",
+          "label": "8th graders at or above NAEP Proficient in math",
+          "display": "28%",
+          "value": 28,
+          "delta": {
+            "text": "+2 vs 2022",
+            "sentiment": "good"
+          },
+          "asOf": "2024",
+          "source": "naep2024_math_trends",
+          "note": "8% reached Advanced. But only 61% are at or above Basic, down 1 point: the middle is hollowing."
+        },
+        {
+          "id": "g4_below_basic",
+          "label": "4th graders below NAEP Basic in math",
+          "display": "≈24%",
+          "value": 24,
+          "asOf": "2024",
+          "source": "naep2024_g48",
+          "note": "'Nearly a quarter' likely cannot identify odd numbers or solve a unit-conversion problem; nearly 40% are Proficient or Advanced."
+        },
+        {
+          "id": "timss_p10",
+          "label": "TIMSS grade 4 math, 10th-percentile change since 2019",
+          "display": "−37",
+          "value": -37,
+          "asOf": "2023",
+          "source": "timss2023",
+          "note": "Lowest in the assessment's 30-year history; the 90th percentile did not change. 18% of 8th graders fell below the Low international benchmark."
+        },
+        {
+          "id": "gender_gap",
+          "label": "TIMSS gender gap in 8th-grade math",
+          "display": "Boys > girls",
+          "value": 1,
+          "asOf": "2023",
+          "source": "timss2023",
+          "note": "First significant 8th-grade math gap since 2003; boys outscored girls in both subjects and grades."
+        }
+      ]
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "timss_trend",
+      "chart": {
+        "kind": "line",
+        "title": "TIMSS math, U.S. average scores",
+        "subtitle": "International benchmark (centerpoint 500). Both grades posted their lowest U.S. scores ever in 2023.",
+        "unit": "TIMSS scale score",
+        "x": [
+          "2015",
+          "2019",
+          "2023"
+        ],
+        "series": [
+          {
+            "name": "Grade 4",
+            "values": [
+              539,
+              535,
+              517
+            ]
+          },
+          {
+            "name": "Grade 8",
+            "values": [
+              518,
+              515,
+              488
+            ]
+          }
+        ],
+        "yDomain": [
+          470,
+          550
+        ],
+        "source": "timss2023",
+        "note": "Singapore led both grades (fourth grade up to 615; eighth grade 605). Twenty-one of 63 systems beat the U.S. at grade 4; 19 of 45 at grade 8."
+      }
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "algebra_equity",
+      "chart": {
+        "kind": "bars",
+        "title": "Top-quintile 8th graders enrolled in algebra",
+        "subtitle": "Among the highest-achieving fifth of students in schools that offer 8th-grade algebra, by race/ethnicity.",
+        "unit": "%",
+        "format": "percent",
+        "items": [
+          {
+            "label": "Asian",
+            "value": 84
+          },
+          {
+            "label": "White",
+            "value": 68
+          },
+          {
+            "label": "Latino",
+            "value": 68
+          },
+          {
+            "label": "Black",
+            "value": 60
+          }
+        ],
+        "source": "nwea_algebra_2025",
+        "note": "Opt-in placement that relies on teacher recommendation or parent advocacy under-enrolls Black, Latino and low-income students; ten states now auto-enroll students who test at grade level."
+      }
+    },
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "math_law_components",
+      "chart": {
+        "kind": "bars",
+        "title": "What state math laws require",
+        "subtitle": "Number of states (of 22) whose post-2022 math laws or policies include each element.",
+        "unit": "states",
+        "format": "int",
+        "items": [
+          {
+            "label": "Screening and assessment",
+            "value": 13
+          },
+          {
+            "label": "Instruction or intervention",
+            "value": 11
+          },
+          {
+            "label": "Algebra I / advanced-math access",
+            "value": 10
+          },
+          {
+            "label": "Teacher preparation",
+            "value": 9
+          },
+          {
+            "label": "Professional development / coaching",
+            "value": 9
+          },
+          {
+            "label": "Instructional materials",
+            "value": 4
+          },
+          {
+            "label": "Minimum instructional time",
+            "value": 3
+          },
+          {
+            "label": "Certification or licensure",
+            "value": 2
+          }
+        ],
+        "source": "edweek_math_tracker",
+        "note": "Alabama's 2022 Numeracy Act set the template: K-2 screeners, coaches, approved curricula and 60 minutes of daily math. Actions by year: 1 (2022), 6 (2023), 1 (2024), 7 (2025), 9 (2026)."
+      }
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Recovery in math",
+      "items": [
+        {
+          "headline": "Math bounced back first.",
+          "detail": "After the pandemic, math achievement rebounded immediately and the annual rate of improvement returned to pre-2013 levels in 2022–2024, while reading kept declining through 2024.",
+          "source": "scorecard_2026"
+        },
+        {
+          "headline": "Absenteeism drags math harder than reading.",
+          "detail": "Across 2,000 districts, high-absenteeism districts were about 50% further from recovery in math than in reading.",
+          "source": "nwea_absenteeism_2026"
+        },
+        {
+          "headline": "Grade-level readiness is barely moving.",
+          "detail": "Among nearly 14 million i-Ready students, the share meeting grade-level benchmarks has been flat since spring 2023 with only a slight uptick by spring 2025; early grades and lower performers remain furthest behind.",
+          "source": "ca_ssl_2025"
+        },
+        {
+          "headline": "Texas shows what acceleration looks like.",
+          "detail": "In 2026, 54% of Algebra I test-takers met grade level (+7 points), and 32% of 7th graders took the grade-8 math STAAR, double the 16% of 2023.",
+          "source": "tea_staar_eoc_2026"
+        },
+        {
+          "headline": "Secondary math is the next frontier.",
+          "detail": "Fractions and fluency with basic operations are the concepts that most trip up middle and high schoolers, per an EdWeek survey of 729 educators; state policy has so far concentrated on K-5.",
+          "source": "edweek_secondary_math_2026"
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "What moves math achievement",
+      "subtitle": "Effect sizes from rigorous evaluations, in standard deviations (SD). For scale, the pandemic drop in grade 8 NAEP math (8 points) is roughly 0.2 SD.",
+      "columns": [
+        "Intervention",
+        "Evidence",
+        "Effect"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "High-dosage in-school tutoring (Chicago and Fulton County, 2022–23)",
+            "≈2,000 students in districtwide programs; University of Chicago Education Lab",
+            "About two-thirds of a year of additional math learning, enough to offset the pandemic loss for the average student. Delivery during the school day was critical."
+          ],
+          "source": "uchicago_hdt_2024"
+        },
+        {
+          "cells": [
+            "Saga two-on-one daily math tutoring (Chicago high schools)",
+            "Multiple RCTs published in the American Economic Review",
+            "0.16–0.37 SD on math test scores, plus lower course-failure rates; effects shrink as programs scale."
+          ],
+          "source": "guryan_2023"
+        },
+        {
+          "cells": [
+            "Khanmigo AI tutor in daily remedial math (Tennessee)",
+            "Two-year cluster RCT, 18 middle schools (NBER, 2026)",
+            "0.06–0.08 SD per year of assignment; up to 0.14 SD with a full year of active use. Similar to Khan practice without AI; engagement is the binding constraint."
+          ],
+          "source": "nber_khanmigo_2026"
+        },
+        {
+          "cells": [
+            "AI assistant on math problems (Liu et al., 2026)",
+            "Three randomized experiments",
+            "Higher assisted performance, then lower persistence and unassisted performance: students finish faster and learn less."
+          ],
+          "source": "liu_2026"
+        },
+        {
+          "cells": [
+            "Human tutors with an AI copilot (Stanford)",
+            "RCT, 1,800 K-12 students",
+            "+4 percentage points mastery; +9 for students of less-experienced tutors."
+          ],
+          "source": "tutor_copilot_2024"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "lg",
+      "title": "The advanced-math pipeline",
+      "items": [
+        {
+          "id": "ap_precalc",
+          "label": "AP Precalculus registrations, May 2025",
+          "display": "247,100",
+          "value": 247100,
+          "delta": {
+            "text": "184,000 took the first exam in 2024",
+            "sentiment": "good"
+          },
+          "asOf": "2025",
+          "source": "edweek_precalc_2025",
+          "note": "Fastest-growing AP course; 81% scored 3 or higher in 2025 (76% in 2024)."
+        },
+        {
+          "id": "ap_calc",
+          "label": "AP Calculus exam takers, 2025",
+          "display": "446,327",
+          "value": 446327,
+          "asOf": "2025",
+          "source": "edweek_precalc_2025",
+          "note": "Calculus AB 285,891 and BC 160,436. Black students are 8% of Precalculus takers vs 5% of Calc AB; Hispanic students 23% vs 17%."
+        },
+        {
+          "id": "college_ready",
+          "label": "Seniors academically prepared for college math",
+          "display": "33%",
+          "value": 33,
+          "delta": {
+            "text": "37% in 2019",
+            "sentiment": "bad"
+          },
+          "asOf": "2024",
+          "source": "naep2024_g12",
+          "note": "Yet more seniors report acceptance to a four-year college than in 2019."
+        },
+        {
+          "id": "math_shortage",
+          "label": "States reporting math teacher shortages",
+          "display": "40",
+          "value": 40,
+          "asOf": "2025",
+          "source": "lpi_subjects_2025",
+          "note": "Among the three most common shortage areas nationally, alongside special education and science."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "sm",
+      "title": "AI meets math class",
+      "items": [
+        {
+          "id": "teens_math_ai",
+          "label": "Teens who have used a chatbot to solve a math problem",
+          "display": "43%",
+          "value": 43,
+          "asOf": "fall 2025",
+          "source": "pew_teens_ai_2026",
+          "note": "In 2024 only 29% of teens said using ChatGPT for math problems was acceptable."
+        },
+        {
+          "id": "math_pd_ai",
+          "label": "Math teachers without PD on AI for math instruction",
+          "display": "≈7 in 10",
+          "value": 70,
+          "asOf": "Feb 2025",
+          "source": "edweek_math_ai_pd_2025",
+          "note": "More than a third of them do not want it; the top reason is that AI should not be used to teach math."
+        },
+        {
+          "id": "math_feelings",
+          "label": "Americans with only positive feelings about doing math",
+          "display": "47%",
+          "value": 47,
+          "delta": {
+            "text": "37% only negative",
+            "sentiment": "neutral"
+          },
+          "asOf": "Dec 2024",
+          "source": "gallup_math_2025",
+          "note": "Ages 18–24: 32% positive; ages 65+: 61%. Men 54%, women 42%."
+        },
+        {
+          "id": "gates_math",
+          "label": "Gates Foundation math investment, 2022–2026",
+          "display": "$1.1B",
+          "value": 1100000000,
+          "asOf": "announced Oct 2022",
+          "source": "gates_math_2022",
+          "note": "Math is the foundation's top K-12 priority for the decade, focused on Black, Latino and low-income students."
+        }
+      ]
+    }
+  ]
+}

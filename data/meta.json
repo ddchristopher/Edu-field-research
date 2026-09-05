@@ -1,0 +1,10 @@
+{
+  "name": "Chalkline",
+  "tagline": "A monthly, sourced reading of U.S. K-12 education research, data and trends.",
+  "edition": "September 2026",
+  "generatedAt": "2026-09-05",
+  "nextScheduledRun": "2026-10-01",
+  "cadence": "Refreshed on the first of each month by a scheduled research task; interim corrections are noted in the changelog.",
+  "repo": "https://github.com/ddchristopher/Edu-field-research",
+  "schemaVersion": 1
+}
