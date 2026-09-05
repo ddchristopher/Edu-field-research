@@ -10,6 +10,37 @@ The task is deliberately conservative: **a number that cannot be traced to a pri
 2. Read `research/SCHEMA.md`, `data/meta.json`, `data/briefing.json` and the three section files (`overview.json`, `ai.json`, `math.json`) so you know what is already on the dashboard and its `asOf` dates.
 3. Run `node scripts/validate-data.mjs` to confirm the starting state is clean.
 
+## 0b. Fetching, and why plain fetching is not enough
+
+The sandbox's egress proxy blocks ordinary `WebFetch` on most of the publisher domains this
+dashboard depends on. Domains observed blocked include:
+
+`rand.org` · `pewresearch.org` · `news.gallup.com` · `nagb.gov` · `nces.ed.gov` ·
+`nwea.org` · `returntolearntracker.net` · `gse.harvard.edu` · `excelined.org`
+
+That matters because this protocol requires every figure to be verified on the publisher's own
+page. Without a fetcher that reaches those domains, a run cannot follow its own rule.
+
+**With the Firecrawl connector attached** (check for `mcp__Firecrawl__firecrawl_scrape`): use it as
+the primary fetcher, with `formats: ["markdown"]` and `onlyMainContent: true`, adding
+`parsers: ["pdf"]` and `pdfOptions: {maxPages: 20}` for PDF reports. Do not retry a `WebFetch`
+that returns `EGRESS_BLOCKED`; go straight to Firecrawl. Credits are metered, so be economical:
+about 100 to 200 credits covers a refresh, and one page often verifies several figures.
+
+**Without it**: say so at the top of the run report, verify what you can through `WebSearch` and
+`WebFetch`, and leave every unconfirmable figure exactly as it is with its existing `asOf` date.
+Never let a search snippet become the source of a statistic, and never fabricate.
+
+**NAEP national trends** are available from a JSON service that is cheap and not blocked:
+
+```
+https://www.nationsreportcard.gov/DataService/GetAdhocData.aspx?type=data&subject=mathematics&grade=8&subscale=MRPCM&variable=TOTAL&jurisdiction=NT&stattype=MN:MN&Year=2013,2015,2017,2019,2022,2024
+```
+
+Swap `subject` (`mathematics` / `reading`), `grade` (4 / 8) and `subscale` (`MRPCM` / `RRPCM`).
+Values come back unrounded; round for display and keep NCES's reported changes, which are
+computed from unrounded scores.
+
 ## 1. Scan the release calendar
 
 Check each recurring source for anything published since the previous edition's `generatedAt`. Typical timing is given so you know where to look hardest.
