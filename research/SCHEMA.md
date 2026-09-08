@@ -18,11 +18,11 @@ All dashboard content lives in `data/*.json`. The page (`assets/app.js`) renders
 
 An object keyed by a short stable id (`snake_case`, ASCII). Each value: `org` (publisher), `title` (exact title), `date` (ISO `YYYY-MM-DD` or `YYYY-MM`), `url` (https). Every `source` reference elsewhere must resolve to a key here. A `source` field may be a single key or an array of keys when a claim draws on two documents (for example a state test release and its companion end-of-course release); list the primary document first.
 
-## Section files (`overview.json`, `ai.json`, `math.json`, `orgs.json`)
+## Section files (`overview.json`, `models.json`, `ai.json`, `math.json`, `conditions.json`)
 
 ```
 {
-  "section": "overview" | "ai" | "math" | "register",
+  "section": "overview" | "models" | "ai" | "math" | "conditions",
   "eyebrow": string,          // small label above the title
   "title": string,
   "lede": string,             // 2–4 sentence synthesis
@@ -76,25 +76,29 @@ Rules: arrays stay aligned and chronological; values are numbers, never strings;
 | `edition` | yes | Matches `meta.edition` |
 | `generated` | yes | ISO date |
 | `summary` | yes | Three-sentence synthesis of the month |
-| `items` | yes | Newest first: `{ date, tag: "AI"|"Math"|"Data"|"Policy", headline, detail, source }` |
+| `items` | yes | Newest first: `{ date, tag: "AI"|"Math"|"Data"|"Policy"|"Funding", headline, detail, implication?, source }`. The optional `implication` is one sentence on what the item means for a school-model portfolio; it renders in a visibly separate rule so interpretation never reads as quoted data |
 | `upcoming` | yes | `{ date (YYYY-MM or YYYY-MM-DD), what, why, source? }` |
 | `changelog` | yes | `{ edition, date, changes: string[] }` |
 
-## The evidence register (`orgs.json`)
+## The school models section (`models.json`)
 
-The register carries two tables and follows one rule: **it ranks nothing.** Effect sizes come
-from different outcomes, grades and populations, so they are never sorted against each other or
-combined into a score. Entries are grouped by evidence tier and every figure is quoted with the
-study that produced it.
+The heart of the dashboard, and the section with the strictest rules. It **ranks nothing**: effect
+sizes come from different outcomes, grades and populations, so they are never sorted against each
+other or combined into a score.
 
-- **The register lane** holds nonprofits whose flagship program has been evaluated in a randomized
-  trial. Each row names the design, the sample and the effect, and carries a `tier` of `Strong`,
-  `Moderate`, `Promising` or `Not ESSA-rated`.
-- **The watch lane** holds work that is deliberately unproven. Each row must name, in its third
-  cell, the evidence that would settle the question. Its `tier` is a status: `Trial running`,
-  `Scaling` or `Measured`.
+- **Proven lane** holds school models evaluated by admissions lottery or matched comparison, at
+  more than one site. `tier` is the evidence design: `Lottery`, `Randomized`, `Quasi-experimental`
+  or `Contested`.
+- **New designs lane** holds models being funded or grown ahead of independent evidence. The third
+  cell must name the evidence that would settle the question. `tier` is a status: `Self-reported`,
+  `Too early`, `Unmeasured` or `Measured`.
 
-Add an organization only when a rating or a study can be cited directly. Do not repeat an
-organization's self-reported impact claims; where reach or finance figures are used they come
-from a filing or an independent source. If an organization's corporate form is not verified, say
-so rather than calling it a nonprofit.
+Attribute an operator's own results to the operator, in the row text, every time. Never present a
+self-reported figure as a finding. Where a claim is contested, cite both sides in the same row.
+
+## The conditions section (`conditions.json`)
+
+Covers what lets a good model open, measure itself and be judged: accountability policy, the data
+and evidence infrastructure, and the capital flowing into new schools. Its last block is a standing
+"where the field disagrees" list; keep it populated, and retire an entry only when the disagreement
+is actually resolved rather than when it becomes inconvenient.

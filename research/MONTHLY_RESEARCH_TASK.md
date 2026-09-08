@@ -69,6 +69,7 @@ Check each recurring source for anything published since the previous edition's 
 | CDC | Youth Risk Behavior Survey (biennial) | Summer of even years |
 | NBER, EdWorkingPapers, arXiv, journals | Rigorous studies of AI tutoring, high-dosage tutoring, math interventions | Rolling |
 | State education agencies | Spring assessment results (Texas, Florida, Mississippi, Louisiana, Tennessee, California, etc.) | June–September |
+| NAPCS, CREDO, NACSA, Canopy, CRPE, Bellwether | Charter enrollment and share, model evidence, authorizer policy, school design data | Rolling; NAPCS enrollment in the autumn |
 | Evidence for ESSA (Johns Hopkins) | New and revised program ratings; category counts; standards updates | Rolling |
 | What Works Clearinghouse | Intervention reports and practice guides; IES restructuring news | Rolling |
 | Accelerate, NSSA, MDRC, Mathematica, AIR | Tutoring and intervention trials, grantee cohorts, results releases | Rolling |
@@ -93,11 +94,15 @@ Replace a dashboard figure only when the new one is (a) from the same or a more 
 
 Section checklists:
 
+**School models.** New or updated evidence on school models and networks: lottery and matched-comparison studies, CREDO and its critics, network expansion and closure announcements, charter enrollment and share, authorizer and cap policy, facilities capital. For new designs, track AI-first networks (Alpha School and 2 Hour Learning, Unbound Academy), microschools, competency-based and portrait-of-a-graduate models. Move a row from the new-designs lane to the proven lane only when an independent evaluation publishes, and report null findings as readily as positive ones. Always attribute an operator's own results to the operator.
+
+**Conditions for scale.** State accountability and assessment policy, ESEA waivers and flexibility, n-size and reporting rules, the state of IES, NCES, NAEP and the What Works Clearinghouse, SEDA and other cross-state data, and capital flows from Walton, City Fund, Bloomberg, Charter School Growth Fund, NewSchools, XQ and similar. Keep the "where the field disagrees" block populated.
+
 **Overview.** NAEP (any grade or subject), chronic absenteeism, enrollment and closures, teacher pay and shortages, teacher well-being, per-pupil spending and federal budget, Department of Education reorganization, school choice programs and the federal tax credit, homeschooling, state policy counts (phones, reading, math, AI), public opinion (PDK, Gallup), student well-being (YRBS), graduation rates, recovery studies (NWEA, Curriculum Associates, Education Scorecard).
 
 **AI in education.** Student use (Pew, RAND, Common Sense, CDT), teacher use and guidance (Gallup/WFF, RAND, EdWeek), district policy and training, learning-outcome studies (RCTs first, then quasi-experimental; record effect sizes and designs), integrity and detection, safety (companions, deepfakes, chatbot laws), federal actions (executive orders, task force, Presidential AI Challenge, ED guidance), state laws and guidance counts, large-district policies, vendor moves that change what students or teachers can access.
 
-**Evidence register.** New or revised Evidence for ESSA ratings for nonprofit-run programs; category and tier counts; newly published randomized trials of nonprofit programs; grantee cohorts and results from Accelerate and similar funders; changes to the clearinghouses themselves. Move an entry from the watch lane to the register only when a completed evaluation is published, and say what it found even when the finding is null. Never rank organizations or compute a composite score.
+**Academic foundations and interventions.** New or revised Evidence for ESSA ratings for nonprofit-run programs; category and tier counts; newly published randomized trials of nonprofit programs; grantee cohorts and results from Accelerate and similar funders; changes to the clearinghouses themselves. Move an entry from the watch lane to the register only when a completed evaluation is published, and say what it found even when the finding is null. Never rank organizations or compute a composite score.
 
 **Math education.** NAEP and TIMSS/PISA math (averages and percentiles), achievement-level shares, recovery in math versus reading, state numeracy laws (EdWeek tracker categories and counts), Algebra I access and automatic enrollment, AP Precalculus/Calculus participation, tutoring evidence, AI-in-math studies, math teacher shortages and professional development, attitudes toward math, major philanthropic or federal math initiatives, notable state results (for example Texas STAAR).
 
@@ -106,8 +111,8 @@ Section checklists:
 Follow `research/SCHEMA.md` exactly. In order:
 
 1. `data/sources.json`: add a source entry for every new citation (short stable key, organization, exact title, ISO date, URL). Do not delete sources still cited.
-2. Section files (`overview.json`, `ai.json`, `math.json`, `orgs.json`): update `kpis` values, `display`, `delta`, `asOf`, `note` and `source`; extend chart series by appending new x labels and values (keep arrays aligned); revise or replace `findings`, `stats`, `chips` and `table` items. Keep block `size` values so that each row of blocks still sums to six columns (sm=2, md=3, lg=4, full=6).
-3. `data/briefing.json`: set `edition` to the new month; rewrite `summary` (three sentences, the month's most important developments across the three sections); add new `items` newest first (each with `date`, `tag` in {AI, Math, Data, Policy}, `headline`, `detail`, `source`); prune items older than about four months unless they remain the current source of a headline figure; refresh `upcoming`; append a `changelog` entry listing what changed.
+2. Section files (`overview.json`, `models.json`, `ai.json`, `math.json`, `conditions.json`): update `kpis` values, `display`, `delta`, `asOf`, `note` and `source`; extend chart series by appending new x labels and values (keep arrays aligned); revise or replace `findings`, `stats`, `chips` and `table` items. Keep block `size` values so that each row of blocks still sums to six columns (sm=2, md=3, lg=4, full=6).
+3. `data/briefing.json`: set `edition` to the new month; give each item an `implication`, one sentence on what it means for a school-model portfolio, written separately from the quoted figures; rewrite `summary` (three sentences, the month's most important developments across the three sections); add new `items` newest first (each with `date`, `tag` in {AI, Math, Data, Policy}, `headline`, `detail`, `source`); prune items older than about four months unless they remain the current source of a headline figure; refresh `upcoming`; append a `changelog` entry listing what changed.
 4. `data/meta.json`: set `edition`, `generatedAt` (today) and `nextScheduledRun` (the first of next month).
 
 Style: plain, specific sentences; numbers with units and dates; no vendor marketing language; no adjectives the evidence does not support. Say "students" not "kids"; "Black, Hispanic/Latino, White, Asian" as the source uses them.

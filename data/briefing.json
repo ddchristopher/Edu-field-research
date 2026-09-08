@@ -1,21 +1,23 @@
 {
   "edition": "September 2026",
   "generated": "2026-09-05",
-  "summary": "The school year opened with a pullback: New York City and Los Angeles, the two largest districts, restricted student-facing generative AI within days of each other, even as Google switched Gemini on for students of all ages and Anthropic and OpenAI extended free tools to teachers. The first rigorous multi-year trial of an AI math tutor (Khanmigo) found small gains limited by how rarely students actually engaged it. Meanwhile the attendance recovery has slowed to less than a point a year, state math laws reached 22 states, and the OECD's PISA 2025 results land on September 8.",
+  "summary": "Capital kept moving toward new schools while the ability to judge them weakened. Charters added 111,349 students in a year districts lost 221,729, Walton widened its facilities fund to $400 million and City Fund and Bloomberg opened an HBCU charter vehicle. Meanwhile AI-first school networks expanded on self-reported results, the two largest districts pulled student AI back, and the federal research agency published a restructuring plan.",
   "items": [
     {
       "date": "2026-09-03",
       "tag": "AI",
       "headline": "LAUSD blocks generative AI on district devices for all students",
       "detail": "The restriction covers 2026–27 while a new Generative AI Ad Hoc Committee drafts guardrails, with recommendations due to the board by the end of the school year. It reverses a policy that let students 13 and older use approved tools after digital-citizenship training.",
-      "source": "lausd_ai_2026"
+      "source": "lausd_ai_2026",
+      "implication": "District policy is now a real deployment risk for any model whose instruction depends on student-facing AI."
     },
     {
       "date": "2026-09-02",
       "tag": "AI",
       "headline": "New York City declares a one-year moratorium on student-facing generative AI, 2-K through grade 8",
       "detail": "Nearly 600,000 students are covered and AI features are switched off in the classroom tools they use, with exceptions for students with disabilities and English learners. High schools get twice-yearly AI critical-thinking modules, limited pilots and new screen-time limits.",
-      "source": "nyc_ai_moratorium_2026"
+      "source": "nyc_ai_moratorium_2026",
+      "implication": "The largest district in the country has removed 600,000 students from the addressable market for student-facing AI through grade 8."
     },
     {
       "date": "2026-09-02",
@@ -25,14 +27,16 @@
       "source": [
         "google_gemini_classroom_2026",
         "edweek_gemini_2026"
-      ]
+      ],
+      "implication": "Vendor defaults are outrunning district policy, which raises the value of models that control their own stack."
     },
     {
       "date": "2026-08-31",
       "tag": "Math",
       "headline": "EdWeek's math tracker counts 22 states with math laws since 2022",
       "detail": "Nine state actions in 2026 alone, including automatic enrollment in advanced math in Arizona, Georgia and Iowa. Screening and intervention requirements are the most common elements.",
-      "source": "edweek_math_tracker"
+      "source": "edweek_math_tracker",
+      "implication": "State mandates are converging on screening and intervention, which favours models that already embed both."
     },
     {
       "date": "2026-08-28",
@@ -60,7 +64,8 @@
       "tag": "Math",
       "headline": "NBER: two-year Khanmigo trial finds small math gains, low engagement",
       "detail": "In 18 Tennessee middle schools, assignment to Khan Academy with the AI tutor raised math achievement 1.3 percentile ranks per term (0.06–0.08 SD a year), similar to Khan practice without AI. 96% tried the tutor; the median student used it on a third of practice days.",
-      "source": "nber_khanmigo_2026"
+      "source": "nber_khanmigo_2026",
+      "implication": "The cheapest AI bet, adding a tutor to an existing school, returns roughly 0.06 to 0.08 SD a year. That is the bar an AI-first redesign must clear."
     },
     {
       "date": "2026-07-15",
@@ -81,7 +86,8 @@
       "tag": "Policy",
       "headline": "Education Department reaches 14 interagency agreements",
       "detail": "Four new agreements move special-education programming to HHS and civil-rights, privacy and desegregation work to Justice; Title I administration is shifting to Labor.",
-      "source": "ed_iaa_2026"
+      "source": "ed_iaa_2026",
+      "implication": "The evidence and data infrastructure a diligence process relies on is being reorganised while it is being used."
     },
     {
       "date": "2026-06-16",
@@ -126,45 +132,95 @@
       "tag": "Data",
       "headline": "Census: per-pupil spending hit a record $17,619 in FY 2024",
       "detail": "Up 6.6% from FY 2023, the final year of federal pandemic relief. Instruction was 58.8% of current spending.",
-      "source": "census_finance_2024"
+      "source": "census_finance_2024",
+      "implication": "The cost baseline any new model is compared against, in the last year before relief funds expired."
     },
     {
       "date": "2026-04-28",
       "tag": "Data",
       "headline": "NEA: average teacher salary reaches $74,495; starting pay $48,112",
       "detail": "Nominal gains of 3.5% and 3.4%; after inflation, starting pay rose 0.7%. Fifteen states now average at least $50,000 for starting teachers, up from 13. The largest one-year raises were in Nevada (11.8%), DC (9.7%) and Delaware (7.6%).",
-      "source": "nea_pay_2026"
+      "source": "nea_pay_2026",
+      "implication": "Staffing is the largest line in any model's unit economics, and it rose faster than inflation only at the top of the scale."
     },
     {
       "date": "2026-03-17",
       "tag": "AI",
       "headline": "RAND: student AI homework use jumps to 62%; 67% fear harm to critical thinking",
       "detail": "Use rose 14 points between May and December 2025, driven by middle and high schoolers.",
-      "source": "rand_youth_ai_2026"
+      "source": "rand_youth_ai_2026",
+      "implication": "Student demand for AI is already universal; the open question is whether schools shape it or ban it."
     },
     {
       "date": "2026-02-24",
       "tag": "AI",
       "headline": "Pew: 54% of teens use chatbots for schoolwork; 59% see AI cheating as common",
       "detail": "One in ten do all or most schoolwork with chatbot help; 43% have used one to solve a math problem.",
-      "source": "pew_teens_ai_2026"
+      "source": "pew_teens_ai_2026",
+      "implication": "Any assessment-based accountability claim now has to survive widespread unsupervised AI use."
     },
     {
       "date": "2026-02-24",
       "tag": "Data",
       "headline": "NWEA: one school in three recovered in a subject, one in seven in both",
       "detail": "Study of 5 million students in 9,326 schools; high-poverty schools made the largest gains but are least likely to be recovered.",
-      "source": "nwea_recovery_2026"
+      "source": "nwea_recovery_2026",
+      "implication": "Two-thirds of schools are still below 2019, which is the size of the addressable problem."
     },
     {
       "date": "2026-02-03",
       "tag": "Policy",
       "headline": "FY 2026 deal funds Education at $79B; Title I and IDEA up $20M each",
       "detail": "Level funding for most K-12 programs; a provision blocks transferring ED funds to other agencies without congressional direction.",
-      "source": "fy26_approps"
+      "source": "fy26_approps",
+      "implication": "Federal funding held, so state and philanthropic capital remain the swing factor for new schools."
+    },
+    {
+      "date": "2025-12-04",
+      "tag": "Funding",
+      "headline": "City Fund and Bloomberg commit $20M to HBCU charter partnerships",
+      "detail": "Ten million dollars each, with UNCF as partner. Two Alabama schools are live: I Dream Big Academy in Tuscaloosa with Stillman College, opened August 2025, and D.C. Wolfe Charter School with Tuskegee University, reopening as a conversion charter in fall 2026.",
+      "implication": "New-school formation is being routed through anchor institutions, a structural bet on community trust and teacher pipelines.",
+      "source": "cityfund_bloomberg_2025"
+    },
+    {
+      "date": "2025-11-14",
+      "tag": "Data",
+      "headline": "Charters added 111,349 students while districts lost 221,729",
+      "detail": "NAPCS state-agency data show 39 of 43 state charter sectors growing. Over six years charters are up 15%, more than half a million students, while districts are down 4.4%, nearly 2 million.",
+      "implication": "Growth for any model is now share-taking inside a contracting system, which raises the value of closures, facilities capital and conversions.",
+      "source": [
+        "napcs_enrollment_2025",
+        "napcs_brief_pdf"
+      ]
+    },
+    {
+      "date": "2025-07-29",
+      "tag": "Policy",
+      "headline": "Education Department signals renewed ESEA waiver flexibility",
+      "detail": "A Dear Colleague letter indicated openness to state flexibility and waivers under ESSA, at a moment when assessment researchers are questioning whether accountability systems identify the right schools at all.",
+      "implication": "More state variation makes cross-state comparison of a network's results harder exactly as networks try to expand across state lines.",
+      "source": [
+        "ed_waiver_letter_2025",
+        "nciea_accountability_2026"
+      ]
+    },
+    {
+      "date": "2025-05-27",
+      "tag": "Funding",
+      "headline": "Walton expands charter facilities fund to $400 million",
+      "detail": "A $100 million expansion with Civic Builders and PNC. The fund now offers up to 100% financing and lends to schools open as little as six months. Since 2017 it has deployed $292.6 million across 33 loans and created 17,083 seats, at schools averaging 81% free or reduced-price lunch.",
+      "implication": "The classic constraint on charter growth loosened rather than tightened, moving capital earlier than commercial lenders will go.",
+      "source": "walton_fif_2025"
     }
   ],
   "upcoming": [
+    {
+      "date": "2026-10",
+      "what": "NAPCS enrollment update and state charter counts",
+      "why": "Whether the charter-district divergence held for a seventh year, which sets the growth ceiling for every model in the portfolio.",
+      "source": "napcs_enrollment_2025"
+    },
     {
       "date": "2026-09-08",
       "what": "PISA 2025 results (OECD)",
@@ -216,6 +272,14 @@
         "Inaugural edition compiled from primary sources published through September 4, 2026.",
         "Baseline series established: NAEP 2013–2024, chronic absenteeism 2018–2025, enrollment 2019–2024, TIMSS 2015–2023.",
         "Added the evidence register: nonprofits with randomized-trial evidence, sorted by ESSA tier, plus a watch lane of approaches still under evaluation."
+      ]
+    },
+    {
+      "edition": "September 2026",
+      "date": "2026-09-08",
+      "changes": [
+        "Rebuilt for a program director investing in school models: added the School models and Conditions for scale sections, reframed the landscape, AI and foundations sections around that reader, and added an implication line to each briefing item.",
+        "Retired the standalone intervention register; its rows now sit inside Academic foundations, and BARR moved to the school models lane."
       ]
     }
   ]

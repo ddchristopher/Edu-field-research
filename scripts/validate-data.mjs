@@ -12,7 +12,7 @@ const fail = m => problems.push('FAIL ' + m);
 const sources = read('sources.json');
 const meta = read('meta.json');
 const briefing = read('briefing.json');
-const sections = ['overview.json', 'ai.json', 'math.json', 'orgs.json'].map(read);
+const sections = ['overview.json', 'models.json', 'ai.json', 'math.json', 'conditions.json'].map(read);
 const usedSources = new Set();
 const isoDate = /^\d{4}-\d{2}(-\d{2})?$/;
 
@@ -79,7 +79,7 @@ for (const sec of sections) {
 }
 // briefing + meta
 for (const k of ['edition', 'generated', 'summary', 'items', 'upcoming', 'changelog']) if (!briefing[k]) fail(`briefing missing ${k}`);
-briefing.items.forEach((it, i) => { for (const k of ['date', 'tag', 'headline', 'detail']) if (!it[k]) fail(`briefing.items[${i}] missing ${k}`); if (!isoDate.test(it.date)) fail(`briefing.items[${i}] bad date`); if (!['AI', 'Math', 'Data', 'Policy'].includes(it.tag)) fail(`briefing.items[${i}] unknown tag ${it.tag}`); checkSource(it.source, `briefing.items[${i}]`); });
+briefing.items.forEach((it, i) => { for (const k of ['date', 'tag', 'headline', 'detail']) if (!it[k]) fail(`briefing.items[${i}] missing ${k}`); if (!isoDate.test(it.date)) fail(`briefing.items[${i}] bad date`); if (!['AI', 'Math', 'Data', 'Policy', 'Funding'].includes(it.tag)) fail(`briefing.items[${i}] unknown tag ${it.tag}`); checkSource(it.source, `briefing.items[${i}]`); });
 const dates = briefing.items.map(i => i.date);
 if (dates.some((d, i) => i && d > dates[i - 1])) warn('briefing.items are not sorted newest first');
 briefing.upcoming.forEach((u, i) => { for (const k of ['date', 'what', 'why']) if (!u[k]) fail(`briefing.upcoming[${i}] missing ${k}`); if (u.source) checkSource(u.source, `briefing.upcoming[${i}]`); });

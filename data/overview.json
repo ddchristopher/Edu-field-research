@@ -1,8 +1,8 @@
 {
   "section": "overview",
-  "eyebrow": "The landscape",
-  "title": "Where U.S. K-12 stands",
-  "lede": "Five school years after the pandemic closures, achievement is still below 2019 in every NAEP grade and subject, the lowest-performing students are falling furthest behind, and attendance recovery has nearly stalled. Enrollment is shrinking, teacher pay is rising in nominal terms, and federal governance is being reorganized in real time.",
+  "eyebrow": "The diagnosis",
+  "title": "The landscape",
+  "lede": "Achievement has not recovered from the pandemic and the decline started before it. Disparities are widening at the bottom of the distribution rather than the middle, enrollment is falling, and the federal machinery that measures any of this is being reorganised. This is the context every school model has to grow inside, and the baseline any investment is judged against.",
   "kpis": [
     {
       "id": "naep_g8_math",
@@ -344,7 +344,7 @@
       "chart": {
         "kind": "line",
         "title": "Public school enrollment, fall 2019–2024",
-        "subtitle": "Millions of PK-12 students in public schools; the axis starts at 46 million, not zero. Falling births, more homeschooling and private choice, and migration all contribute.",
+        "subtitle": "Millions of PK-12 students in public schools; the axis starts at 46 million, not zero. A shrinking pool is the headwind every growth plan runs against.",
         "unit": "M",
         "x": [
           "2019",
@@ -595,6 +595,11 @@
           "headline": "One school in three has recovered in a subject; one in seven in both.",
           "detail": "NWEA's study of 5 million students in 9,326 schools defines recovery as fall 2024 achievement at or above fall 2019. High-poverty schools are less likely to be recovered but have made the largest gains.",
           "source": "nwea_recovery_2026"
+        },
+        {
+          "headline": "The slide began around 2013, not 2020.",
+          "detail": "The Education Scorecard dates the learning recession to seven years before the pandemic and notes it coincided with the dismantling of test-based accountability and a sharp rise in social media use, without separating the two. In reading, the annual loss from 2017 to 2019 was as large as the loss during the pandemic itself.",
+          "source": "scorecard_2026"
         },
         {
           "headline": "The recovery is U-shaped by income.",

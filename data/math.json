@@ -1,8 +1,8 @@
 {
   "section": "math",
-  "eyebrow": "Special section",
-  "title": "Math education",
-  "lede": "Math was hit hardest by the pandemic and is recovering fastest, but the average hides a split: top students have regained their footing while the lowest performers keep sliding to record lows on both NAEP and TIMSS. States are answering with numeracy laws modeled on reading reforms, and AI tutors are arriving with modest, engagement-limited evidence.",
+  "eyebrow": "The outcomes",
+  "title": "Academic foundations",
+  "lede": "What any school model has to move. Math was hit hardest and is recovering fastest, but the average hides a split: top students have regained their footing while the lowest performers keep sliding to record lows on both NAEP and TIMSS. Alongside the academic core, states are now writing durable skills into graduation expectations without an agreed way to measure them.",
   "kpis": [
     {
       "id": "g8_math_p10",
@@ -386,12 +386,13 @@
     {
       "type": "table",
       "size": "full",
-      "title": "What moves math achievement",
-      "subtitle": "Effect sizes from rigorous evaluations, in standard deviations (SD). For scale, the pandemic drop in grade 8 NAEP math (8 points) is roughly 0.2 SD.",
+      "title": "What moves achievement inside a school",
+      "subtitle": "Interventions that run inside an existing school, as opposed to a redesign of the school itself. Effect sizes are in standard deviations and are quoted with the study that produced them; they are not comparable across different outcomes and populations.",
       "columns": [
         "Intervention",
         "Evidence",
-        "Effect"
+        "Effect",
+        "Rating"
       ],
       "rows": [
         {
@@ -400,6 +401,7 @@
             "≈2,000 students in districtwide programs; University of Chicago Education Lab",
             "About two-thirds of a year of additional math learning, enough to offset the pandemic loss for the average student. Delivery during the school day was critical."
           ],
+          "tier": "Quasi-experimental",
           "source": "uchicago_hdt_2024"
         },
         {
@@ -408,6 +410,7 @@
             "Multiple RCTs published in the American Economic Review",
             "0.16–0.37 SD on math test scores, plus lower course-failure rates; effects shrink as programs scale."
           ],
+          "tier": "Randomized",
           "source": "guryan_2023"
         },
         {
@@ -416,6 +419,7 @@
             "Two-year cluster RCT, 18 middle schools (NBER, 2026)",
             "0.06–0.08 SD per year of assignment; up to 0.14 SD with a full year of active use. Similar to Khan practice without AI; engagement is the binding constraint."
           ],
+          "tier": "Randomized",
           "source": "nber_khanmigo_2026"
         },
         {
@@ -424,6 +428,7 @@
             "Three randomized experiments, 1,222 participants",
             "Higher assisted performance, then lower persistence and unassisted performance: students finish faster and learn less."
           ],
+          "tier": "Randomized",
           "source": "liu_2026"
         },
         {
@@ -432,6 +437,7 @@
             "Quasi-experimental analysis of 3.2 million student interactions",
             "Students who used generative AI spent less time on problems and built less of the knowledge the problems are designed to teach."
           ],
+          "tier": "Quasi-experimental",
           "source": "rismanchian_2026"
         },
         {
@@ -440,7 +446,47 @@
             "RCT, 1,800 K-12 students",
             "+4 percentage points mastery; +9 for students of less-experienced tutors."
           ],
+          "tier": "Randomized",
           "source": "tutor_copilot_2024"
+        },
+        {
+          "cells": [
+            "Ampact (Reading Corps)",
+            "AmeriCorps literacy tutors embedded in K-3 classrooms, working with 15 to 18 students for 20 minutes each a day",
+            "Two randomized studies with 798 students; average effect +0.36 SD, reaching +0.74 on letter-sound fluency in the Minnesota trial"
+          ],
+          "tier": "Strong",
+          "source": "efe_reading_corps"
+        },
+        {
+          "cells": [
+            "Chapter One",
+            "Part-time tutors push into kindergarten classrooms for 5 to 10 minute bursts during reading blocks, rather than pulling students out",
+            "Two randomized studies with 1,009 students; average effect +0.23 SD, and +0.31 on the district reading level assessment in the larger trial"
+          ],
+          "tier": "Strong",
+          "source": "efe_chapter_one"
+        },
+        {
+          "cells": [
+            "Saga Education",
+            "In-school math tutoring for ninth and tenth graders, at least three times a week, at ratios between one to two and one to four",
+            "Three randomized trials with 5,396 students; average effect +0.14 SD, with per-study effects of +0.09, +0.14 and +0.19 for students assigned to tutoring"
+          ],
+          "tier": "Strong",
+          "source": [
+            "efe_saga",
+            "guryan_2023"
+          ]
+        },
+        {
+          "cells": [
+            "Reading Partners",
+            "Community volunteers tutor students in grades 2 to 5 one-to-one, twice a week, in a dedicated reading center inside the school",
+            "One large randomized trial by MDRC with 1,166 students; effect +0.10 SD on comprehension, against a control group that mostly received other literacy support"
+          ],
+          "tier": "Strong",
+          "source": "efe_reading_partners"
         }
       ]
     },
@@ -498,47 +544,51 @@
     {
       "type": "stats",
       "size": "sm",
-      "title": "AI meets math class",
+      "title": "Durable skills",
       "items": [
         {
-          "id": "teens_math_ai",
-          "label": "Teens who have used a chatbot to solve a math problem",
-          "display": "43%",
-          "value": 43,
-          "asOf": "fall 2025",
-          "source": "pew_teens_ai_2026",
-          "note": "In 2024 only 29% of teens said using ChatGPT for math problems was acceptable."
-        },
-        {
-          "id": "math_pd_ai",
-          "label": "Math teachers without PD on AI for math instruction",
-          "display": "≈7 in 10",
-          "value": 70,
-          "asOf": "Feb 2025",
-          "source": "edweek_math_ai_pd_2025",
-          "note": "More than a third of them do not want it; the top reason is that AI should not be used to teach math."
-        },
-        {
-          "id": "math_feelings",
-          "label": "Americans with only positive feelings about doing math",
-          "display": "47%",
-          "value": 47,
+          "id": "durable_demand",
+          "label": "Job postings requiring at least one durable skill",
+          "display": "76%",
+          "value": 76,
           "delta": {
-            "text": "37% only negative",
+            "text": "47% ask for three or more",
             "sentiment": "neutral"
           },
-          "asOf": "Dec 2024",
-          "source": "gallup_math_2025",
-          "note": "Ages 18–24: 32% positive; ages 65+: 61%. Men 54%, women 42%."
+          "asOf": "2026",
+          "source": "america_succeeds",
+          "note": "America Succeeds' analysis of postings; the share asking for three or more rose 13%. Durable skills are communication, collaboration, critical thinking and similar."
         },
         {
-          "id": "gates_math",
-          "label": "Gates Foundation math investment, 2022–2026",
-          "display": "$1.1B",
-          "value": 1100000000,
-          "asOf": "announced Oct 2022",
-          "source": "gates_math_2022",
-          "note": "Math is the foundation's top K-12 priority for the decade, focused on Black, Latino and low-income students."
+          "id": "portrait_states",
+          "label": "States turning graduate portraits into policy",
+          "display": "NC, IN",
+          "value": 2,
+          "asOf": "2026",
+          "source": "nasbe_portraits",
+          "note": "North Carolina and Indiana are furthest along in actually teaching and assessing durable skills rather than only declaring them."
+        },
+        {
+          "id": "nc_alignment",
+          "label": "North Carolina's portrait against employer demand",
+          "display": "Aligned",
+          "value": 1,
+          "asOf": "July 2024",
+          "source": "nc_portrait_2024",
+          "note": "A state commerce department analysis found projected employment growth is higher in occupations that place the most importance on durable skills."
+        },
+        {
+          "id": "durable_measure",
+          "label": "Agreed measure of durable skills",
+          "display": "None",
+          "value": 0,
+          "delta": {
+            "text": "the gap that blocks accountability",
+            "sentiment": "bad"
+          },
+          "asOf": "2026",
+          "source": "nasbe_portraits",
+          "note": "No state assesses durable skills the way it assesses reading and math, so a model claiming to build them cannot yet be held to it."
         }
       ]
     }
