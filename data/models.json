@@ -79,19 +79,20 @@
     {
       "id": "microschools",
       "label": "Students in microschools",
-      "value": 1500000,
-      "display": "0.75–2M",
+      "value": 2100000,
+      "display": "0.75–2.1M",
       "unit": "estimates disagree sharply",
       "delta": {
         "text": "no agreed definition or count",
         "sentiment": "neutral"
       },
-      "asOf": "2025",
+      "asOf": "2026",
       "source": [
+        "nmc_sector_2026",
         "rand_microschools",
         "cap_microschools"
       ],
-      "note": "RAND puts full-time attendance between 1 and 2 million; the National Microschooling Center counts 95,000 microschools serving about 1.5 million. The disagreement is the finding."
+      "note": "The National Microschooling Center's 2026 sector analysis puts students using a microschool as their main provider at between 750,000 and 2.1 million; RAND puts full-time attendance between 1 and 2 million. The disagreement is the finding, and it is not narrowing."
     }
   ],
   "blocks": [
@@ -236,11 +237,12 @@
           "cells": [
             "Alpha School and 2 Hour Learning",
             "A private network where students do two hours of AI-tutored academics each morning and spend afternoons on workshops and projects, expanding to roughly 50 campuses including 27 newly announced. The operator reports every grade and subject scoring in the top 1% on national benchmarks, measured on NWEA MAP, SAT and AP",
-            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network; three public-school pilots, two in Houston and one in Springfield, Massachusetts, will be the first test on a broader mix of students"
+            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network. The first broader test is now running: Houston ISD converted C. Martinez and Gregg elementary schools to pre-K-8 'Future 2' schools for 2026–27, with no academic requirements for admission and enrolled students carried over by default unless families opt out, so the intake is a neighbourhood mix rather than a selected one. Scientific American reported the district pilots as tests of the Alpha model. Results from those campuses against comparable HISD schools would be the first evidence that is not the operator's own"
           ],
           "tier": "Self-reported",
           "source": [
             "sciam_alpha_2026",
+            "hisd_future2_2026",
             "alpha_school"
           ]
         },
@@ -248,7 +250,7 @@
           "cells": [
             "Unbound Academy",
             "Arizona's tuition-free virtual charter for grades 4 to 8, approved by the state charter board, running the same two-hour model with no teachers delivering core academics",
-            "State assessment results against comparable Arizona students. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
+            "State assessment results against comparable Arizona students. The school has now completed a full year inside Arizona's testing and charter-accountability system, so the first AASA results and the Arizona State Board for Charter Schools academic dashboard are where this gets settled; neither could be read from a primary source this month, and figures circulating in commentary are not used here. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
           ],
           "tier": "Too early",
           "source": [
@@ -259,11 +261,12 @@
         {
           "cells": [
             "Microschools",
-            "Small, mixed-age, self-paced schools, often in homes or storefronts, growing on the back of state voucher and education savings account programs",
-            "A count anyone agrees on, and any outcome data at all. Estimates of enrollment range from 750,000 to 2 million; most operate outside state assessment and reporting entirely"
+            "Small, mixed-age, self-paced schools, often in homes or storefronts, growing on the back of state voucher and education savings account programs. The Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds a sector that has stopped being new: one in five has been open six years or longer and 45% for three to five years. Half report that their families receive state school-choice funding, three in five rely mainly on family tuition, and 66% discount it on a sliding scale",
+            "A count anyone agrees on, and any outcome data at all. Estimates of students using a microschool as their main provider range from 750,000 to 2.1 million, and most operate outside state assessment and reporting entirely. The 2026 survey makes that less likely to change, not more: for the first time, operators named growth in nonacademic learning as their most desired student outcome"
           ],
           "tier": "Unmeasured",
           "source": [
+            "nmc_sector_2026",
             "rand_microschools",
             "cap_microschools"
           ]
@@ -318,6 +321,11 @@
           "headline": "The AI-school premise has a cheaper rival.",
           "detail": "A 2025 review of 28 studies covering nearly 5,000 K-12 students found intelligent tutoring systems generally positive, but with a negligible advantage over non-AI tutoring systems that also used active learning. Any AI-first school design has to beat that, not just beat the status quo.",
           "source": "sciam_alpha_2026"
+        },
+        {
+          "headline": "The displacement risk now has a number attached.",
+          "detail": "A randomized trial of 2,379 undergraduates and 30 instructors at a large U.S. public university found that access to a course-integrated AI tutor cut final grades by 0.37 SD and engagement with existing coursework by 0.90 SD, with the largest losses among first-generation students. This is university evidence at one site, not K-12, and it does not transfer directly. But it is the first well-powered trial to show an AI tutor making outcomes worse by crowding out what already worked, which is the specific failure mode a school with no non-AI fallback cannot absorb.",
+          "source": "edwp_ai_tutor_2026"
         }
       ]
     },

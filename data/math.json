@@ -2,7 +2,7 @@
   "section": "math",
   "eyebrow": "The outcomes",
   "title": "Academic foundations",
-  "lede": "What any school model has to move. Math was hit hardest and is recovering fastest, but the average hides a split: top students have regained their footing while the lowest performers keep sliding to record lows on both NAEP and TIMSS. Alongside the academic core, states are now writing durable skills into graduation expectations without an agreed way to measure them.",
+  "lede": "What any school model has to move. Math was hit hardest and is recovering fastest, but the average hides a split: top students have regained their footing while the lowest performers keep sliding to record lows on both NAEP and TIMSS. PISA 2025 adds a second reading of the same story: U.S. scores held roughly where they were in 2022 while the OECD fell sharply, so the United States now looks average by standing still. Alongside the academic core, states are writing durable skills into graduation expectations without an agreed way to measure them.",
   "kpis": [
     {
       "id": "g8_math_p10",
@@ -301,6 +301,134 @@
       }
     },
     {
+      "type": "stats",
+      "size": "md",
+      "title": "PISA 2025: the U.S. result",
+      "subtitle": "U.S. 15-year-olds, released September 8, 2026. Scores are on the PISA scale and are not comparable to NAEP or TIMSS scales.",
+      "items": [
+        {
+          "id": "pisa_math_2025",
+          "label": "Mathematics, U.S. average",
+          "display": "463",
+          "value": 463,
+          "unit": "not significantly different from the OECD average",
+          "delta": {
+            "text": "465 in 2022, 478 in 2018",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_nces",
+          "note": "Among the 38 OECD member countries the U.S. scored lower than 14 and higher than 7. U.S. math and reading results are below 2018 and among the lowest observed for the United States in PISA."
+        },
+        {
+          "id": "pisa_read_2025",
+          "label": "Reading, U.S. average",
+          "display": "490",
+          "value": 490,
+          "unit": "OECD average 461",
+          "delta": {
+            "text": "lower than 2022",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_nces",
+          "note": "Still well above the OECD average, but the U.S. decline since 2018 runs in the same direction as the international one."
+        },
+        {
+          "id": "pisa_sci_2025",
+          "label": "Science, U.S. average",
+          "display": "502",
+          "value": 502,
+          "unit": "OECD average 482",
+          "delta": {
+            "text": "about the same as 2022",
+            "sentiment": "neutral"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_nces",
+          "note": "Science was the focal domain in 2025 and is the one subject where the U.S. result is clearly above the OECD average."
+        },
+        {
+          "id": "pisa_below2_2025",
+          "label": "U.S. students below baseline proficiency in math",
+          "display": "35%",
+          "value": 35,
+          "unit": "below PISA Level 2",
+          "delta": {
+            "text": "8% at Level 5 or above",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_nces",
+          "note": "Roughly one in three 15-year-olds cannot reliably use mathematics in a straightforward applied situation, against one in twelve working at the top two levels."
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "PISA 2025: the OECD picture",
+      "subtitle": "Why the U.S. position improved relative to peers without U.S. scores improving.",
+      "items": [
+        {
+          "id": "pisa_oecd_read",
+          "label": "OECD average reading change, 2015 to 2025",
+          "display": "−28",
+          "value": -28,
+          "unit": "points, about one and a half years of learning",
+          "delta": {
+            "text": "lowest average PISA has recorded",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_oecd",
+          "note": "Reading and mathematics both reached their lowest OECD averages on record."
+        },
+        {
+          "id": "pisa_oecd_math",
+          "label": "OECD average mathematics change, 2015 to 2025",
+          "display": "−22",
+          "value": -22,
+          "unit": "points, just over one year of learning",
+          "delta": {
+            "text": "science stable since 2022",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_oecd",
+          "note": "Science was flat between 2022 and 2025 after trending down from 2009, so the collapse is specific to reading and math."
+        },
+        {
+          "id": "pisa_oecd_low",
+          "label": "OECD students who are low performers in all three subjects",
+          "display": "1 in 5",
+          "value": 20,
+          "unit": "science, mathematics and reading",
+          "delta": {
+            "text": "16% in 2022",
+            "sentiment": "bad"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_oecd",
+          "note": "The share failing to reach baseline across every subject rose by about four points in three years."
+        },
+        {
+          "id": "pisa_scale_2025",
+          "label": "Students assessed",
+          "display": "760,000",
+          "value": 760000,
+          "unit": "91 countries and economies",
+          "delta": {
+            "text": "largest PISA to date",
+            "sentiment": "neutral"
+          },
+          "asOf": "2025",
+          "source": "pisa2025_oecd",
+          "note": "Across OECD countries, advantaged students outscored disadvantaged students by 85 points in science; the gap narrowed since 2022 mainly because advantaged students did worse."
+        }
+      ]
+    },
+    {
       "type": "chart",
       "size": "md",
       "id": "math_law_components",
@@ -380,6 +508,22 @@
           "headline": "Secondary math is the next frontier.",
           "detail": "Fractions and fluency with basic operations are the concepts that most trip up middle and high schoolers, per an EdWeek survey of 729 educators; state policy has so far concentrated on K-5.",
           "source": "edweek_secondary_math_2026"
+        },
+        {
+          "headline": "The SAT shows math recovering but not recovered.",
+          "detail": "The class of 2026 averaged 1045 on the SAT, up 16 points and the second consecutive year of gains, with increases across every demographic group. Reading and writing rose 7 points to 528, back to pre-pandemic levels; math rose 9 points to 517 and is still below the 523 of the 2020 cohort. Forty-two percent of takers met both college and career readiness benchmarks, out of nearly 2 million students tested.",
+          "source": [
+            "collegeboard_sat_2026",
+            "collegeboard_sat100_2026"
+          ]
+        },
+        {
+          "headline": "Standing still was enough to move up internationally.",
+          "detail": "U.S. PISA math and science results in 2025 were about the same as 2022 while OECD averages fell to their lowest recorded levels in math and reading. A model benchmarked against international peers should be careful here: the relative gain is a fall elsewhere, not a U.S. improvement, and U.S. math remains below its own 2018 level.",
+          "source": [
+            "pisa2025_nces",
+            "pisa2025_oecd"
+          ]
         }
       ]
     },

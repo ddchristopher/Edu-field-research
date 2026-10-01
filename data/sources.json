@@ -754,5 +754,65 @@
     "title": "50-State Comparison: School Accountability Systems",
     "date": "2024-01-01",
     "url": "https://www.ecs.org/50-state-comparison-school-accountability-systems-2024/"
+  },
+  "pisa2025_nces": {
+    "org": "NCES",
+    "title": "PISA 2025 U.S. Results",
+    "date": "2026-09-08",
+    "url": "https://nces.ed.gov/surveys/pisa/pisa2025/"
+  },
+  "pisa2025_oecd": {
+    "org": "OECD",
+    "title": "PISA 2025: Students' reading and mathematics performance declined sharply across the OECD",
+    "date": "2026-09-08",
+    "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html"
+  },
+  "gallup_k12_2026": {
+    "org": "Gallup / Walton Family Foundation",
+    "title": "Satisfaction With K-12 Education Hits New Low",
+    "date": "2026-09",
+    "url": "https://news.gallup.com/poll/714017/satisfaction-education-hits-new-low.aspx"
+  },
+  "collegeboard_sat_2026": {
+    "org": "College Board",
+    "title": "SAT Suite of Assessments Program Results, Class of 2026",
+    "date": "2026-09",
+    "url": "https://reports.collegeboard.org/sat-suite-program-results"
+  },
+  "collegeboard_sat100_2026": {
+    "org": "College Board",
+    "title": "As the SAT Turns 100, Nearly 2 Million Students in the Class of 2026 Take the Test",
+    "date": "2026-09",
+    "url": "https://newsroom.collegeboard.org/sat-turns-100-nearly-2-million-students-class-2026-take-test"
+  },
+  "irs_fstc_states_2026": {
+    "org": "Internal Revenue Service",
+    "title": "Federal Scholarship Tax Credit (FSTC): states making an advance election to participate for 2027",
+    "date": "2026-09-14",
+    "url": "https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc"
+  },
+  "nmc_sector_2026": {
+    "org": "National Microschooling Center",
+    "title": "American Microschools 2026 Sector Analysis",
+    "date": "2026-05",
+    "url": "https://microschoolingcenter.org/news-blog/sa2026"
+  },
+  "hisd_future2_2026": {
+    "org": "Houston Independent School District",
+    "title": "HISD to Launch Future 2 Schools, Ushering in a Paradigm Shift for the AI Era",
+    "date": "2026-08",
+    "url": "https://hisdnow.houstonisd.org/p/~board/district-news/post/hisd-to-launch-future-2-schools-ushering-in-a-paradigm-shift-for-the-ai-era"
+  },
+  "edwp_ai_tutor_2026": {
+    "org": "Annenberg Institute at Brown University (EdWorkingPapers)",
+    "title": "The Effects of Course-Integrated AI Tutoring on Student Performance and Engagement: A Randomized University Trial (EdWorkingPaper 26-1598)",
+    "date": "2026-10",
+    "url": "https://edworkingpapers.com/ai26-1598"
+  },
+  "cr_fy2027": {
+    "org": "U.S. Congress",
+    "title": "H.R. 6500 — Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103)",
+    "date": "2026-09-02",
+    "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"
   }
 }

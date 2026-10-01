@@ -2,7 +2,7 @@
   "section": "ai",
   "eyebrow": "The inflection",
   "title": "AI and learning",
-  "lede": "AI is being asked to do two different jobs, and only one of them has evidence. Inside conventional schools it is a tool teachers and students already use daily, with modest measured effects and a large guidance gap. In new school designs it is being made the core of instruction, on claims that no independent study has yet tested. Adoption has outrun evaluation in both cases.",
+  "lede": "AI is being asked to do two different jobs, and only one of them has evidence. Inside conventional schools it is a tool teachers and students already use daily, with modest measured effects and a large guidance gap. In new school designs it is being made the core of instruction, on claims that no independent study has yet tested. Adoption has outrun evaluation in both cases, and the newest well-powered trial found an AI tutor displacing learning rather than adding to it.",
   "kpis": [
     {
       "id": "teens_chatbot_school",
@@ -335,6 +335,14 @@
             "+1.3 national percentile ranks per term (≈0.06–0.08 SD per year; 0.14 SD implied for a full year of active use). Gains resemble Khan practice without AI. Median student messaged the tutor on a third of practice days and in 17% of sessions with a mistake."
           ],
           "source": "nber_khanmigo_2026"
+        },
+        {
+          "cells": [
+            "Course-integrated AI tutor (EdWorkingPaper 26-1598, Oct 2026) — undergraduate, not K-12",
+            "RCT, 2,379 undergraduates and 30 instructors across disciplines at one large U.S. public university; tutor built into the course",
+            "Among sections of the same course, tutor access cut final grades by 0.37 SD and learning-management-system participation by 0.90 SD; estimated losses were larger for first-generation students. The authors read it as the tutor displacing engagement with activities that already worked, rather than failing to teach."
+          ],
+          "source": "edwp_ai_tutor_2026"
         },
         {
           "cells": [

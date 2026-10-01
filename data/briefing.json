@@ -1,8 +1,38 @@
 {
-  "edition": "September 2026",
-  "generated": "2026-09-05",
-  "summary": "Capital kept moving toward new schools while the ability to judge them weakened. Charters added 111,349 students in a year districts lost 221,729, Walton widened its facilities fund to $400 million and City Fund and Bloomberg opened an HBCU charter vehicle. Meanwhile AI-first school networks expanded on self-reported results, the two largest districts pulled student AI back, and the federal research agency published a restructuring plan.",
+  "edition": "October 2026",
+  "generated": "2026-10-01",
+  "summary": "PISA 2025 put U.S. 15-year-olds at 463 in mathematics, statistically level with 2022, while OECD averages fell to their lowest recorded levels in math and reading: the United States moved up the table by standing still. For school models the month's most consequential development was not an evaluation but an intake, as Houston ISD opened the first non-selective, district-run test of the two-hour AI model, and 30 states filed to join a federal scholarship tax credit that begins routing demand-side capital in January 2027. Against that, the first well-powered randomized trial of a course-integrated AI tutor found it cut final grades by 0.37 SD by displacing coursework that already worked, which is the failure mode an AI-first design has no fallback for.",
   "items": [
+    {
+      "date": "2026-10",
+      "tag": "AI",
+      "headline": "Randomized trial: a course-integrated AI tutor cut final grades by 0.37 SD",
+      "detail": "In a trial of 2,379 undergraduates and 30 instructors across disciplines at one large U.S. public university, access to a built-in AI tutor reduced final grades by 0.37 standard deviations and learning-management-system participation by 0.90 SD among sections of the same course, with larger estimated losses for first-generation students. The authors read it as displacement of activities that already worked rather than a failure to teach. This is undergraduate evidence at a single site, not K-12.",
+      "implication": "The strongest counterweight yet to the AI-first premise: a portfolio should require any AI-centred design to show it is not crowding out the instruction it replaced.",
+      "source": "edwp_ai_tutor_2026"
+    },
+    {
+      "date": "2026-09-14",
+      "tag": "Policy",
+      "headline": "30 states have filed to join the federal scholarship tax credit",
+      "detail": "The IRS list of states making an advance election under Section 25F for 2027 reached 30 as of September 14, 2026, under Revenue Procedure 2026-6. From January 1, 2027 individual taxpayers may claim a credit for contributions of up to $1,700 to approved scholarship-granting organizations serving low- and middle-income students.",
+      "implication": "Demand-side capital at a scale philanthropy cannot match, aimed at private and microschool tuition rather than public-school seats, which changes who a new public school competes with for students.",
+      "source": [
+        "irs_fstc_states_2026",
+        "irs_fstc_2026"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "tag": "Data",
+      "headline": "PISA 2025: U.S. math 463, flat since 2022, as OECD averages hit record lows",
+      "detail": "U.S. 15-year-olds scored 463 in mathematics, not significantly different from the OECD average, with 35% below baseline Level 2 and 8% at Level 5 or above; reading was 490 against an OECD average of 461 and science 502 against 482. Across the OECD, reading fell 28 points and math 22 points between 2015 and 2025, and one in five students is now a low performer in all three subjects, up from 16% in 2022. The assessment covered 760,000 students in 91 countries and economies.",
+      "implication": "International benchmarking has become a weaker argument for any model: the U.S. relative position improved because other systems fell, and U.S. math is still below its 2018 level.",
+      "source": [
+        "pisa2025_nces",
+        "pisa2025_oecd"
+      ]
+    },
     {
       "date": "2026-09-03",
       "tag": "AI",
@@ -10,6 +40,14 @@
       "detail": "The restriction covers 2026–27 while a new Generative AI Ad Hoc Committee drafts guardrails, with recommendations due to the board by the end of the school year. It reverses a policy that let students 13 and older use approved tools after digital-citizenship training.",
       "source": "lausd_ai_2026",
       "implication": "District policy is now a real deployment risk for any model whose instruction depends on student-facing AI."
+    },
+    {
+      "date": "2026-09-02",
+      "tag": "Policy",
+      "headline": "FY 2027 opens on a continuing resolution that expires December 11",
+      "detail": "The Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103) was signed September 2, 2026 after a 370-48 House vote, funding federal agencies from October 1 until the earlier of December 11, 2026 or enactment of the regular appropriations bills.",
+      "implication": "The federal statistics and evidence agencies a diligence process depends on, already mid-restructuring, now have ten weeks of funding at a time.",
+      "source": "cr_fy2027"
     },
     {
       "date": "2026-09-02",
@@ -29,6 +67,28 @@
         "edweek_gemini_2026"
       ],
       "implication": "Vendor defaults are outrunning district policy, which raises the value of models that control their own stack."
+    },
+    {
+      "date": "2026-09",
+      "tag": "Data",
+      "headline": "Gallup: satisfaction with U.S. K-12 education falls to a 27-year low of 32%",
+      "detail": "Down from 35% in 2025 and 11 points in two years, with dissatisfaction at a record 67%. Parents' satisfaction with their own child's education also hit a low at 66%, against 32% for U.S. K-12 overall. Asked to rate schools area by area, a majority of parents gave an excellent or good mark in only one, preparing students to adapt to new technologies (51%); critical thinking drew 29% and preparation for work 27%. Walton Family Foundation/Gallup fieldwork, August 3-24, 2026.",
+      "implication": "Demand conditions for new models are as favourable as they have been, and the areas parents rate worst, thinking and work readiness, are the ones hardest to evidence.",
+      "source": [
+        "gallup_k12_2026",
+        "gallup_k12_2025"
+      ]
+    },
+    {
+      "date": "2026-09",
+      "tag": "Math",
+      "headline": "SAT class of 2026 up 16 points; math still below 2020",
+      "detail": "The mean total was 1045, a second consecutive year of gains with increases across all demographic groups. Reading and writing rose 7 points to 528, returning to pre-pandemic levels; math rose 9 points to 517, below the 2020 cohort average of 523. Forty-two percent met both readiness benchmarks among nearly 2 million test-takers.",
+      "implication": "Math recovery is real but partial, and it is still the subject where a model has the most room to show a difference.",
+      "source": [
+        "collegeboard_sat_2026",
+        "collegeboard_sat100_2026"
+      ]
     },
     {
       "date": "2026-08-31",
@@ -68,6 +128,17 @@
       "implication": "The cheapest AI bet, adding a tutor to an existing school, returns roughly 0.06 to 0.08 SD a year. That is the bar an AI-first redesign must clear."
     },
     {
+      "date": "2026-08",
+      "tag": "AI",
+      "headline": "Houston ISD converts two elementary schools to AI-centred 'Future 2' schools",
+      "detail": "From 2026-27, C. Martinez and Gregg elementary schools become pre-K-8 'Future 2' schools with a curriculum that prioritises interpersonal skills and real-world experience alongside core academics, staffed by teachers hired to support students working through AI-powered platforms. There are no academic requirements for admission and currently enrolled students carry over by default, with an opt-out to a nearby school. Scientific American reported the district pilots as tests of the Alpha School model.",
+      "implication": "The first chance to see the two-hour AI model run on a neighbourhood intake rather than a tuition-paying one; results against comparable HISD schools would be the first evidence on this design that is not the operator’s own.",
+      "source": [
+        "hisd_future2_2026",
+        "sciam_alpha_2026"
+      ]
+    },
+    {
       "date": "2026-07-15",
       "tag": "Data",
       "headline": "NWEA links chronic absenteeism to slower recovery, especially in math",
@@ -100,13 +171,6 @@
       ]
     },
     {
-      "date": "2026-06-09",
-      "tag": "AI",
-      "headline": "White House honors first Presidential AI Challenge champions",
-      "detail": "Six national champion teams; more than 20,000 students from all 50 states, DC, Puerto Rico and 49 DoDEA schools participated.",
-      "source": "wh_ai_challenge_2026"
-    },
-    {
       "date": "2026-06-08",
       "tag": "AI",
       "headline": "Common Sense census: 86% of kids 9–17 use AI, 24% daily",
@@ -134,6 +198,14 @@
       "detail": "Up 6.6% from FY 2023, the final year of federal pandemic relief. Instruction was 58.8% of current spending.",
       "source": "census_finance_2024",
       "implication": "The cost baseline any new model is compared against, in the last year before relief funds expired."
+    },
+    {
+      "date": "2026-05",
+      "tag": "Data",
+      "headline": "Microschooling sector analysis: half the sector depends on state choice funding",
+      "detail": "The National Microschooling Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds one in five open six years or longer and 45% open three to five years. Half report that their families receive state school-choice funding and three in five rely mainly on family tuition, with 66% offering sliding-scale discounts. Estimates of students using a microschool as their main provider remain a range, 750,000 to 2.1 million. For the first time, operators named growth in nonacademic learning as their most desired student outcome.",
+      "implication": "A sector maturing in operations while moving away from measurable academic outcomes, so a funder wanting evidence here has to pay for the measurement as well as the school.",
+      "source": "nmc_sector_2026"
     },
     {
       "date": "2026-04-28",
@@ -217,38 +289,37 @@
   "upcoming": [
     {
       "date": "2026-10",
-      "what": "NAPCS enrollment update and state charter counts",
-      "why": "Whether the charter-district divergence held for a seventh year, which sets the growth ceiling for every model in the portfolio.",
+      "what": "NAPCS enrollment report and state charter counts",
+      "why": "Not yet published as of October 1. Whether the charter-district divergence held for a seventh year sets the growth ceiling for every model in the portfolio.",
       "source": "napcs_enrollment_2025"
     },
     {
-      "date": "2026-09-08",
-      "what": "PISA 2025 results (OECD)",
-      "why": "First international comparison since 2022, when U.S. 15-year-olds scored 465 in math against an OECD average of 472. Science is the focal domain.",
-      "source": "pisa_schedule"
-    },
-    {
-      "date": "2026-09-30",
-      "what": "FY 2027 federal appropriations deadline",
-      "why": "Determines Title I, IDEA and the Education Department's operating funds; the FY26 law limits transfers to other agencies.",
-      "source": "fy26_approps"
-    },
-    {
       "date": "2026-10",
-      "what": "ACT and SAT reports for the class of 2026",
-      "why": "Class of 2025 averages were ACT 19.4 and SAT 1029; watch the math sections.",
-      "source": "collegeboard_sat_2025"
+      "what": "ACT results for the class of 2026",
+      "why": "The class of 2025 averaged 19.4. The SAT showed math recovering but still below 2020, so the ACT math composite is the cross-check.",
+      "source": "act_2025"
     },
     {
       "date": "2026-11",
-      "what": "AEI Return to Learn: additional 2025–26 state absenteeism data",
-      "why": "Whether the sub-1-point improvement of 2024–25 becomes the new normal.",
+      "what": "Arizona AASA results and ASBCS academic dashboard for Unbound Academy's first full year",
+      "why": "The first state-test evidence on the two-hour AI model with a non-tuition intake. Nothing on this could be verified from a primary source this month."
+    },
+    {
+      "date": "2026-11",
+      "what": "AEI Return to Learn: additional 2025-26 state absenteeism data",
+      "why": "Whether the sub-1-point improvement of 2024-25 becomes the new normal.",
       "source": "r2l_tracker"
+    },
+    {
+      "date": "2026-12-11",
+      "what": "Continuing resolution expires",
+      "why": "Congress must pass FY 2027 appropriations or another CR. IES, NCES and the What Works Clearinghouse are inside the perimeter, mid-restructuring.",
+      "source": "cr_fy2027"
     },
     {
       "date": "2027-01",
       "what": "NAEP 2026 reading and math (grades 4 and 8)",
-      "why": "The first Nation's Report Card since 2024 and the first fully post-relief snapshot; U.S. history and civics follow in summer 2027.",
+      "why": "The first Nation’s Report Card since 2024 and the first fully post-relief snapshot; U.S. history and civics follow in summer 2027.",
       "source": "naep2026_schedule"
     },
     {
@@ -280,6 +351,18 @@
       "changes": [
         "Rebuilt for a program director investing in school models: added the School models and Conditions for scale sections, reframed the landscape, AI and foundations sections around that reader, and added an implication line to each briefing item.",
         "Retired the standalone intervention register; its rows now sit inside Academic foundations, and BARR moved to the school models lane."
+      ]
+    },
+    {
+      "edition": "October 2026",
+      "date": "2026-10-01",
+      "changes": [
+        "Added PISA 2025 to Academic foundations as two paired blocks, the U.S. result and the OECD picture, with the standing-still caveat stated in the lede and the recovery findings.",
+        "School models: Alpha School row updated for the Houston ISD Future 2 conversions, the first non-selective district test of the two-hour model; microschools row and KPI rebuilt on the Center’s 2026 sector analysis.",
+        "Added the October 2026 randomized trial of a course-integrated AI tutor (−0.37 SD on final grades) to the AI evidence table, the school-models findings and a new \"where the field disagrees\" entry alongside the Khanmigo trial.",
+        "Conditions for scale: added the Section 25F scholarship tax credit (30 states, 2027 start) to the capital table and the FY 2027 continuing resolution to the funding picture.",
+        "Landscape: Gallup satisfaction 35% → 32% (new 27-year low) and the SAT class of 2026 (1045, math 517).",
+        "Left unchanged for want of a newer primary source: NAEP 2024, CREDO NCSS3, KIPP and BARR effects, NAPCS enrollment, IES restructuring, Walton and City Fund capital figures. Unbound Academy’s first-year state results could not be verified on a primary source and are not on the dashboard."
       ]
     }
   ]

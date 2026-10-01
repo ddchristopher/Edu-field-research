@@ -147,9 +147,10 @@
           "asOf": "Feb 2026",
           "source": [
             "wwc_home",
-            "ies_reimagining"
+            "ies_reimagining",
+            "cr_fy2027"
           ],
-          "note": "The What Works Clearinghouse remains the federal evidence review, inside an agency publishing a restructuring strategy. Evidence for ESSA at Johns Hopkins is the independent alternative."
+          "note": "The What Works Clearinghouse remains the federal evidence review, inside an agency publishing a restructuring strategy and now funded by a continuing resolution that expires December 11, 2026. Evidence for ESSA at Johns Hopkins is the independent alternative."
         },
         {
           "id": "efe_catalog",
@@ -210,6 +211,18 @@
           ],
           "tier": "2022–2026",
           "source": "accelerate_home"
+        },
+        {
+          "cells": [
+            "Federal government, via the Section 25F scholarship tax credit",
+            "A federal credit of up to $1,700 per taxpayer for contributions to approved scholarship-granting organizations, starting January 1, 2027. Thirty states had filed an advance election to participate as of September 14, 2026, under Revenue Procedure 2026-6",
+            "Demand-side capital at a scale no philanthropy can match, routed to tuition at private schools and microschools rather than to new public-school buildings. It changes who a new public school competes with for students, not how many public seats exist"
+          ],
+          "tier": "Sept 2026",
+          "source": [
+            "irs_fstc_states_2026",
+            "irs_fstc_2026"
+          ]
         }
       ]
     },
@@ -233,8 +246,9 @@
         },
         {
           "headline": "How many microschool students exist.",
-          "detail": "Estimates run from 750,000 to 2 million depending on definition, and most microschools sit outside state assessment entirely. A sector that cannot be counted cannot be evaluated, which is an argument for funding measurement before models.",
+          "detail": "Estimates run from 750,000 to 2.1 million depending on definition, and most microschools sit outside state assessment entirely. The Center's own 2026 survey reports that operators now rank growth in nonacademic learning as their most desired student outcome, so the measurement gap is becoming a design choice rather than a growing pain. A sector that cannot be counted cannot be evaluated, which is an argument for funding measurement before models.",
           "source": [
+            "nmc_sector_2026",
             "rand_microschools",
             "cap_microschools"
           ]
@@ -245,6 +259,14 @@
           "source": [
             "uchicago_hdt_2024",
             "efe_saga"
+          ]
+        },
+        {
+          "headline": "Whether an AI tutor adds learning or displaces it.",
+          "detail": "The two best-powered randomized trials point opposite ways. In 18 Tennessee middle schools, Khanmigo produced roughly 0.06 to 0.08 SD a year, similar to Khan practice without the AI. In a trial of 2,379 undergraduates at a large U.S. public university, access to a course-integrated AI tutor cut final grades by 0.37 SD and engagement with existing coursework by 0.90 SD, with larger losses for first-generation students. The populations and settings differ and neither settles the K-12 question. But the mechanism the second proposes, displacement rather than augmentation, is the one an AI-first school design most needs to rule out, and nobody has yet.",
+          "source": [
+            "nber_khanmigo_2026",
+            "edwp_ai_tutor_2026"
           ]
         }
       ]
