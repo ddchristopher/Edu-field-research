@@ -10,28 +10,44 @@ The task is deliberately conservative: **a number that cannot be traced to a pri
 2. Read `research/SCHEMA.md`, `data/meta.json`, `data/briefing.json` and the three section files (`overview.json`, `ai.json`, `math.json`) so you know what is already on the dashboard and its `asOf` dates.
 3. Run `node scripts/validate-data.mjs` to confirm the starting state is clean.
 
-## 0b. Fetching, and why plain fetching is not enough
+## 0b. Fetching: the fallback order
 
-The sandbox's egress proxy blocks ordinary `WebFetch` on most of the publisher domains this
-dashboard depends on. Domains observed blocked include:
+Every figure must be verified on the publisher's own page, so the first job of a run is to find out
+what can actually reach those pages. Before planning, list the fetching tools this session has
+(search the deferred tools for "firecrawl", "brightdata" and "apify") and test plain fetching with
+one cheap request to `nces.ed.gov`. Connectors attach at session start; one added mid-session will
+not appear until the next run.
 
-`rand.org` · `pewresearch.org` · `news.gallup.com` · `nagb.gov` · `nces.ed.gov` ·
-`nwea.org` · `returntolearntracker.net` · `gse.harvard.edu` · `excelined.org`
+Use the first rung that works for a given page, and drop to the next only when it fails for that
+page. Do not retry a fetch that returns `EGRESS_BLOCKED` or a 403 from the proxy.
 
-That matters because this protocol requires every figure to be verified on the publisher's own
-page. Without a fetcher that reaches those domains, a run cannot follow its own rule.
+1. **Plain `WebFetch` or `curl`**, when the environment's network policy allows the domain. It is
+   free, so try it first for government sources (`nces.ed.gov`, `nationsreportcard.gov`, `ed.gov`,
+   `census.gov`, `irs.gov`, `congress.gov`, state agencies). The NAEP JSON service below is the
+   cheapest source on the dashboard.
+2. **Firecrawl** (`mcp__Firecrawl__firecrawl_scrape`): the primary paid fetcher. Use
+   `formats: ["markdown"]` and `onlyMainContent: true`, adding `parsers: ["pdf"]` and
+   `pdfOptions: {maxPages: 20}` for PDF reports. If only `firecrawl_search` exists (the search-only
+   endpoint), use it with `includeDomains` set to the publisher's domain.
+3. **Bright Data** (its markdown scrape tool, typically `scrape_as_markdown`): for pages that block
+   Firecrawl or sit behind bot protection, such as `rand.org`, `pewresearch.org` and `news.gallup.com`.
+4. **Apify** (a web-browser or website-content-crawler actor): last of the paid fetchers, for
+   JavaScript-rendered pages and dashboards the other two return empty, such as state report-card
+   and charter-board dashboards.
+5. **`WebSearch` restricted to the publisher's domain** (`allowed_domains`): only when no fetcher
+   reaches the page. A figure stated in a result drawn from the publisher's own domain may be used;
+   mark it "verified by publisher-domain search" in the verification table. Results from any other
+   domain, and unrestricted search answers, are leads, never sources.
 
-**With the Firecrawl connector attached** (check for `mcp__Firecrawl__firecrawl_scrape`): use it as
-the primary fetcher, with `formats: ["markdown"]` and `onlyMainContent: true`, adding
-`parsers: ["pdf"]` and `pdfOptions: {maxPages: 20}` for PDF reports. Do not retry a `WebFetch`
-that returns `EGRESS_BLOCKED`; go straight to Firecrawl. Credits are metered, so be economical:
-about 100 to 200 credits covers a refresh, and one page often verifies several figures.
+If nothing on this list reaches a page, leave its figures exactly as they are with their existing
+`asOf` dates. Never fabricate.
 
-**Without it**: say so at the top of the run report, verify what you can through `WebSearch` and
-`WebFetch`, and leave every unconfirmable figure exactly as it is with its existing `asOf` date.
-Never let a search snippet become the source of a statistic, and never fabricate.
+Say at the top of the run report which rungs were available, which were used, and for which pages.
+Firecrawl, Bright Data and Apify are all metered: about 100 to 200 Firecrawl credits covers a
+refresh, one page often verifies several figures, and a page that a cheaper rung already returned
+should not be fetched again. If a tool reports a concurrency limit, slow down rather than moving on.
 
-**NAEP national trends** are available from a JSON service that is cheap and not blocked:
+**NAEP national trends** are available from a JSON service that is cheap and usually reachable on rung 1:
 
 ```
 https://www.nationsreportcard.gov/DataService/GetAdhocData.aspx?type=data&subject=mathematics&grade=8&subscale=MRPCM&variable=TOTAL&jurisdiction=NT&stattype=MN:MN&Year=2013,2015,2017,2019,2022,2024
