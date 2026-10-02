@@ -1,8 +1,8 @@
 {
   "section": "overview",
-  "eyebrow": "The landscape",
-  "title": "Where U.S. K-12 stands",
-  "lede": "Five school years after the pandemic closures, achievement is still below 2019 in every NAEP grade and subject, the lowest-performing students are falling furthest behind, and attendance recovery has nearly stalled. Enrollment is shrinking, teacher pay is rising in nominal terms, and federal governance is being reorganized in real time.",
+  "eyebrow": "The diagnosis",
+  "title": "The landscape",
+  "lede": "Achievement has not recovered from the pandemic and the decline started before it. Disparities are widening at the bottom of the distribution rather than the middle, enrollment is falling, and the federal machinery that measures any of this is being reorganised. This is the context every school model has to grow inside, and the baseline any investment is judged against.",
   "kpis": [
     {
       "id": "naep_g8_math",
@@ -344,7 +344,7 @@
       "chart": {
         "kind": "line",
         "title": "Public school enrollment, fall 2019–2024",
-        "subtitle": "Millions of PK-12 students in public schools; the axis starts at 46 million, not zero. Falling births, more homeschooling and private choice, and migration all contribute.",
+        "subtitle": "Millions of PK-12 students in public schools; the axis starts at 46 million, not zero. A shrinking pool is the headwind every growth plan runs against.",
         "unit": "M",
         "x": [
           "2019",
@@ -544,8 +544,16 @@
         },
         {
           "headline": "Universal choice is now the norm in a fifth of states.",
-          "detail": "Roughly 18 states offer universal or near-universal private-choice eligibility; Arizona's ESA program alone tops 99,000 students. Half the states have already opted into the 2027 federal tax-credit scholarship.",
-          "source": "irs_fstc_2026"
+          "detail": "Roughly 18 states offer universal or near-universal private-choice eligibility; Arizona's ESA program alone tops 99,000 students. Thirty states had filed an advance election to join the federal scholarship tax credit as of September 14, 2026, ahead of its January 1, 2027 start.",
+          "source": [
+            "irs_fstc_states_2026",
+            "irs_fstc_2026"
+          ]
+        },
+        {
+          "headline": "FY 2027 runs on a ten-week continuing resolution.",
+          "detail": "The Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103) was signed September 2, 2026 after a 370-48 House vote, funding agencies from October 1 until the earlier of December 11, 2026 or enactment of the regular bills. Education programs, including the federal statistics and evidence agencies, have no appropriation beyond that date.",
+          "source": "cr_fy2027"
         }
       ]
     },
@@ -597,6 +605,11 @@
           "source": "nwea_recovery_2026"
         },
         {
+          "headline": "The slide began around 2013, not 2020.",
+          "detail": "The Education Scorecard dates the learning recession to seven years before the pandemic and notes it coincided with the dismantling of test-based accountability and a sharp rise in social media use, without separating the two. In reading, the annual loss from 2017 to 2019 was as large as the loss during the pandemic itself.",
+          "source": "scorecard_2026"
+        },
+        {
           "headline": "The recovery is U-shaped by income.",
           "detail": "The highest- and lowest-income districts improved most from 2022 to 2025; middle-income districts (30–70% subsidized lunch) improved least, largely because federal relief was concentrated at the extremes.",
           "source": "scorecard_2026"
@@ -634,15 +647,18 @@
         {
           "id": "gallup_sat",
           "label": "Americans satisfied with K-12 education quality",
-          "display": "35%",
-          "value": 35,
+          "display": "32%",
+          "value": 32,
           "delta": {
-            "text": "record low",
+            "text": "new low; −11 pts in two years",
             "sentiment": "bad"
           },
-          "asOf": "Aug 2025 fieldwork",
-          "source": "gallup_k12_2025",
-          "note": "Parents rate their own child's school far higher: 74% satisfied."
+          "asOf": "Aug 3–24, 2026 fieldwork",
+          "source": [
+            "gallup_k12_2026",
+            "gallup_k12_2025"
+          ],
+          "note": "A new low in Gallup's 27-year trend, down from 35% in 2025, with dissatisfaction at a record 67%. Parents rate their own child's education far higher but it also hit a low: 66% satisfied, against 32% for U.S. K-12 overall. Asked to rate schools by area, a majority of parents gave an excellent or good mark in only one, preparing students to adapt to new technologies (51%); critical thinking drew 29% and preparation for work 27%."
         },
         {
           "id": "yrbs_sad",
@@ -665,10 +681,10 @@
           "asOf": "2022–23",
           "source": [
             "nces_grad",
-            "collegeboard_sat_2025",
+            "collegeboard_sat_2026",
             "act_2025"
           ],
-          "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2025 averages: SAT 1029, ACT 19.4."
+          "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2026 SAT mean total was 1045, up 16 points and the second straight year of gains, with reading and writing back to pre-pandemic levels and math still below; the ACT figure is the class of 2025 (19.4)."
         }
       ]
     }

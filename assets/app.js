@@ -2,7 +2,7 @@
 (function () {
   const $ = (sel, root) => (root || document).querySelector(sel);
   const el = (tag, cls, text) => { const n = document.createElement(tag); if (cls) n.className = cls; if (text !== undefined && text !== null) n.textContent = text; return n; };
-  const SECTION_ACCENT = { overview: '--accent', ai: '--ai', math: '--math', register: '--register' };
+  const SECTION_ACCENT = { overview: '--accent', models: '--models', ai: '--ai', math: '--math', conditions: '--conditions' };
   const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
   function fmtDate(iso, opts) {
@@ -22,7 +22,7 @@
   async function loadData() {
     const inline = document.getElementById('chalkline-data');
     if (inline) return JSON.parse(inline.textContent);
-    const files = ['meta', 'sources', 'overview', 'ai', 'math', 'orgs', 'briefing'];
+    const files = ['meta', 'sources', 'overview', 'models', 'ai', 'math', 'conditions', 'briefing'];
     const out = {};
     await Promise.all(files.map(async f => {
       const res = await fetch(`data/${f}.json`, { cache: 'no-cache' });
@@ -179,7 +179,9 @@
       li.appendChild(el('span', 'chip-label', c.label));
       li.appendChild(el('span', 'chip-value', c.display));
       if (c.note) li.appendChild(el('span', 'chip-note', c.note));
-      sourceIds(c.source).forEach((id, i) => { if (i) li.appendChild(document.createTextNode('; ')); li.appendChild(sourceLink(id, sources, 'source-link chip-source')); });
+      const csrc = el('span', 'chip-source');
+      sourceIds(c.source).forEach((id, i) => { if (i) csrc.appendChild(document.createTextNode(' · ')); csrc.appendChild(sourceLink(id, sources)); });
+      li.appendChild(csrc);
       list.appendChild(li);
     });
     card.appendChild(list);
@@ -257,6 +259,12 @@
       const body = el('div', 'event-body');
       body.appendChild(el('h4', 'event-title', item.headline));
       body.appendChild(el('p', 'event-detail', item.detail));
+      if (item.implication) {
+        const imp = el('p', 'event-implication');
+        imp.appendChild(el('span', 'implication-label', 'For the portfolio'));
+        imp.appendChild(document.createTextNode(item.implication));
+        body.appendChild(imp);
+      }
       body.appendChild(sourceLine(item.source, sources));
       li.appendChild(body);
       list.appendChild(li);
@@ -323,9 +331,10 @@
       const data = await loadData();
       renderHero(data.meta, data.briefing);
       renderSection(data.overview, data.sources);
+      renderSection(data.models, data.sources);
       renderSection(data.ai, data.sources);
       renderSection(data.math, data.sources);
-      renderSection(data.orgs, data.sources);
+      renderSection(data.conditions, data.sources);
       renderBriefing(data.briefing, data.sources);
       renderSources(data.sources, data.meta);
       document.body.classList.add('is-ready');

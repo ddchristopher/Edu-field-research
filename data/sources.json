@@ -616,5 +616,203 @@
     "title": "Tutoring Information Hub",
     "date": "2026-09-05",
     "url": "https://nssa.stanford.edu/tutoring-information-hub"
+  },
+  "credo_ncss3": {
+    "org": "CREDO, Stanford University",
+    "title": "As A Matter Of Fact: The National Charter School Study III",
+    "date": "2023-06-06",
+    "url": "https://ncss3.stanford.edu/wp-content/uploads/2023/06/Credo-NCSS3-Report.pdf"
+  },
+  "nepc_credo_review": {
+    "org": "National Education Policy Center (Joseph J. Ferrare)",
+    "title": "CREDO Report Makes Overstated Claims of Charter School Gains",
+    "date": "2023-09-07",
+    "url": "https://nepc.colorado.edu/review/charter-study"
+  },
+  "napcs_enrollment_2025": {
+    "org": "National Alliance for Public Charter Schools",
+    "title": "2025 Enrollment Report and Enrollment Brief",
+    "date": "2025-11-14",
+    "url": "https://publiccharters.org/news/2025-enrollment-report/"
+  },
+  "napcs_brief_pdf": {
+    "org": "National Alliance for Public Charter Schools",
+    "title": "Enrollment Brief (2025): charter and district year-over-year change",
+    "date": "2025-11-14",
+    "url": "https://publiccharters.org/wp-content/uploads/2025/11/NAPCS-2025_Enrollment-Brief-111425v1.pdf"
+  },
+  "nces_charter_coe": {
+    "org": "NCES Condition of Education",
+    "title": "Public Charter School Enrollment",
+    "date": "2025-05-01",
+    "url": "https://nces.ed.gov/programs/coe/indicator/cgb/public-charter-enrollment"
+  },
+  "kipp_mathematica_2023": {
+    "org": "Mathematica (via KIPP Foundation)",
+    "title": "Long-Term Impacts of KIPP Middle and High Schools on College Enrollment, Persistence, and Attainment",
+    "date": "2023-09-01",
+    "url": "https://www.kipp.org/results/independent-reports/"
+  },
+  "kipp_mathematica_2019": {
+    "org": "Mathematica",
+    "title": "Long-Term Impacts of KIPP Middle Schools on College Enrollment and Early College Persistence",
+    "date": "2019-09-01",
+    "url": "https://www.mathematica.org/our-publications-and-findings/publications/long-term-impacts-of-kipp-middle-schools-on-college-enrollment-and-early-college-persistence"
+  },
+  "sciam_alpha_2026": {
+    "org": "Scientific American",
+    "title": "Alpha School's AI teaching model is expanding. Does it work?",
+    "date": "2026-01-01",
+    "url": "https://www.scientificamerican.com/article/alpha-schools-ai-teaching-model-is-expanding-does-it-work/"
+  },
+  "alpha_school": {
+    "org": "Alpha School",
+    "title": "The 2-Hour School Day and the Future of Alpha School",
+    "date": "2026-05-01",
+    "url": "https://alpha.school/shane-parrish-alpha-school-2-hour-school-day/"
+  },
+  "unbound_academy": {
+    "org": "Unbound Academy",
+    "title": "Arizona's tuition-free online charter school, grades 4-8",
+    "date": "2026-09-08",
+    "url": "https://unbound.school/"
+  },
+  "rand_microschools": {
+    "org": "RAND",
+    "title": "Microschools as an Emerging Education Model",
+    "date": "2025-06-01",
+    "url": "https://www.rand.org/pubs/research_reports/RRA3698-1.html"
+  },
+  "cap_microschools": {
+    "org": "Center for American Progress",
+    "title": "The Importance of Holding Microschools Accountable",
+    "date": "2025-09-01",
+    "url": "https://www.americanprogress.org/article/the-importance-of-holding-microschools-accountable/"
+  },
+  "walton_fif_2025": {
+    "org": "Walton Family Foundation",
+    "title": "More Capital, More Classrooms: $100 Million Fund Expansion Boosts Charter School Access",
+    "date": "2025-05-27",
+    "url": "https://www.waltonfamilyfoundation.org/more-capital-more-classrooms-100-million-fund-expansion-boosts-charter-school-access"
+  },
+  "walton_startups": {
+    "org": "Walton Family Foundation",
+    "title": "Foundation Surpasses 1,500 Charter School Startup Investments",
+    "date": "2025-01-01",
+    "url": "https://www.waltonfamilyfoundation.org/about-us/newsroom/foundation-surpasses-1-500-charter-school-startup-investments"
+  },
+  "cityfund_bloomberg_2025": {
+    "org": "Bloomberg Philanthropies and City Fund",
+    "title": "City Fund and Bloomberg Philanthropies Commit $20 Million to Transform Public Education Through HBCU-Charter School Partnerships",
+    "date": "2025-12-04",
+    "url": "https://www.bloomberg.org/press/city-fund-and-bloomberg-philanthropies-commit-20-million-to-transform-public-education-through-hbcu-charter-school-partnerships/"
+  },
+  "csgf": {
+    "org": "Charter School Growth Fund",
+    "title": "Growing the nation's best public charter schools",
+    "date": "2026-09-08",
+    "url": "https://chartergrowthfund.org/"
+  },
+  "america_succeeds": {
+    "org": "America Succeeds",
+    "title": "Durable Skills research and resources",
+    "date": "2026-09-08",
+    "url": "https://americasucceeds.org/resources"
+  },
+  "nc_portrait_2024": {
+    "org": "North Carolina Department of Public Instruction",
+    "title": "NC Portrait of a Graduate Skills Meet Critical Workforce Needs, NC Commerce Analysis Finds",
+    "date": "2024-07-11",
+    "url": "https://www.dpi.nc.gov/news/press-releases/2024/07/11/nc-portrait-graduate-skills-meet-critical-workforce-needs-nc-commerce-analysis-finds"
+  },
+  "nasbe_portraits": {
+    "org": "National Association of State Boards of Education",
+    "title": "Turning Graduate Portraits into Pathways",
+    "date": "2026-09-08",
+    "url": "https://www.nasbe.org/turning-graduate-portraits-into-pathways/"
+  },
+  "nciea_accountability_2026": {
+    "org": "National Center for the Improvement of Educational Assessment",
+    "title": "Evaluating the Impact of Statewide School Accountability Systems",
+    "date": "2026-05-13",
+    "url": "https://www.nciea.org/blog/evaluating-the-impact-of-statewide-school-accountability-systems/"
+  },
+  "ed_waiver_letter_2025": {
+    "org": "U.S. Department of Education",
+    "title": "Dear Colleague Letter: ESEA Flexibility and Waivers",
+    "date": "2025-07-29",
+    "url": "https://www.ed.gov/media/document/dear-colleague-letter-esea-flexibility-and-waivers-july-29-2025-110440.pdf"
+  },
+  "edtrust_essa_2024": {
+    "org": "EdTrust",
+    "title": "Reassessing ESSA Implementation: An Equity Analysis of School Accountability",
+    "date": "2024-09-01",
+    "url": "https://edtrust.org/rti/reassessing-essa-implementation-an-equity-analysis/"
+  },
+  "ecs_accountability": {
+    "org": "Education Commission of the States",
+    "title": "50-State Comparison: School Accountability Systems",
+    "date": "2024-01-01",
+    "url": "https://www.ecs.org/50-state-comparison-school-accountability-systems-2024/"
+  },
+  "pisa2025_nces": {
+    "org": "NCES",
+    "title": "PISA 2025 U.S. Results",
+    "date": "2026-09-08",
+    "url": "https://nces.ed.gov/surveys/pisa/pisa2025/"
+  },
+  "pisa2025_oecd": {
+    "org": "OECD",
+    "title": "PISA 2025: Students' reading and mathematics performance declined sharply across the OECD",
+    "date": "2026-09-08",
+    "url": "https://www.oecd.org/en/about/news/press-releases/2026/09/pisa-2025-students-reading-and-mathematics-performance-declined-sharply-across-the-oecd.html"
+  },
+  "gallup_k12_2026": {
+    "org": "Gallup / Walton Family Foundation",
+    "title": "Satisfaction With K-12 Education Hits New Low",
+    "date": "2026-09",
+    "url": "https://news.gallup.com/poll/714017/satisfaction-education-hits-new-low.aspx"
+  },
+  "collegeboard_sat_2026": {
+    "org": "College Board",
+    "title": "SAT Suite of Assessments Program Results, Class of 2026",
+    "date": "2026-09",
+    "url": "https://reports.collegeboard.org/sat-suite-program-results"
+  },
+  "collegeboard_sat100_2026": {
+    "org": "College Board",
+    "title": "As the SAT Turns 100, Nearly 2 Million Students in the Class of 2026 Take the Test",
+    "date": "2026-09",
+    "url": "https://newsroom.collegeboard.org/sat-turns-100-nearly-2-million-students-class-2026-take-test"
+  },
+  "irs_fstc_states_2026": {
+    "org": "Internal Revenue Service",
+    "title": "Federal Scholarship Tax Credit (FSTC): states making an advance election to participate for 2027",
+    "date": "2026-09-14",
+    "url": "https://www.irs.gov/government-entities/federal-state-local-governments/federal-scholarship-tax-credit-fstc"
+  },
+  "nmc_sector_2026": {
+    "org": "National Microschooling Center",
+    "title": "American Microschools 2026 Sector Analysis",
+    "date": "2026-05",
+    "url": "https://microschoolingcenter.org/news-blog/sa2026"
+  },
+  "hisd_future2_2026": {
+    "org": "Houston Independent School District",
+    "title": "HISD to Launch Future 2 Schools, Ushering in a Paradigm Shift for the AI Era",
+    "date": "2026-08",
+    "url": "https://hisdnow.houstonisd.org/p/~board/district-news/post/hisd-to-launch-future-2-schools-ushering-in-a-paradigm-shift-for-the-ai-era"
+  },
+  "edwp_ai_tutor_2026": {
+    "org": "Annenberg Institute at Brown University (EdWorkingPapers)",
+    "title": "The Effects of Course-Integrated AI Tutoring on Student Performance and Engagement: A Randomized University Trial (EdWorkingPaper 26-1598)",
+    "date": "2026-10",
+    "url": "https://edworkingpapers.com/ai26-1598"
+  },
+  "cr_fy2027": {
+    "org": "U.S. Congress",
+    "title": "H.R. 6500 — Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103)",
+    "date": "2026-09-02",
+    "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"
   }
 }

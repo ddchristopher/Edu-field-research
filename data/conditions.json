@@ -1,0 +1,275 @@
+{
+  "section": "conditions",
+  "eyebrow": "What enables scale",
+  "title": "Conditions for scale",
+  "lede": "A good school model still needs a system that lets it open, measure itself and be judged fairly. Three conditions decide that: whether accountability tells anyone which schools are working, whether the data infrastructure to answer that question still exists, and whether capital is flowing toward new schools. All three moved in 2025 and 2026, mostly in the direction of less measurement.",
+  "kpis": [
+    {
+      "id": "accountability_recession",
+      "label": "When the learning recession began",
+      "value": 2013,
+      "display": "2013",
+      "unit": "seven years before the pandemic",
+      "delta": {
+        "text": "coincided with accountability rollback",
+        "sentiment": "bad"
+      },
+      "asOf": "May 2026",
+      "source": "scorecard_2026",
+      "note": "The Education Scorecard attributes the pre-pandemic slide partly to the dismantling of test-based accountability, alongside the rise of social media. Causation is unproven; the timing is not."
+    },
+    {
+      "id": "waiver_flexibility",
+      "label": "Federal posture on accountability",
+      "value": 1,
+      "display": "More waivers",
+      "unit": "ESEA flexibility signalled",
+      "asOf": "July 2025",
+      "source": "ed_waiver_letter_2025",
+      "note": "The Department signalled renewed interest in state flexibility and waivers under ESSA, which widens the variation in what a school rating means from state to state."
+    },
+    {
+      "id": "nsize",
+      "label": "States whose school ratings use an n-size of 20 or higher",
+      "value": 30,
+      "display": "30",
+      "unit": "only 13 use 10",
+      "delta": {
+        "text": "larger n-size hides smaller student groups",
+        "sentiment": "bad"
+      },
+      "asOf": "2024",
+      "source": "edtrust_essa_2024",
+      "note": "The threshold decides whether a school's results for a student group appear in its rating at all. It is the quietest equity lever in the system."
+    },
+    {
+      "id": "ies_restructure",
+      "label": "The federal research and statistics agency",
+      "value": 1,
+      "display": "Restructuring",
+      "unit": "strategy published Feb 2026",
+      "asOf": "Feb 2026",
+      "source": [
+        "ies_reimagining",
+        "ed_iaa_2026"
+      ],
+      "note": "IES published a restructuring strategy while the Department moved programs to other agencies under 14 interagency agreements. NAEP, NCES collections and the What Works Clearinghouse all sit inside that perimeter."
+    },
+    {
+      "id": "next_naep",
+      "label": "Next national achievement reading",
+      "value": 2027,
+      "display": "Jan 2027",
+      "unit": "NAEP 2026, grades 4 and 8",
+      "asOf": "scheduled",
+      "source": "naep2026_schedule",
+      "note": "The first Report Card since 2024 and the first fully post-relief snapshot. Until it lands, state tests and NWEA are the only signal on whether recovery continued."
+    },
+    {
+      "id": "facilities_capital",
+      "label": "Charter facilities capital available",
+      "value": 400000000,
+      "display": "$400M",
+      "unit": "Walton and Civic Builders fund",
+      "delta": {
+        "text": "up to 100% financing",
+        "sentiment": "good"
+      },
+      "asOf": "May 2025",
+      "source": "walton_fif_2025",
+      "note": "Facilities remain the binding constraint on charter growth, and the terms loosened in 2025 rather than tightened."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Accountability: the signal is weakening",
+      "items": [
+        {
+          "headline": "The decline predates the pandemic and tracks the rollback.",
+          "detail": "The Education Scorecard dates the learning recession to 2013 and notes it coincided with the dismantling of test-based accountability and the rise of social media, without claiming to have separated the two. For an investor in school models, this is the argument that measurement itself is part of the intervention.",
+          "source": "scorecard_2026"
+        },
+        {
+          "headline": "School ratings already hide the students they were built to surface.",
+          "detail": "Thirty states set the minimum group size for reporting at 20 or higher and only 13 use 10, so a school can be rated well while a small group of students inside it is not counted at all.",
+          "source": "edtrust_essa_2024"
+        },
+        {
+          "headline": "Federal flexibility is expanding, not contracting.",
+          "detail": "The Department signalled renewed openness to ESEA waivers in July 2025. More state variation follows, which makes cross-state comparison of a model's results harder precisely as networks try to expand across state lines.",
+          "source": [
+            "ed_waiver_letter_2025",
+            "nciea_accountability_2026"
+          ]
+        },
+        {
+          "headline": "There is a live question about whether any of it works.",
+          "detail": "Assessment researchers are now asking whether accountability systems identify the right schools, whether anyone uses the results, and whether identified schools actually improve. New Hampshire found its identified schools improved faster than matched controls; most states have not checked.",
+          "source": "nciea_accountability_2026"
+        }
+      ]
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "Data infrastructure",
+      "items": [
+        {
+          "id": "seda_scale",
+          "label": "Students in the national achievement database",
+          "display": "≈35M",
+          "value": 35000000,
+          "unit": "grades 3–8, 2022–2025",
+          "asOf": "May 2026",
+          "source": "scorecard_2026",
+          "note": "The Stanford Education Data Archive links state tests to a common scale. It is the only way to compare a model's results across state lines, and it is grant-funded rather than statutory."
+        },
+        {
+          "id": "districts_on_rise",
+          "label": "Districts improving faster than matched peers",
+          "display": "108",
+          "value": 108,
+          "delta": {
+            "text": "identified from that database",
+            "sentiment": "good"
+          },
+          "asOf": "2022–2025",
+          "source": "scorecard_2026",
+          "note": "A ready-made sourcing list: districts that gained at least 0.3 grade levels in both reading and math against peers of similar size, poverty and demographics in their own state."
+        },
+        {
+          "id": "wwc_status",
+          "label": "The federal evidence clearinghouse",
+          "display": "Under review",
+          "value": 1,
+          "asOf": "Feb 2026",
+          "source": [
+            "wwc_home",
+            "ies_reimagining",
+            "cr_fy2027"
+          ],
+          "note": "The What Works Clearinghouse remains the federal evidence review, inside an agency publishing a restructuring strategy and now funded by a continuing resolution that expires December 11, 2026. Evidence for ESSA at Johns Hopkins is the independent alternative."
+        },
+        {
+          "id": "efe_catalog",
+          "label": "Program ratings in the independent catalog",
+          "display": "195",
+          "value": 195,
+          "unit": "80 at Tier 1",
+          "asOf": "Sept 2026",
+          "source": "efe_home",
+          "note": "Across reading, math, attendance and family engagement. Whole-school models are a thin slice of it: most rated entries are programs that run inside a school, not designs for the school itself."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "Capital moving into new schools",
+      "subtitle": "Announced commitments and the vehicles behind them. Amounts are as announced by the funder; deployment schedules are rarely published.",
+      "columns": [
+        "Funder",
+        "Vehicle and commitment",
+        "What it signals",
+        "Announced"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Walton Family Foundation, with Civic Builders and PNC",
+            "Facilities Investment Fund expanded by $100 million to $400 million total, now offering up to 100% financing and lending to schools open as little as six months",
+            "The binding constraint on charter growth is buildings, and the response is to move capital earlier in a school's life, where commercial lenders will not go"
+          ],
+          "tier": "May 2025",
+          "source": "walton_fif_2025"
+        },
+        {
+          "cells": [
+            "Walton Family Foundation",
+            "$335 million in charter startup funding since 1997, past 1,500 startup investments",
+            "The single largest private source of new-school formation capital in the country, and the baseline any new funder is adding to"
+          ],
+          "tier": "2025",
+          "source": "walton_startups"
+        },
+        {
+          "cells": [
+            "City Fund and Bloomberg Philanthropies, with UNCF",
+            "$10 million each for charter schools partnered with historically Black colleges; first two schools in Alabama with Stillman College and Tuskegee University",
+            "New-school formation is being routed through anchor institutions rather than standalone operators, a structural bet on community trust and teacher pipelines"
+          ],
+          "tier": "Dec 2025",
+          "source": "cityfund_bloomberg_2025"
+        },
+        {
+          "cells": [
+            "Accelerate",
+            "More than 30 randomized trials since 2022 across 75-plus programs in 29 states, reaching over 500,000 students",
+            "The field's main engine for turning promising interventions into rated evidence, and a natural co-funder for any model that needs an evaluation partner"
+          ],
+          "tier": "2022–2026",
+          "source": "accelerate_home"
+        },
+        {
+          "cells": [
+            "Federal government, via the Section 25F scholarship tax credit",
+            "A federal credit of up to $1,700 per taxpayer for contributions to approved scholarship-granting organizations, starting January 1, 2027. Thirty states had filed an advance election to participate as of September 14, 2026, under Revenue Procedure 2026-6",
+            "Demand-side capital at a scale no philanthropy can match, routed to tuition at private schools and microschools rather than to new public-school buildings. It changes who a new public school competes with for students, not how many public seats exist"
+          ],
+          "tier": "Sept 2026",
+          "source": [
+            "irs_fstc_states_2026",
+            "irs_fstc_2026"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "full",
+      "title": "Where the field disagrees",
+      "items": [
+        {
+          "headline": "Whether the charter effect is real.",
+          "detail": "CREDO reports positive average effects; the National Education Policy Center argues they fall below what researchers treat as meaningful and that the days-of-learning conversion inflates them. Both readings are defensible from the same numbers, which is why the sector average is a poor basis for an investment.",
+          "source": [
+            "credo_ncss3",
+            "nepc_credo_review"
+          ]
+        },
+        {
+          "headline": "Whether AI-first schools are a model or a marketing claim.",
+          "detail": "Operators publish top-percentile results on external instruments; researchers point out there is no comparison group, the population is self-selected and tuition-paying, and that a 2025 review found intelligent tutoring barely beats non-AI tutoring built on the same active-learning principles.",
+          "source": "sciam_alpha_2026"
+        },
+        {
+          "headline": "How many microschool students exist.",
+          "detail": "Estimates run from 750,000 to 2.1 million depending on definition, and most microschools sit outside state assessment entirely. The Center's own 2026 survey reports that operators now rank growth in nonacademic learning as their most desired student outcome, so the measurement gap is becoming a design choice rather than a growing pain. A sector that cannot be counted cannot be evaluated, which is an argument for funding measurement before models.",
+          "source": [
+            "nmc_sector_2026",
+            "rand_microschools",
+            "cap_microschools"
+          ]
+        },
+        {
+          "headline": "Whether tutoring's effects survive scale.",
+          "detail": "High-dosage tutoring produces some of the largest effects in education research, and those effects shrink as programs grow. Saga's own studies range from +0.09 to +0.19 SD depending on the site and year.",
+          "source": [
+            "uchicago_hdt_2024",
+            "efe_saga"
+          ]
+        },
+        {
+          "headline": "Whether an AI tutor adds learning or displaces it.",
+          "detail": "The two best-powered randomized trials point opposite ways. In 18 Tennessee middle schools, Khanmigo produced roughly 0.06 to 0.08 SD a year, similar to Khan practice without the AI. In a trial of 2,379 undergraduates at a large U.S. public university, access to a course-integrated AI tutor cut final grades by 0.37 SD and engagement with existing coursework by 0.90 SD, with larger losses for first-generation students. The populations and settings differ and neither settles the K-12 question. But the mechanism the second proposes, displacement rather than augmentation, is the one an AI-first school design most needs to rule out, and nobody has yet.",
+          "source": [
+            "nber_khanmigo_2026",
+            "edwp_ai_tutor_2026"
+          ]
+        }
+      ]
+    }
+  ]
+}

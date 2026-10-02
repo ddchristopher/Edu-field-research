@@ -245,24 +245,30 @@
     const rows = spec.items.map(it => ({ ...it, lines: wrapWords(it.label, labelMax, font, 3) }));
     const rowH = r => Math.max(30, r.lines.length * 15 + 12);
     const heights = rows.map(rowH);
-    const m = { top: spec.reference ? 26 : 10, right: 58, bottom: 26, left: Math.min(labelMax, Math.max(...rows.map(r => Math.max(...r.lines.map(l => textWidth(l, font)))))) + 14 };
+    const hasNeg = spec.items.some(i => i.value < 0);
+    const m = { top: spec.reference ? 26 : 10, right: 58, bottom: 26, left: Math.min(labelMax, Math.max(...rows.map(r => Math.max(...r.lines.map(l => textWidth(l, font)))))) + 14 + (hasNeg ? 64 : 0) };
     const natural = m.top + heights.reduce((a, b) => a + b, 0) + m.bottom;
     // When the card is taller than the chart needs, spread the rows (bars stay thin; the air grows), up to a cap.
-    const extra = Math.max(0, Math.min((opts.availableHeight || 0) - natural, rows.length * 34));
+    const extra = Math.max(0, Math.min((opts.availableHeight || 0) - natural, rows.length * (rows.length <= 3 ? 90 : 34)));
     if (extra > 0) heights.forEach((h, i) => { heights[i] = h + extra / rows.length; });
     const height = m.top + heights.reduce((a, b) => a + b, 0) + m.bottom;
     const { svg, width } = frame(container, height);
     const pw = width - m.left - m.right;
     const vals = spec.items.map(i => i.value);
-    const max = spec.xDomain ? spec.xDomain[1] : Math.max(...vals, spec.reference ? spec.reference.value : 0) * 1.08;
-    const xAt = v => m.left + (v / max) * pw;
+    // Domain always includes zero so negative bars grow the other way from a shared baseline.
+    const rawMax = Math.max(...vals, spec.reference ? spec.reference.value : 0, 0);
+    const rawMin = Math.min(...vals, 0);
+    const max = spec.xDomain ? spec.xDomain[1] : rawMax * 1.08;
+    const min = spec.xDomain ? spec.xDomain[0] : rawMin * 1.08;
+    const xAt = v => m.left + ((v - min) / (max - min || 1)) * pw;
+    const zeroX = xAt(0);
     const g = svgEl('g');
     svg.appendChild(g);
-    ticksFor(0, max, 4).forEach(t => {
+    ticksFor(min, max, 4).forEach(t => {
       g.appendChild(svgEl('line', { x1: xAt(t), x2: xAt(t), y1: m.top, y2: height - m.bottom, class: 'grid' }));
       g.appendChild(svgEl('text', { x: xAt(t), y: height - 8, 'text-anchor': 'middle', class: 'axis-label' }, [document.createTextNode(fmt(t, spec.format, spec.unit))]));
     });
-    g.appendChild(svgEl('line', { x1: m.left, x2: m.left, y1: m.top, y2: height - m.bottom, class: 'axis' }));
+    g.appendChild(svgEl('line', { x1: zeroX, x2: zeroX, y1: m.top, y2: height - m.bottom, class: 'axis' }));
     const groups = [...new Set(spec.items.map(i => i.group).filter(Boolean))];
     const colorFor = it => it.color || (it.group ? seriesColor(groups.indexOf(it.group), groups.indexOf(it.group) === 0 ? opts.accent : null, root) : (opts.accent || seriesColor(0, null, root)));
     const tip = makeTip(container);
@@ -273,14 +279,17 @@
       const cy = y + h / 2;
       r.lines.forEach((line, li) => {
         const ly = cy + (li - (r.lines.length - 1) / 2) * 15 + 4;
-        g.appendChild(svgEl('text', { x: m.left - 10, y: ly, 'text-anchor': 'end', class: 'cat-label' }, [document.createTextNode(line)]));
+        g.appendChild(svgEl('text', { x: m.left - 10 - (hasNeg ? 64 : 0), y: ly, 'text-anchor': 'end', class: 'cat-label' }, [document.createTextNode(line)]));
       });
-      const x1 = xAt(r.value), rad = 4;
+      const x1 = xAt(r.value), rad = 4, neg = r.value < 0;
       const top = cy - barH / 2, bot = cy + barH / 2;
-      const d = `M${m.left} ${top} H${Math.max(m.left, x1 - rad)} Q${x1} ${top} ${x1} ${top + rad} V${bot - rad} Q${x1} ${bot} ${Math.max(m.left, x1 - rad)} ${bot} H${m.left} Z`;
+      // Rounded on the data end, square where it meets the zero baseline.
+      const d = neg
+        ? `M${zeroX} ${top} H${Math.min(zeroX, x1 + rad)} Q${x1} ${top} ${x1} ${top + rad} V${bot - rad} Q${x1} ${bot} ${Math.min(zeroX, x1 + rad)} ${bot} H${zeroX} Z`
+        : `M${zeroX} ${top} H${Math.max(zeroX, x1 - rad)} Q${x1} ${top} ${x1} ${top + rad} V${bot - rad} Q${x1} ${bot} ${Math.max(zeroX, x1 - rad)} ${bot} H${zeroX} Z`;
       const bar = svgEl('path', { d, fill: colorFor(r), class: 'bar' });
       g.appendChild(bar);
-      g.appendChild(svgEl('text', { x: x1 + 8, y: cy + 4, class: 'value-label' }, [document.createTextNode(r.display || fmt(r.value, spec.format, spec.unit))]));
+      g.appendChild(svgEl('text', { x: neg ? x1 - 8 : x1 + 8, y: cy + 4, 'text-anchor': neg ? 'end' : 'start', class: 'value-label' }, [document.createTextNode(r.display || fmt(r.value, spec.format, spec.unit))]));
       const hitRect = svgEl('rect', { x: 0, y, width, height: h, fill: 'transparent', class: 'bar-hit', tabindex: '0', role: 'img', 'aria-label': `${r.label}: ${r.display || fmt(r.value, spec.format, spec.unit)}` });
       g.appendChild(hitRect);
       const show = (clientX, clientY) => {

@@ -1,8 +1,8 @@
 {
   "section": "ai",
-  "eyebrow": "Special section",
-  "title": "AI in education",
-  "lede": "In two years generative AI went from novelty to daily habit: most teens now use chatbots for schoolwork and most teachers use AI for their jobs. Guidance, training and evidence lag far behind use. The 2026–27 school year opens with the nation's two largest districts pulling student-facing AI back while Google, OpenAI and Anthropic push classroom tools out.",
+  "eyebrow": "The inflection",
+  "title": "AI and learning",
+  "lede": "AI is being asked to do two different jobs, and only one of them has evidence. Inside conventional schools it is a tool teachers and students already use daily, with modest measured effects and a large guidance gap. In new school designs it is being made the core of instruction, on claims that no independent study has yet tested. Adoption has outrun evaluation in both cases, and the newest well-powered trial found an AI tutor displacing learning rather than adding to it.",
   "kpis": [
     {
       "id": "teens_chatbot_school",
@@ -338,6 +338,14 @@
         },
         {
           "cells": [
+            "Course-integrated AI tutor (EdWorkingPaper 26-1598, Oct 2026) — undergraduate, not K-12",
+            "RCT, 2,379 undergraduates and 30 instructors across disciplines at one large U.S. public university; tutor built into the course",
+            "Among sections of the same course, tutor access cut final grades by 0.37 SD and learning-management-system participation by 0.90 SD; estimated losses were larger for first-generation students. The authors read it as the tutor displacing engagement with activities that already worked, rather than failing to teach."
+          ],
+          "source": "edwp_ai_tutor_2026"
+        },
+        {
+          "cells": [
             "AI assistance on math and reading tasks (Liu et al., Apr 2026)",
             "Three randomized experiments, 1,222 participants",
             "AI help raised in-task performance but cut persistence and later unassisted performance: students finish faster and learn less."
@@ -462,6 +470,14 @@
       "title": "The market: push and pullback",
       "items": [
         {
+          "headline": "The design question is now separable from the tool question.",
+          "detail": "Schools built around AI, where two hours of tutored academics replace the conventional day, are a different bet from adding an AI tutor to an existing school. The second has a two-year randomized trial behind it and gains near 0.06 to 0.08 SD a year; the first has operator-reported results and three public-school pilots that have not reported.",
+          "source": [
+            "nber_khanmigo_2026",
+            "sciam_alpha_2026"
+          ]
+        },
+        {
           "headline": "New York City paused student-facing AI through 8th grade.",
           "detail": "A one-year moratorium for 2026–27 covers 2-K through grade 8, nearly 600,000 students; AI features are switched off in the classroom tools they use, with exceptions for students with disabilities and English learners. High schoolers get twice-yearly AI critical-thinking modules and limited pilots.",
           "source": "nyc_ai_moratorium_2026"
@@ -486,11 +502,6 @@
             "anthropic_claude_teachers_2026",
             "openai_teachers_2026"
           ]
-        },
-        {
-          "headline": "AI literacy is becoming routine.",
-          "detail": "Nearly 8 in 10 educators say high schoolers in their district get lessons on what AI is and how to use it responsibly, according to an EdWeek Research Center survey of 499 teachers, principals and district leaders.",
-          "source": "edweek_ai_literacy_2026"
         }
       ]
     }

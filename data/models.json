@@ -1,0 +1,373 @@
+{
+  "section": "models",
+  "eyebrow": "The portfolio",
+  "title": "School models",
+  "lede": "Two questions decide this portfolio: which school models have earned the right to grow, and which new designs are worth funding before the evidence exists. The proven lane holds models with lottery-based or matched-comparison evidence at scale. The new-designs lane holds work that is deliberately unproven, including schools built around AI, and names for each what evidence would settle it. Nothing here is ranked; effects are quoted with the study that produced them.",
+  "kpis": [
+    {
+      "id": "charter_share",
+      "label": "Students in public charter schools",
+      "value": 4,
+      "display": "4M",
+      "unit": "about 8% of public school students",
+      "asOf": "2024–25",
+      "source": [
+        "napcs_brief_pdf",
+        "nces_charter_coe"
+      ],
+      "note": "Charter schools are roughly 8% of all public schools. The sector is the main vehicle for growing a school model inside the public system."
+    },
+    {
+      "id": "charter_growth",
+      "label": "Charter enrollment added while districts shrank",
+      "value": 111349,
+      "display": "+111K",
+      "unit": "against −222K in districts",
+      "delta": {
+        "text": "39 of 43 state charter sectors grew",
+        "sentiment": "neutral"
+      },
+      "asOf": "2024–25",
+      "source": "napcs_brief_pdf",
+      "note": "Charters added 111,349 students while districts lost 221,729. The single most important number for a growth portfolio: model expansion is running against a shrinking student population, not with it."
+    },
+    {
+      "id": "charter_six_year",
+      "label": "Charter growth over six years",
+      "value": 15,
+      "display": "+15%",
+      "unit": "over half a million students",
+      "delta": {
+        "text": "districts −4.4%, nearly 2 million students",
+        "sentiment": "neutral"
+      },
+      "asOf": "2019–20 to 2024–25",
+      "source": "napcs_enrollment_2025",
+      "note": "NAPCS uses state agency data. The divergence has held every year since the pandemic."
+    },
+    {
+      "id": "credo_effect",
+      "label": "Charter effect on annual growth, national",
+      "value": 0.028,
+      "display": "+0.028 SD",
+      "unit": "reading; +0.011 SD math",
+      "delta": {
+        "text": "reported as 16 and 6 days of learning",
+        "sentiment": "neutral"
+      },
+      "asOf": "CREDO 2023",
+      "source": [
+        "credo_ncss3",
+        "nepc_credo_review"
+      ],
+      "note": "Small on average and contested. The sector average matters far less than the variation inside it, which is where a portfolio lives."
+    },
+    {
+      "id": "kipp_college",
+      "label": "KIPP middle plus high school effect on college completion",
+      "value": 19,
+      "display": "≈19 pts",
+      "unit": "lottery-based, 2,066 students",
+      "delta": {
+        "text": "nearly twice as likely to persist and graduate",
+        "sentiment": "good"
+      },
+      "asOf": "Mathematica 2023",
+      "source": "kipp_mathematica_2023",
+      "note": "The strongest long-run evidence any U.S. school model has produced, on outcomes that matter after graduation rather than test scores."
+    },
+    {
+      "id": "microschools",
+      "label": "Students in microschools",
+      "value": 2100000,
+      "display": "0.75–2.1M",
+      "unit": "estimates disagree sharply",
+      "delta": {
+        "text": "no agreed definition or count",
+        "sentiment": "neutral"
+      },
+      "asOf": "2026",
+      "source": [
+        "nmc_sector_2026",
+        "rand_microschools",
+        "cap_microschools"
+      ],
+      "note": "The National Microschooling Center's 2026 sector analysis puts students using a microschool as their main provider at between 750,000 and 2.1 million; RAND puts full-time attendance between 1 and 2 million. The disagreement is the finding, and it is not narrowing."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "chart",
+      "size": "md",
+      "id": "supply_divergence",
+      "chart": {
+        "kind": "bars",
+        "title": "Where the seats went, 2024–25",
+        "subtitle": "Year-over-year change in enrollment. Charters grew while districts shrank by twice as much.",
+        "unit": "students",
+        "format": "int",
+        "items": [
+          {
+            "label": "Public charter schools",
+            "value": 111349,
+            "group": "Charter schools"
+          },
+          {
+            "label": "District schools",
+            "value": -221729,
+            "group": "District schools"
+          }
+        ],
+        "source": "napcs_brief_pdf",
+        "note": "Over six years the gap compounds: charters +15% while districts lost 4.4%, nearly 2 million students. A model that grows is taking share in a contracting market."
+      }
+    },
+    {
+      "type": "stats",
+      "size": "md",
+      "title": "What constrains growth",
+      "items": [
+        {
+          "id": "closures",
+          "label": "Schools slated to close in 2026 across 14 districts",
+          "display": "147",
+          "value": 147,
+          "asOf": "2026",
+          "source": "reason_closures_2026",
+          "note": "Closures free buildings and displace families. Both are openings for a model with capital and a waiting list."
+        },
+        {
+          "id": "facilities",
+          "label": "Walton facilities fund, total capital",
+          "display": "$400M",
+          "value": 400000000,
+          "delta": {
+            "text": "$100M expansion in May 2025",
+            "sentiment": "good"
+          },
+          "asOf": "2025",
+          "source": "walton_fif_2025",
+          "note": "Facilities are the classic growth constraint. The fund now offers up to 100% financing and will lend to schools open as little as six months."
+        },
+        {
+          "id": "seats_created",
+          "label": "Seats created by that fund since 2017",
+          "display": "17,083",
+          "value": 17083,
+          "unit": "33 loans, $292.6M deployed",
+          "asOf": "2025",
+          "source": "walton_fif_2025",
+          "note": "Average loan $8.9M; average free or reduced-price lunch rate across schools served, 81%."
+        },
+        {
+          "id": "enrollment_headwind",
+          "label": "Public school enrollment against its 2019 peak",
+          "display": "−1.4M",
+          "value": -1400000,
+          "delta": {
+            "text": "NCES projects under 47M by 2030",
+            "sentiment": "bad"
+          },
+          "asOf": "fall 2024",
+          "source": "futureed_enrollment",
+          "note": "Every model's growth plan is competing for a smaller pool of students each year."
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "Proven lane: models with evidence at scale",
+      "subtitle": "School models evaluated by admissions lottery or matched comparison, at more than one site. Effects are quoted with the study that produced them and are not comparable across different outcomes and populations.",
+      "columns": [
+        "Model",
+        "What it is",
+        "Strongest evidence",
+        "Evidence"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "KIPP",
+            "The largest U.S. charter network, running middle and high schools with extended time and explicit college-going support",
+            "Lottery-based study of 2,066 students across ten regions: attending KIPP for both middle and high school raised college completion by about 19 percentage points and made students nearly twice as likely to persist and graduate from a four-year college. An earlier lottery study found +12.9 points on four-year college enrollment from middle school alone"
+          ],
+          "tier": "Lottery",
+          "source": [
+            "kipp_mathematica_2023",
+            "kipp_mathematica_2019"
+          ]
+        },
+        {
+          "cells": [
+            "BARR Center",
+            "A ninth-grade whole-school model built on teacher teams, deliberate relationship building and weekly review of student data",
+            "Randomized trial across 11 high schools in five states: +0.21 SD on grades and course failure and +0.17 on relationships, but no gain on NWEA reading or math. Rated Strong by Evidence for ESSA in four categories"
+          ],
+          "tier": "Randomized",
+          "source": "efe_barr"
+        },
+        {
+          "cells": [
+            "The charter sector as a whole",
+            "Not a model, a market. 4 million students across 43 state sectors, ranging from the strongest networks in the country to virtual schools with strongly negative results",
+            "CREDO's 31-state study found average annual gains of 0.028 SD in reading and 0.011 SD in math, larger for Black and Hispanic students and strongly negative for virtual charters. A National Education Policy Center review argues the differences are too small to be meaningful and criticises the days-of-learning metric"
+          ],
+          "tier": "Contested",
+          "source": [
+            "credo_ncss3",
+            "nepc_credo_review"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "table",
+      "size": "full",
+      "title": "New designs: results pending",
+      "subtitle": "Models being funded and grown ahead of independent evidence. Each row names the evidence that would settle it. Claims attributed to an operator are the operator's own and are labelled as such.",
+      "columns": [
+        "Design",
+        "What is being tried",
+        "What would settle it",
+        "Status"
+      ],
+      "rows": [
+        {
+          "cells": [
+            "Alpha School and 2 Hour Learning",
+            "A private network where students do two hours of AI-tutored academics each morning and spend afternoons on workshops and projects, expanding to roughly 50 campuses including 27 newly announced. The operator reports every grade and subject scoring in the top 1% on national benchmarks, measured on NWEA MAP, SAT and AP",
+            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network. The first broader test is now running: Houston ISD converted C. Martinez and Gregg elementary schools to pre-K-8 'Future 2' schools for 2026–27, with no academic requirements for admission and enrolled students carried over by default unless families opt out, so the intake is a neighbourhood mix rather than a selected one. Scientific American reported the district pilots as tests of the Alpha model. Results from those campuses against comparable HISD schools would be the first evidence that is not the operator's own"
+          ],
+          "tier": "Self-reported",
+          "source": [
+            "sciam_alpha_2026",
+            "hisd_future2_2026",
+            "alpha_school"
+          ]
+        },
+        {
+          "cells": [
+            "Unbound Academy",
+            "Arizona's tuition-free virtual charter for grades 4 to 8, approved by the state charter board, running the same two-hour model with no teachers delivering core academics",
+            "State assessment results against comparable Arizona students. The school has now completed a full year inside Arizona's testing and charter-accountability system, so the first AASA results and the Arizona State Board for Charter Schools academic dashboard are where this gets settled; neither could be read from a primary source this month, and figures circulating in commentary are not used here. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
+          ],
+          "tier": "Too early",
+          "source": [
+            "unbound_academy",
+            "credo_ncss3"
+          ]
+        },
+        {
+          "cells": [
+            "Microschools",
+            "Small, mixed-age, self-paced schools, often in homes or storefronts, growing on the back of state voucher and education savings account programs. The Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds a sector that has stopped being new: one in five has been open six years or longer and 45% for three to five years. Half report that their families receive state school-choice funding, three in five rely mainly on family tuition, and 66% discount it on a sliding scale",
+            "A count anyone agrees on, and any outcome data at all. Estimates of students using a microschool as their main provider range from 750,000 to 2.1 million, and most operate outside state assessment and reporting entirely. The 2026 survey makes that less likely to change, not more: for the first time, operators named growth in nonacademic learning as their most desired student outcome"
+          ],
+          "tier": "Unmeasured",
+          "source": [
+            "nmc_sector_2026",
+            "rand_microschools",
+            "cap_microschools"
+          ]
+        },
+        {
+          "cells": [
+            "HBCU and charter partnerships",
+            "City Fund and Bloomberg Philanthropies each put in $10 million to found charter schools partnered with historically Black colleges, with UNCF as partner. Two schools are live in Alabama, with Stillman College and Tuskegee University",
+            "Whether the partnership structure produces different results from a standalone charter, and whether the teacher pipeline and dual-enrolment pathways materialise. The first cohorts are too new to test"
+          ],
+          "tier": "Too early",
+          "source": "cityfund_bloomberg_2025"
+        },
+        {
+          "cells": [
+            "AI tutoring inside conventional schools",
+            "The counterfactual to redesigning the school: keep the school, add the tutor. Khan Academy's Khanmigo is the best-evidenced instance",
+            "Already partly settled, and the answer is sobering. A two-year randomized trial in 18 Tennessee middle schools found gains of roughly 0.06 to 0.08 SD a year, similar to Khan practice without the AI, limited by how rarely students opened it"
+          ],
+          "tier": "Measured",
+          "source": "nber_khanmigo_2026"
+        }
+      ]
+    },
+    {
+      "type": "findings",
+      "size": "md",
+      "title": "Reading this section",
+      "items": [
+        {
+          "headline": "The sector average is the least useful number here.",
+          "detail": "CREDO's +0.028 SD hides virtual charters posting strongly negative results and individual networks posting lottery-verified college effects. A portfolio is built from the tail, not the mean, which is why this section separates named models from the market they sit in.",
+          "source": [
+            "credo_ncss3",
+            "nepc_credo_review"
+          ]
+        },
+        {
+          "headline": "Growth is now a share-taking exercise.",
+          "detail": "Charters added 111,349 students in a year when districts lost 221,729. Over six years charters grew 15% while districts shed nearly 2 million. Any model's growth plan is competing for a shrinking pool, which raises the value of closures, facilities capital and conversions.",
+          "source": [
+            "napcs_enrollment_2025",
+            "napcs_brief_pdf"
+          ]
+        },
+        {
+          "headline": "Self-reported results are not evidence, and should not be dismissed either.",
+          "detail": "Alpha's top-1% claims come from real external instruments but an unrepresentative, tuition-paying population with no comparison group. The honest position is to fund the question rather than the claim: its public-school pilots are the first design that could answer it.",
+          "source": "sciam_alpha_2026"
+        },
+        {
+          "headline": "The AI-school premise has a cheaper rival.",
+          "detail": "A 2025 review of 28 studies covering nearly 5,000 K-12 students found intelligent tutoring systems generally positive, but with a negligible advantage over non-AI tutoring systems that also used active learning. Any AI-first school design has to beat that, not just beat the status quo.",
+          "source": "sciam_alpha_2026"
+        },
+        {
+          "headline": "The displacement risk now has a number attached.",
+          "detail": "A randomized trial of 2,379 undergraduates and 30 instructors at a large U.S. public university found that access to a course-integrated AI tutor cut final grades by 0.37 SD and engagement with existing coursework by 0.90 SD, with the largest losses among first-generation students. This is university evidence at one site, not K-12, and it does not transfer directly. But it is the first well-powered trial to show an AI tutor making outcomes worse by crowding out what already worked, which is the specific failure mode a school with no non-AI fallback cannot absorb.",
+          "source": "edwp_ai_tutor_2026"
+        }
+      ]
+    },
+    {
+      "type": "chips",
+      "size": "md",
+      "title": "Who is funding school models",
+      "items": [
+        {
+          "label": "Walton Family Foundation",
+          "display": "$335M since 1997",
+          "source": [
+            "walton_startups",
+            "walton_fif_2025"
+          ],
+          "note": "The largest private funder of charter startups, past 1,500 startup investments, plus the $400M Facilities Investment Fund with Civic Builders and PNC."
+        },
+        {
+          "label": "City Fund",
+          "display": "200+ new schools",
+          "source": "cityfund_bloomberg_2025",
+          "note": "112,500 new charter seats created, working in two dozen cities and reaching more than 1.3 million students."
+        },
+        {
+          "label": "Bloomberg Philanthropies",
+          "display": "$10M, HBCU charters",
+          "source": "cityfund_bloomberg_2025",
+          "note": "Matched by City Fund for charter schools partnered with historically Black colleges, announced December 2025."
+        },
+        {
+          "label": "Charter School Growth Fund",
+          "display": "Network expansion",
+          "source": "csgf",
+          "note": "Funds the expansion of high-performing networks and runs a separate innovation strategy in teacher talent, early literacy and postsecondary success."
+        },
+        {
+          "label": "Evidence for ESSA",
+          "display": "Tier ratings",
+          "source": "efe_home",
+          "note": "Where a whole-school model like BARR gets an independent tier rating rather than a self-assessment."
+        }
+      ]
+    }
+  ]
+}

@@ -19,9 +19,12 @@
   --math: #eb6834;
   --math-ink: #a63f16;
   --math-wash: rgba(235, 104, 52, 0.09);
-  --register: #008300;
-  --register-ink: #0a6a0a;
-  --register-wash: rgba(0, 131, 0, 0.09);
+  --conditions: #d55181;
+  --conditions-ink: #9d2f5a;
+  --conditions-wash: rgba(213, 81, 129, 0.10);
+  --models: #008300;
+  --models-ink: #0a6a0a;
+  --models-wash: rgba(0, 131, 0, 0.09);
   --series-1: #2a78d6;
   --series-2: #1baf7a;
   --series-3: #eda100;
@@ -64,9 +67,15 @@
     --math: #d95926;
     --math-ink: #f0946d;
     --math-wash: rgba(217, 89, 38, 0.16);
-    --register: #0ca30c;
-    --register-ink: #5fd35f;
-    --register-wash: rgba(12, 163, 12, 0.16);
+    --conditions: #d55181;
+    --conditions-ink: #e87ba4;
+    --conditions-wash: rgba(213, 81, 129, 0.18);
+    --conditions: #d55181;
+  --conditions-ink: #e87ba4;
+  --conditions-wash: rgba(213, 81, 129, 0.18);
+  --models: #0ca30c;
+    --models-ink: #5fd35f;
+    --models-wash: rgba(12, 163, 12, 0.16);
     --series-1: #3987e5;
     --series-2: #199e70;
     --series-3: #c98500;
@@ -106,9 +115,12 @@
   --math: #d95926;
   --math-ink: #f0946d;
   --math-wash: rgba(217, 89, 38, 0.16);
-  --register: #0ca30c;
-  --register-ink: #5fd35f;
-  --register-wash: rgba(12, 163, 12, 0.16);
+  --conditions: #d55181;
+  --conditions-ink: #e87ba4;
+  --conditions-wash: rgba(213, 81, 129, 0.18);
+  --models: #0ca30c;
+  --models-ink: #5fd35f;
+  --models-wash: rgba(12, 163, 12, 0.16);
   --series-1: #3987e5;
   --series-2: #199e70;
   --series-3: #c98500;
@@ -175,7 +187,7 @@ button { font: inherit; }
 .nav a.is-active { color: var(--ink); border-top-color: var(--tab, var(--accent)); background: var(--surface-2); }
 .nav a[href="#ai"] { --tab: var(--ai); }
 .nav a[href="#math"] { --tab: var(--math); }
-.nav a[href="#register"] { --tab: var(--register); }
+.nav a[href="#models"] { --tab: var(--models); }
 .nav a[href="#briefing"], .nav a[href="#sources"] { --tab: var(--ink-3); }
 .theme-toggle {
   display: inline-flex; align-items: center; gap: 6px; padding: 6px 10px; border: 1px solid var(--hair); background: var(--surface); color: var(--ink-2); border-radius: 999px; cursor: pointer; font-size: 12.5px;
@@ -211,14 +223,17 @@ button { font: inherit; }
 #overview { --section-accent: var(--accent); }
 /* The register runs green, so its later series slots swap aqua for blue: green beside
    aqua falls below the colour-vision separation floor in dark mode. */
-#register { --section-accent: var(--register); --series-2: #2a78d6; --series-3: #eda100; }
+#models { --section-accent: var(--models); --series-2: #2a78d6; --series-3: #eda100; }
 @media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) #register { --series-2: #3987e5; --series-3: #c98500; }
+  :root:not([data-theme="light"]) #models { --series-2: #3987e5; --series-3: #c98500; }
 }
-:root[data-theme="dark"] #register { --series-2: #3987e5; --series-3: #c98500; }
+:root[data-theme="dark"] #models { --series-2: #3987e5; --series-3: #c98500; }
 #ai .eyebrow { color: var(--ai-ink); }
 #math .eyebrow { color: var(--math-ink); }
-#register .eyebrow { color: var(--register-ink); }
+#models .eyebrow { color: var(--models-ink); }
+#conditions { --section-accent: var(--conditions); }
+#conditions .eyebrow { color: var(--conditions-ink); }
+.nav a[href="#conditions"] { --tab: var(--conditions); }
 #math {
   background-image: linear-gradient(var(--grid-paper) 1px, transparent 1px), linear-gradient(90deg, var(--grid-paper) 1px, transparent 1px);
   background-size: 28px 28px;
@@ -317,13 +332,18 @@ td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size
   display: inline-block; font-size: 11.5px; font-weight: 600; letter-spacing: 0.02em;
   padding: 3px 9px; border-radius: 999px; border: 1px solid transparent; white-space: nowrap;
 }
-.tier-strong { background: var(--register-wash); color: var(--register-ink); border-color: color-mix(in srgb, var(--register) 35%, transparent); }
+.tier-strong { background: var(--models-wash); color: var(--models-ink); border-color: color-mix(in srgb, var(--models) 35%, transparent); }
 .tier-not-essa-rated { background: var(--surface-2); color: var(--ink-2); border-color: var(--hair); }
 .tier-trial-running, .tier-scaling { background: var(--accent-wash); color: var(--accent-ink); border-color: color-mix(in srgb, var(--accent) 30%, transparent); }
+.tier-lottery, .tier-randomized { background: var(--models-wash); color: var(--models-ink); border-color: color-mix(in srgb, var(--models) 35%, transparent); }
+.tier-contested, .tier-self-reported, .tier-unmeasured { background: var(--conditions-wash); color: var(--conditions-ink); border-color: color-mix(in srgb, var(--conditions) 35%, transparent); }
+.tier-too-early, .tier-quasi-experimental { background: var(--surface-2); color: var(--ink-2); border-color: var(--hair); }
+.event-implication { font-size: 13px; line-height: 1.5; color: var(--ink-2); margin-top: 6px; padding-left: 10px; border-left: 2px solid var(--section-accent, var(--accent)); }
+.implication-label { display: block; font-size: 10px; letter-spacing: 0.07em; text-transform: uppercase; color: var(--ink-3); font-weight: 600; }
 .tier-measured { background: var(--surface-2); color: var(--ink-2); border-color: var(--rule); }
-#register .evidence-table th:first-child { min-width: 150px; }
-#register .evidence-table td:nth-child(2) { min-width: 210px; }
-#register .evidence-table td:nth-child(3) { min-width: 260px; }
+#models .evidence-table th:first-child { min-width: 150px; }
+#models .evidence-table td:nth-child(2) { min-width: 210px; }
+#models .evidence-table td:nth-child(3) { min-width: 260px; }
 
 /* Companion list under stack chart */
 .companion { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 4px 0 0; padding-top: 10px; border-top: 1px solid var(--hair); font-size: 13px; }
@@ -385,6 +405,7 @@ td.mono { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size
 .tag { font-size: 10.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 2px 7px; border-radius: 4px; background: var(--surface-2); color: var(--ink-2); }
 .tag-ai { background: var(--ai-wash); color: var(--ai-ink); }
 .tag-math { background: var(--math-wash); color: var(--math-ink); }
+.tag-funding { background: var(--models-wash); color: var(--models-ink); }
 .tag-data { background: var(--accent-wash); color: var(--accent-ink); }
 .tag-policy { background: var(--surface-3); color: var(--ink-2); }
 .event-title { font-size: 15.5px; font-weight: 600; line-height: 1.35; }
