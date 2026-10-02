@@ -770,19 +770,19 @@
   "gallup_k12_2026": {
     "org": "Gallup / Walton Family Foundation",
     "title": "Satisfaction With K-12 Education Hits New Low",
-    "date": "2026-09",
+    "date": "2026-09-07",
     "url": "https://news.gallup.com/poll/714017/satisfaction-education-hits-new-low.aspx"
   },
   "collegeboard_sat_2026": {
     "org": "College Board",
     "title": "SAT Suite of Assessments Program Results, Class of 2026",
-    "date": "2026-09",
+    "date": "2026-09-29",
     "url": "https://reports.collegeboard.org/sat-suite-program-results"
   },
   "collegeboard_sat100_2026": {
     "org": "College Board",
     "title": "As the SAT Turns 100, Nearly 2 Million Students in the Class of 2026 Take the Test",
-    "date": "2026-09",
+    "date": "2026-09-29",
     "url": "https://newsroom.collegeboard.org/sat-turns-100-nearly-2-million-students-class-2026-take-test"
   },
   "irs_fstc_states_2026": {
@@ -811,8 +811,20 @@
   },
   "cr_fy2027": {
     "org": "U.S. Congress",
-    "title": "H.R. 6500 — Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103)",
+    "title": "Public Law 119-103: Continuing Appropriations and Extensions Act, 2027 (H.R. 6500)",
     "date": "2026-09-02",
-    "url": "https://www.congress.gov/bill/119th-congress/house-bill/6500"
+    "url": "https://www.govinfo.gov/content/pkg/PLAW-119publ103/html/PLAW-119publ103.htm"
+  },
+  "hisd_future2_schools_2026": {
+    "org": "Houston Independent School District",
+    "title": "Gregg Elementary School and Clemente Martinez Elementary School: \"A Future 2 School\" (school websites, 2026-27 enrollment)",
+    "date": "2026-10",
+    "url": "https://gregg.houstonisd.org/"
+  },
+  "az_reportcard_unbound": {
+    "org": "Arizona Department of Education",
+    "title": "Arizona School Report Cards: Unbound Academy (Oro Valley, grades 4-8; charter, online). Published years run through fiscal 2025 (2024-25) as of October 2, 2026",
+    "date": "2026-10",
+    "url": "https://azreportcards.azed.gov/schools/detail/1002640"
   }
 }

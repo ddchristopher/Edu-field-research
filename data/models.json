@@ -79,20 +79,20 @@
     {
       "id": "microschools",
       "label": "Students in microschools",
-      "value": 2100000,
-      "display": "0.75–2.1M",
+      "value": 2000000,
+      "display": "0.75–2M",
       "unit": "estimates disagree sharply",
       "delta": {
         "text": "no agreed definition or count",
         "sentiment": "neutral"
       },
-      "asOf": "2026",
+      "asOf": "2025–26",
       "source": [
-        "nmc_sector_2026",
         "rand_microschools",
-        "cap_microschools"
+        "cap_microschools",
+        "nmc_sector_2026"
       ],
-      "note": "The National Microschooling Center's 2026 sector analysis puts students using a microschool as their main provider at between 750,000 and 2.1 million; RAND puts full-time attendance between 1 and 2 million. The disagreement is the finding, and it is not narrowing."
+      "note": "Estimates of students attending run from 750,000 to 2 million; RAND puts full-time attendance between 1 and 2 million. The National Microschooling Center's 2026 survey of 1,000 microschools describes how the sector operates but does not settle its size. The disagreement is the finding."
     }
   ],
   "blocks": [
@@ -237,12 +237,13 @@
           "cells": [
             "Alpha School and 2 Hour Learning",
             "A private network where students do two hours of AI-tutored academics each morning and spend afternoons on workshops and projects, expanding to roughly 50 campuses including 27 newly announced. The operator reports every grade and subject scoring in the top 1% on national benchmarks, measured on NWEA MAP, SAT and AP",
-            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network. The first broader test is now running: Houston ISD converted C. Martinez and Gregg elementary schools to pre-K-8 'Future 2' schools for 2026–27, with no academic requirements for admission and enrolled students carried over by default unless families opt out, so the intake is a neighbourhood mix rather than a selected one. Scientific American reported the district pilots as tests of the Alpha model. Results from those campuses against comparable HISD schools would be the first evidence that is not the operator's own"
+            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network. The first broader test is now running: Houston ISD converted C. Martinez and Gregg elementary schools to pre-K-8 'Future 2' schools for 2026–27, with no academic requirements for admission and enrolled students carried over by default unless families opt out, so the intake is a neighbourhood mix rather than a selected one. Both schools now present themselves on their own websites as Future 2 schools enrolling for 2026–27. Scientific American reported the district pilots as tests of the Alpha model. Results from those campuses against comparable HISD schools would be the first evidence that is not the operator's own"
           ],
           "tier": "Self-reported",
           "source": [
             "sciam_alpha_2026",
             "hisd_future2_2026",
+            "hisd_future2_schools_2026",
             "alpha_school"
           ]
         },
@@ -250,10 +251,11 @@
           "cells": [
             "Unbound Academy",
             "Arizona's tuition-free virtual charter for grades 4 to 8, approved by the state charter board, running the same two-hour model with no teachers delivering core academics",
-            "State assessment results against comparable Arizona students. The school has now completed a full year inside Arizona's testing and charter-accountability system, so the first AASA results and the Arizona State Board for Charter Schools academic dashboard are where this gets settled; neither could be read from a primary source this month, and figures circulating in commentary are not used here. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
+            "State assessment results against comparable Arizona students. The school opened in 2025–26, so spring 2026 AASA is its first test, and Arizona's public report card does not carry it yet: as of October 2, 2026 the state's report cards publish results only through 2024–25, and every 2025–26 data series for the school is empty. Figures circulating in commentary cannot be traced to a published state source and are not used here. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
           ],
           "tier": "Too early",
           "source": [
+            "az_reportcard_unbound",
             "unbound_academy",
             "credo_ncss3"
           ]
@@ -262,7 +264,7 @@
           "cells": [
             "Microschools",
             "Small, mixed-age, self-paced schools, often in homes or storefronts, growing on the back of state voucher and education savings account programs. The Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds a sector that has stopped being new: one in five has been open six years or longer and 45% for three to five years. Half report that their families receive state school-choice funding, three in five rely mainly on family tuition, and 66% discount it on a sliding scale",
-            "A count anyone agrees on, and any outcome data at all. Estimates of students using a microschool as their main provider range from 750,000 to 2.1 million, and most operate outside state assessment and reporting entirely. The 2026 survey makes that less likely to change, not more: for the first time, operators named growth in nonacademic learning as their most desired student outcome"
+            "A count anyone agrees on, and any outcome data at all. Estimates of students using a microschool as their main provider range from 750,000 to 2 million, and most operate outside state assessment and reporting entirely. The 2026 survey makes that less likely to change, not more: for the first time, operators named growth in nonacademic learning as their most desired student outcome"
           ],
           "tier": "Unmeasured",
           "source": [

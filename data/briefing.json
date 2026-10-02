@@ -12,6 +12,17 @@
       "source": "edwp_ai_tutor_2026"
     },
     {
+      "date": "2026-09-29",
+      "tag": "Math",
+      "headline": "SAT class of 2026 up 16 points; math still below 2020",
+      "detail": "The mean total was 1045, a second consecutive year of gains with increases across all demographic groups. Reading and writing rose 7 points to 528, returning to pre-pandemic levels; math rose 9 points to 517, below the 2020 cohort average of 523. Forty-two percent met both readiness benchmarks among nearly 2 million test-takers.",
+      "implication": "Math recovery is real but partial, and it is still the subject where a model has the most room to show a difference.",
+      "source": [
+        "collegeboard_sat_2026",
+        "collegeboard_sat100_2026"
+      ]
+    },
+    {
       "date": "2026-09-14",
       "tag": "Policy",
       "headline": "30 states have filed to join the federal scholarship tax credit",
@@ -34,6 +45,17 @@
       ]
     },
     {
+      "date": "2026-09-07",
+      "tag": "Data",
+      "headline": "Gallup: satisfaction with U.S. K-12 education falls to a 27-year low of 32%",
+      "detail": "Down from 35% in 2025 and 11 points in two years, with dissatisfaction at a record 67%. Parents' satisfaction with their own child's education also hit a low at 66%, against 32% for U.S. K-12 overall. Asked to rate schools area by area, a majority of parents gave an excellent or good mark in only one, preparing students to adapt to new technologies (51%); critical thinking drew 29% and preparation for work 27%. Walton Family Foundation/Gallup fieldwork, August 3-24, 2026.",
+      "implication": "Demand conditions for new models are as favourable as they have been, and the areas parents rate worst, thinking and work readiness, are the ones hardest to evidence.",
+      "source": [
+        "gallup_k12_2026",
+        "gallup_k12_2025"
+      ]
+    },
+    {
       "date": "2026-09-03",
       "tag": "AI",
       "headline": "LAUSD blocks generative AI on district devices for all students",
@@ -45,7 +67,7 @@
       "date": "2026-09-02",
       "tag": "Policy",
       "headline": "FY 2027 opens on a continuing resolution that expires December 11",
-      "detail": "The Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103) was signed September 2, 2026 after a 370-48 House vote, funding federal agencies from October 1 until the earlier of December 11, 2026 or enactment of the regular appropriations bills.",
+      "detail": "The Continuing Appropriations and Extensions Act, 2027 (P.L. 119-103) was signed September 2, 2026, funding federal agencies from October 1 until the earlier of December 11, 2026 or enactment of the regular appropriations bills.",
       "implication": "The federal statistics and evidence agencies a diligence process depends on, already mid-restructuring, now have ten weeks of funding at a time.",
       "source": "cr_fy2027"
     },
@@ -67,28 +89,6 @@
         "edweek_gemini_2026"
       ],
       "implication": "Vendor defaults are outrunning district policy, which raises the value of models that control their own stack."
-    },
-    {
-      "date": "2026-09",
-      "tag": "Data",
-      "headline": "Gallup: satisfaction with U.S. K-12 education falls to a 27-year low of 32%",
-      "detail": "Down from 35% in 2025 and 11 points in two years, with dissatisfaction at a record 67%. Parents' satisfaction with their own child's education also hit a low at 66%, against 32% for U.S. K-12 overall. Asked to rate schools area by area, a majority of parents gave an excellent or good mark in only one, preparing students to adapt to new technologies (51%); critical thinking drew 29% and preparation for work 27%. Walton Family Foundation/Gallup fieldwork, August 3-24, 2026.",
-      "implication": "Demand conditions for new models are as favourable as they have been, and the areas parents rate worst, thinking and work readiness, are the ones hardest to evidence.",
-      "source": [
-        "gallup_k12_2026",
-        "gallup_k12_2025"
-      ]
-    },
-    {
-      "date": "2026-09",
-      "tag": "Math",
-      "headline": "SAT class of 2026 up 16 points; math still below 2020",
-      "detail": "The mean total was 1045, a second consecutive year of gains with increases across all demographic groups. Reading and writing rose 7 points to 528, returning to pre-pandemic levels; math rose 9 points to 517, below the 2020 cohort average of 523. Forty-two percent met both readiness benchmarks among nearly 2 million test-takers.",
-      "implication": "Math recovery is real but partial, and it is still the subject where a model has the most room to show a difference.",
-      "source": [
-        "collegeboard_sat_2026",
-        "collegeboard_sat100_2026"
-      ]
     },
     {
       "date": "2026-08-31",
@@ -135,6 +135,7 @@
       "implication": "The first chance to see the two-hour AI model run on a neighbourhood intake rather than a tuition-paying one; results against comparable HISD schools would be the first evidence on this design that is not the operator’s own.",
       "source": [
         "hisd_future2_2026",
+        "hisd_future2_schools_2026",
         "sciam_alpha_2026"
       ]
     },
@@ -203,9 +204,13 @@
       "date": "2026-05",
       "tag": "Data",
       "headline": "Microschooling sector analysis: half the sector depends on state choice funding",
-      "detail": "The National Microschooling Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds one in five open six years or longer and 45% open three to five years. Half report that their families receive state school-choice funding and three in five rely mainly on family tuition, with 66% offering sliding-scale discounts. Estimates of students using a microschool as their main provider remain a range, 750,000 to 2.1 million. For the first time, operators named growth in nonacademic learning as their most desired student outcome.",
+      "detail": "The National Microschooling Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds one in five open six years or longer and 45% open three to five years. Half report that their families receive state school-choice funding and three in five rely mainly on family tuition, with 66% offering sliding-scale discounts. The survey does not settle the size of the sector; estimates of students attending still run from 750,000 to 2 million. For the first time, operators named growth in nonacademic learning as their most desired student outcome.",
       "implication": "A sector maturing in operations while moving away from measurable academic outcomes, so a funder wanting evidence here has to pay for the measurement as well as the school.",
-      "source": "nmc_sector_2026"
+      "source": [
+        "nmc_sector_2026",
+        "rand_microschools",
+        "cap_microschools"
+      ]
     },
     {
       "date": "2026-04-28",
@@ -301,8 +306,9 @@
     },
     {
       "date": "2026-11",
-      "what": "Arizona AASA results and ASBCS academic dashboard for Unbound Academy's first full year",
-      "why": "The first state-test evidence on the two-hour AI model with a non-tuition intake. Nothing on this could be verified from a primary source this month."
+      "what": "Arizona's 2025–26 report cards, including Unbound Academy's first AASA results",
+      "why": "The first state-test evidence on the two-hour AI model with a non-tuition intake. As of October 2, 2026 the state's report cards publish only through 2024–25.",
+      "source": "az_reportcard_unbound"
     },
     {
       "date": "2026-11",
@@ -363,6 +369,16 @@
         "Conditions for scale: added the Section 25F scholarship tax credit (30 states, 2027 start) to the capital table and the FY 2027 continuing resolution to the funding picture.",
         "Landscape: Gallup satisfaction 35% → 32% (new 27-year low) and the SAT class of 2026 (1045, math 517).",
         "Left unchanged for want of a newer primary source: NAEP 2024, CREDO NCSS3, KIPP and BARR effects, NAPCS enrollment, IES restructuring, Walton and City Fund capital figures. Unbound Academy’s first-year state results could not be verified on a primary source and are not on the dashboard."
+      ]
+    },
+    {
+      "edition": "October 2026",
+      "date": "2026-10-02",
+      "changes": [
+        "Verification pass after the network policy was opened: re-checked the October figures against the publishers’ own pages and data files (NCES PISA 2025 data, Gallup, College Board, IRS, govinfo, EdWorkingPapers, the Microschooling Center, the NAEP data service).",
+        "Corrected the microschool student range from 750,000–2.1 million back to 750,000–2 million: the higher bound does not appear on the Center’s own pages.",
+        "Removed the House vote count on the continuing resolution, which is not in the enacted text; dated the Gallup (Sept 7) and SAT (Sept 29) items precisely.",
+        "Unbound Academy: confirmed from Arizona’s own report-card system that 2025–26 results are not yet published there, and said so in the row."
       ]
     }
   ]

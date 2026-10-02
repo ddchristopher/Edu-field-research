@@ -246,11 +246,11 @@
         },
         {
           "headline": "How many microschool students exist.",
-          "detail": "Estimates run from 750,000 to 2.1 million depending on definition, and most microschools sit outside state assessment entirely. The Center's own 2026 survey reports that operators now rank growth in nonacademic learning as their most desired student outcome, so the measurement gap is becoming a design choice rather than a growing pain. A sector that cannot be counted cannot be evaluated, which is an argument for funding measurement before models.",
+          "detail": "Estimates run from 750,000 to 2 million depending on definition, and most microschools sit outside state assessment entirely. The Center's own 2026 survey reports that operators now rank growth in nonacademic learning as their most desired student outcome, so the measurement gap is becoming a design choice rather than a growing pain. A sector that cannot be counted cannot be evaluated, which is an argument for funding measurement before models.",
           "source": [
-            "nmc_sector_2026",
             "rand_microschools",
-            "cap_microschools"
+            "cap_microschools",
+            "nmc_sector_2026"
           ]
         },
         {
