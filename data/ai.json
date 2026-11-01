@@ -338,6 +338,14 @@
         },
         {
           "cells": [
+            "AI hints inside a mastery-based math practice platform (Oreopoulos, Liut, Sungu & Low, NBER, Aug 2026)",
+            "Randomized field experiment, more than 6,000 middle-school students in Hamilton County, Tennessee; AI vs. standard computer-assisted support, crossed with mastery vs. non-mastery progression",
+            "AI students progressed more slowly and attempted fewer questions but answered more accurately after mistakes. Mastery progression alone did not improve a test a week later; the clearest delayed gains, marginally significant, came when AI was built into the mastery workflow. Structure, not the model, carried the effect."
+          ],
+          "source": "nber_ai_mastery_2026"
+        },
+        {
+          "cells": [
             "Course-integrated AI tutor (EdWorkingPaper 26-1598, Oct 2026) — undergraduate, not K-12",
             "RCT, 2,379 undergraduates and 30 instructors across disciplines at one large U.S. public university; tutor built into the course",
             "Among sections of the same course, tutor access cut final grades by 0.37 SD and learning-management-system participation by 0.90 SD; estimated losses were larger for first-generation students. The authors read it as the tutor displacing engagement with activities that already worked, rather than failing to teach."

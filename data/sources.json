@@ -55,8 +55,8 @@
   },
   "r2l_tracker": {
     "org": "AEI Return to Learn Tracker",
-    "title": "Chronic Absenteeism: 2017–2026 (updated Aug 28, 2026)",
-    "date": "2026-08-28",
+    "title": "Chronic Absenteeism: 2017–2026 (updated Oct 30, 2026)",
+    "date": "2026-10-30",
     "url": "https://www.returntolearntracker.net/"
   },
   "futureed_enrollment": {
@@ -799,7 +799,7 @@
   },
   "hisd_future2_2026": {
     "org": "Houston Independent School District",
-    "title": "HISD to Launch Future 2 Schools, Ushering in a Paradigm Shift for the AI Era",
+    "title": "HISD to Launch Future 2 Schools, Ushering in a Paradigm Shift for the AI Era (February 18, 2026 announcement; the page returned 404 on November 1, 2026 and is quoted from the district's indexed text)",
     "date": "2026-08",
     "url": "https://hisdnow.houstonisd.org/p/~board/district-news/post/hisd-to-launch-future-2-schools-ushering-in-a-paradigm-shift-for-the-ai-era"
   },
@@ -823,8 +823,74 @@
   },
   "az_reportcard_unbound": {
     "org": "Arizona Department of Education",
-    "title": "Arizona School Report Cards: Unbound Academy (Oro Valley, grades 4-8; charter, online). Published years run through fiscal 2025 (2024-25) as of October 2, 2026",
-    "date": "2026-10",
+    "title": "Arizona School Report Cards: Unbound Academy (Oro Valley, grades 4-8; charter, online). Published years run through fiscal 2025 (2024-25) as of November 1, 2026",
+    "date": "2026-11-01",
     "url": "https://azreportcards.azed.gov/schools/detail/1002640"
+  },
+  "act_2026": {
+    "org": "ACT",
+    "title": "The ACT Profile Report: 2026 Graduating Class, National",
+    "date": "2026-10",
+    "url": "https://www.act.org/content/dam/act/unsecured/documents/2026-grad-class-national-profile-report.pdf"
+  },
+  "nyt_alpha_2026": {
+    "org": "The New York Times",
+    "title": "Alpha School Claims to Teach Kids Twice as Fast. Many Don't Make It.",
+    "date": "2026-10-23",
+    "url": "https://www.nytimes.com/2026/10/23/us/alpha-school-ai-education-parents.html"
+  },
+  "propublica_alpha_2026": {
+    "org": "ProPublica and The Texas Tribune",
+    "title": "Alpha School Eligible for Texas Voucher Money Despite Rejected Charter Bid",
+    "date": "2026-09-02",
+    "url": "https://www.propublica.org/article/alpha-school-texas-vouchers-ai"
+  },
+  "ed_res_ohio_2026": {
+    "org": "U.S. Department of Education",
+    "title": "U.S. Department of Education Approves Ohio's Returning Education to the States Waiver",
+    "date": "2026-10-30",
+    "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-approves-ohios-returning-education-states-waiver"
+  },
+  "ed_res_indiana_2026": {
+    "org": "U.S. Department of Education",
+    "title": "U.S. Department of Education Approves Indiana's Returning Education to the States Waiver, Freeing Up Millions to Invest in Students",
+    "date": "2026-06-16",
+    "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-approves-indianas-returning-education-states-waiver-freeing-millions-invest-students"
+  },
+  "ed_res_arkansas_2026": {
+    "org": "U.S. Department of Education",
+    "title": "U.S. Department of Education Approves Arkansas' Returning Education to the States Waiver, Other Education Flexibilities",
+    "date": "2026-07-07",
+    "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-approves-arkansas-returning-education-states-waiver-other-education-flexibilities"
+  },
+  "ed_csp_se_2026": {
+    "org": "U.S. Department of Education",
+    "title": "Expanding Opportunities Through Quality Charter Schools Program (CSP) Grants to State Entities (84.282A): FY 2026 awards",
+    "date": "2026-09-08",
+    "url": "https://www.ed.gov/grants-and-programs/grants-birth-grade-12/charter-school-programs/expanding-opportunities-through-quality-charter-schools-program-csp-grants-state-entities-84282a"
+  },
+  "ed_csp_2025": {
+    "org": "U.S. Department of Education",
+    "title": "U.S. Department of Education Announces Release of Record $500 Million for Charter Schools Programs",
+    "date": "2025-09-24",
+    "url": "https://www.ed.gov/about/news/press-release/us-department-of-education-announces-release-of-record-500-million-charter-schools-programs"
+  },
+  "nber_ai_mastery_2026": {
+    "org": "NBER (Oreopoulos, Liut, Sungu & Low)",
+    "title": "Making AI Tutoring Productive: Evidence from a Mastery-Based Math Practice Experiment (Working Paper 35621)",
+    "date": "2026-08",
+    "url": "https://www.nber.org/papers/w35621"
+  },
+  "az_ade_assessment_data": {
+    "org": "Arizona Department of Education",
+    "title": "Accountability & Research Data: state assessment files (latest posted: FY 2025, October 2025; no FY 2026 file as of November 1, 2026)",
+    "date": "2026-11-01",
+    "url": "https://www.azed.gov/accountability-research/data"
+  },
+  "hisd_future2_ftr_2026": {
+    "org": "Houston Independent School District",
+    "title": "For the Record: Future 2 Schools",
+    "date": "2026-04-28",
+    "url": "https://hisdnow.houstonisd.org/p/~board/for-the-record/post/future-2-schools"
   }
 }

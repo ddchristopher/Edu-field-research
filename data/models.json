@@ -236,14 +236,16 @@
         {
           "cells": [
             "Alpha School and 2 Hour Learning",
-            "A private network where students do two hours of AI-tutored academics each morning and spend afternoons on workshops and projects, expanding to roughly 50 campuses including 27 newly announced. The operator reports every grade and subject scoring in the top 1% on national benchmarks, measured on NWEA MAP, SAT and AP",
-            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network. The first broader test is now running: Houston ISD converted C. Martinez and Gregg elementary schools to pre-K-8 'Future 2' schools for 2026–27, with no academic requirements for admission and enrolled students carried over by default unless families opt out, so the intake is a neighbourhood mix rather than a selected one. Both schools now present themselves on their own websites as Future 2 schools enrolling for 2026–27. Scientific American reported the district pilots as tests of the Alpha model. Results from those campuses against comparable HISD schools would be the first evidence that is not the operator's own"
+            "A private network where students do two hours of AI-tutored academics each morning and spend afternoons on workshops and projects, expanding to roughly 50 campuses including 27 newly announced; ProPublica and The Texas Tribune count private schools in 17 states and Puerto Rico and more than 30 Texas campuses, most accepted into the state's new voucher program. The operator reports every grade and subject scoring in the top 1% on national benchmarks, measured on NWEA MAP, SAT and AP",
+            "Independent evaluation of a comparable student population. The operator's own results are self-reported and drawn from a tuition-paying private network, and the first outside looks at them are unfavourable. The New York Times (October 23, 2026), working from the operator's internal data, reported that only 42% of students progressed twice as fast in both math and reading, the '2x' standard in Alpha's marketing. ProPublica and The Texas Tribune (September 2, 2026) found that at Texas Preparatory School, an Austin charter that ran the platform in partnership with Alpha, Texas Education Agency results showed the share of students at grade level fall from 10% to zero, against the operator's claim of 50% to 60% passing. Houston ISD is not the clean test this row previously described. Its February 2026 announcement put C. Martinez and Gregg elementary schools on a 'Future 2' design whose first four hours follow the district's standard NES curriculum, with only students in the top percentile on MAP able to opt into an accelerated AI platform for reading and math, and the district says Future 2 'is not a model where artificial intelligence replaces teachers or delivers instruction independently'. Results from those campuses would test a redesigned school day, not the two-hour AI model. No public-school setting yet runs the full model on a non-selective intake with a comparison group"
           ],
           "tier": "Self-reported",
           "source": [
-            "sciam_alpha_2026",
+            "nyt_alpha_2026",
+            "propublica_alpha_2026",
+            "hisd_future2_ftr_2026",
             "hisd_future2_2026",
-            "hisd_future2_schools_2026",
+            "sciam_alpha_2026",
             "alpha_school"
           ]
         },
@@ -251,11 +253,13 @@
           "cells": [
             "Unbound Academy",
             "Arizona's tuition-free virtual charter for grades 4 to 8, approved by the state charter board, running the same two-hour model with no teachers delivering core academics",
-            "State assessment results against comparable Arizona students. The school opened in 2025–26, so spring 2026 AASA is its first test, and Arizona's public report card does not carry it yet: as of October 2, 2026 the state's report cards publish results only through 2024–25, and every 2025–26 data series for the school is empty. Figures circulating in commentary cannot be traced to a published state source and are not used here. Virtual charters are the one segment CREDO found strongly negative nationally, so this design carries that prior until it is disproved"
+            "State assessment results against comparable Arizona students. The school opened in 2025–26, so spring 2026 AASA is its first test. ProPublica and The Texas Tribune reported preliminary scores presented to the school's oversight board: 28% of students proficient in English language arts against the 65% its charter application projected, and 10% in math against a projected 60%. These are not yet published by the state: as of November 1, 2026 Arizona's report cards run only through 2024–25 and the Department's newest school-level assessment file is for fiscal 2025, so the figures are quoted as reported and should be checked against the official release. Virtual charters are the one segment CREDO found strongly negative nationally, and the preliminary numbers are consistent with that prior"
           ],
           "tier": "Too early",
           "source": [
+            "propublica_alpha_2026",
             "az_reportcard_unbound",
+            "az_ade_assessment_data",
             "unbound_academy",
             "credo_ncss3"
           ]
@@ -315,9 +319,14 @@
           ]
         },
         {
-          "headline": "Self-reported results are not evidence, and should not be dismissed either.",
-          "detail": "Alpha's top-1% claims come from real external instruments but an unrepresentative, tuition-paying population with no comparison group. The honest position is to fund the question rather than the claim: its public-school pilots are the first design that could answer it.",
-          "source": "sciam_alpha_2026"
+          "headline": "Self-reported results are not evidence, and the first outside checks point the wrong way.",
+          "detail": "Alpha's top-1% claims come from real external instruments but an unrepresentative, tuition-paying population with no comparison group. The New York Times reports that only 42% of Alpha students met the company's own '2x' growth standard in both math and reading, and preliminary state scores reported for Unbound Academy fall far below its charter projections. Neither is an evaluation, and Houston's Future 2 campuses, read last month as the first independent test, run the AI platform only for top-percentile students. The question is still worth funding; the claim is not.",
+          "source": [
+            "nyt_alpha_2026",
+            "propublica_alpha_2026",
+            "hisd_future2_ftr_2026",
+            "hisd_future2_2026"
+          ]
         },
         {
           "headline": "The AI-school premise has a cheaper rival.",
@@ -368,6 +377,15 @@
           "display": "Tier ratings",
           "source": "efe_home",
           "note": "Where a whole-school model like BARR gets an independent tier rating rather than a self-assessment."
+        },
+        {
+          "label": "U.S. Department of Education",
+          "display": "$416M, FY 2026 state grants",
+          "source": [
+            "ed_csp_se_2026",
+            "ed_csp_2025"
+          ],
+          "note": "Eight Charter Schools Program state-entity awards on September 8, 2026, led by Texas ($149.2M); last year's record $500M round included $263M to 22 charter management organizations to replicate 147 schools."
         }
       ]
     }

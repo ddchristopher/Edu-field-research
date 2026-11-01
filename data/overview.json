@@ -319,12 +319,12 @@
         },
         {
           "id": "absent_2026_early",
-          "label": "First states reporting 2025–26 rates",
-          "display": "6 of 6 fell",
-          "value": 6,
-          "asOf": "Aug 28, 2026",
+          "label": "States reporting 2025–26 rates",
+          "display": "23",
+          "value": 23,
+          "asOf": "Oct 30, 2026",
           "source": "r2l_tracker",
-          "note": "CO, CT, GA, LA, MA, RI; Rhode Island is within half a point of its pre-pandemic baseline."
+          "note": "Up from six in August. The first six to report (CO, CT, GA, LA, MA, RI) all declined; AEI added California, Illinois, Indiana and Mississippi on October 30 but has not yet published a direction count across all 23."
         },
         {
           "id": "absent_recovery_drag",
@@ -682,9 +682,9 @@
           "source": [
             "nces_grad",
             "collegeboard_sat_2026",
-            "act_2025"
+            "act_2026"
           ],
-          "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2026 SAT mean total was 1045, up 16 points and the second straight year of gains, with reading and writing back to pre-pandemic levels and math still below; the ACT figure is the class of 2025 (19.4)."
+          "note": "Adjusted cohort graduation rate; up from 80% in 2011–12. Class of 2026 SAT mean total was 1045, up 16 points, with math still below pre-pandemic levels. The class of 2026 ACT composite was 19.2 (19.4 in 2025) across 1,463,293 test takers, the first class scored partly under the new composite that drops science; the ACT math mean was 19.0 and 30% met the math benchmark."
         }
       ]
     }

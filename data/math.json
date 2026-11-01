@@ -518,6 +518,11 @@
           ]
         },
         {
+          "headline": "The ACT does not show the same rebound.",
+          "detail": "The class of 2026 ACT composite was 19.2, down from 19.4, across 1,463,293 test takers, up from 1,380,130. The math mean was 19.0 (18.9 in 2025) and 30% met the math benchmark (29%). ACT drops science from the composite for tests taken from September 2025 and tested a larger, less selected pool, so the composite decline is partly compositional; math is flat, not recovering.",
+          "source": "act_2026"
+        },
+        {
           "headline": "Standing still was enough to move up internationally.",
           "detail": "U.S. PISA math and science results in 2025 were about the same as 2022 while OECD averages fell to their lowest recorded levels in math and reading. A model benchmarked against international peers should be careful here: the relative gain is a fall elsewhere, not a U.S. improvement, and U.S. math remains below its own 2018 level.",
           "source": [
