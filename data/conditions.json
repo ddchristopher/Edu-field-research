@@ -20,13 +20,20 @@
     },
     {
       "id": "waiver_flexibility",
-      "label": "Federal posture on accountability",
-      "value": 1,
-      "display": "More waivers",
-      "unit": "ESEA flexibility signalled",
-      "asOf": "July 2025",
-      "source": "ed_waiver_letter_2025",
-      "note": "The Department signalled renewed interest in state flexibility and waivers under ESSA, which widens the variation in what a school rating means from state to state."
+      "label": "States granted ESEA 'Returning Education to the States' waivers",
+      "value": 8,
+      "display": "8",
+      "unit": "Iowa first, Ohio eighth",
+      "delta": {
+        "text": "Ohio became the eighth on Oct 30",
+        "sentiment": "neutral"
+      },
+      "asOf": "Oct 30, 2026",
+      "source": [
+        "ed_res_ohio_2026",
+        "ed_res_indiana_2026"
+      ],
+      "note": "Most consolidate federal funding streams ($158M across the eight). Indiana's goes furthest on accountability, removing the requirement that academic indicators carry much greater weight in high school ratings."
     },
     {
       "id": "nsize",
@@ -98,9 +105,11 @@
         },
         {
           "headline": "Federal flexibility is expanding, not contracting.",
-          "detail": "The Department signalled renewed openness to ESEA waivers in July 2025. More state variation follows, which makes cross-state comparison of a model's results harder precisely as networks try to expand across state lines.",
+          "detail": "Eight states now hold ESEA waivers under the Department's Returning Education to the States initiative, Ohio the latest on October 30, 2026. Most are about money, consolidating federal funding streams, but two reach accountability: Indiana no longer has to give academic indicators much greater weight in high school ratings, and Arkansas may count advanced students' high school test results in place of grade-level tests. More state variation follows, which makes cross-state comparison of a model's results harder precisely as networks try to expand across state lines.",
           "source": [
-            "ed_waiver_letter_2025",
+            "ed_res_ohio_2026",
+            "ed_res_indiana_2026",
+            "ed_res_arkansas_2026",
             "nciea_accountability_2026"
           ]
         },
@@ -223,6 +232,18 @@
             "irs_fstc_states_2026",
             "irs_fstc_2026"
           ]
+        },
+        {
+          "cells": [
+            "U.S. Department of Education, Charter Schools Program",
+            "Eight new state-entity grants worth $416.1 million in total expected funding, awarded September 8, 2026 through the Department of Labor: Texas Education Agency $149.2M, The Mind Trust $68.9M, Florida $53.9M, South Carolina $48.2M, Michigan $38.6M, Excellent Schools Washington $33.3M, Delaware $16.0M, North Dakota $8.0M",
+            "Federal start-up and replication money is at a high and concentrated in a few states, Texas above all. For a funder, it lowers the cost of opening in those states and raises the premium on knowing which of the new schools work"
+          ],
+          "tier": "Sept 2026",
+          "source": [
+            "ed_csp_se_2026",
+            "ed_csp_2025"
+          ]
         }
       ]
     },
@@ -241,8 +262,11 @@
         },
         {
           "headline": "Whether AI-first schools are a model or a marketing claim.",
-          "detail": "Operators publish top-percentile results on external instruments; researchers point out there is no comparison group, the population is self-selected and tuition-paying, and that a 2025 review found intelligent tutoring barely beats non-AI tutoring built on the same active-learning principles.",
-          "source": "sciam_alpha_2026"
+          "detail": "Operators publish top-percentile results on external instruments; researchers point out there is no comparison group, the population is self-selected and tuition-paying, and that a 2025 review found intelligent tutoring barely beats non-AI tutoring built on the same active-learning principles. October moved the argument without settling it: the New York Times reported that only 42% of Alpha students met the company's own '2x' growth standard in both subjects. It is a reporter's reading of operator data, not an evaluation, and no public-school pilot yet runs the full model against a comparison group.",
+          "source": [
+            "sciam_alpha_2026",
+            "nyt_alpha_2026"
+          ]
         },
         {
           "headline": "How many microschool students exist.",

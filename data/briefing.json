@@ -1,8 +1,36 @@
 {
-  "edition": "October 2026",
-  "generated": "2026-10-01",
-  "summary": "PISA 2025 put U.S. 15-year-olds at 463 in mathematics, statistically level with 2022, while OECD averages fell to their lowest recorded levels in math and reading: the United States moved up the table by standing still. For school models the month's most consequential development was not an evaluation but an intake, as Houston ISD opened the first non-selective, district-run test of the two-hour AI model, and 30 states filed to join a federal scholarship tax credit that begins routing demand-side capital in January 2027. Against that, the first well-powered randomized trial of a course-integrated AI tutor found it cut final grades by 0.37 SD by displacing coursework that already worked, which is the failure mode an AI-first design has no fallback for.",
+  "edition": "November 2026",
+  "generated": "2026-11-01",
+  "summary": "The month's most consequential evidence on AI-first schools came from journalists rather than evaluators: the New York Times reported that only 42% of Alpha School students met the company's own '2x' growth standard in both math and reading, and ProPublica and The Texas Tribune reported preliminary scores of 28% proficient in English and 10% in math at Unbound Academy, far below its charter projections and not yet published by Arizona. Federal policy kept loosening the measurement system a school model is judged by, with Ohio becoming the eighth state to receive an ESEA Returning Education to the States waiver on October 30, while the Charter Schools Program's eight new state grants put $416 million of start-up capital into play, $149 million of it in Texas. The ACT class of 2026 composite slipped to 19.2 with math flat, NAPCS's charter enrollment count and Arizona's official 2025–26 results were still unpublished on November 1, and a new Hamilton County experiment found AI hints help only when built into a structured practice workflow.",
   "items": [
+    {
+      "date": "2026-10-30",
+      "tag": "Policy",
+      "headline": "Ohio becomes the eighth state with an ESEA 'Returning Education to the States' waiver",
+      "detail": "Ohio may consolidate more than $38 million in federal funds through 2029, bringing the total across the eight approved states to more than $158 million. Its waiver also loosens Title III-A spending rules and the provider-list requirement for Title I direct student services. Earlier waivers went further on accountability: Indiana's (June 16) removed the requirement that academic indicators receive much greater weight, and Arkansas's (July 7) lets advanced students' high school test results count.",
+      "implication": "Each waiver makes a school rating mean something slightly different from state to state, so a network expanding across state lines should plan to fund its own common outcome measure rather than rely on state ratings.",
+      "source": [
+        "ed_res_ohio_2026",
+        "ed_res_indiana_2026",
+        "ed_res_arkansas_2026"
+      ]
+    },
+    {
+      "date": "2026-10-30",
+      "tag": "Data",
+      "headline": "AEI's tracker now holds 2025–26 chronic absenteeism data for 23 states",
+      "detail": "AEI added California, Illinois, Indiana and Mississippi on October 30, up from six states in August. All of the first six (CO, CT, GA, LA, MA, RI) declined; AEI has not yet published a direction count across all 23.",
+      "implication": "Attendance remains the input most school models can move fastest; once the 23-state picture is summarised it sets the baseline any model's attendance claim should be compared against.",
+      "source": "r2l_tracker"
+    },
+    {
+      "date": "2026-10-23",
+      "tag": "AI",
+      "headline": "New York Times: only 42% of Alpha students met the company's own '2x' growth standard",
+      "detail": "Working from internal learning data, the Times reported that only 42 percent of Alpha School students progressed twice as fast in both math and reading, the '2x' standard featured in the company's marketing. The figure is a reporter's reading of operator data, not an evaluation, and there is still no comparison group.",
+      "implication": "Treat the '2x' claim as a target the operator misses for most of its own students, and make any grant to an AI-first design conditional on an independent comparison group, which no current public-school pilot provides.",
+      "source": "nyt_alpha_2026"
+    },
     {
       "date": "2026-10",
       "tag": "AI",
@@ -10,6 +38,14 @@
       "detail": "In a trial of 2,379 undergraduates and 30 instructors across disciplines at one large U.S. public university, access to a built-in AI tutor reduced final grades by 0.37 standard deviations and learning-management-system participation by 0.90 SD among sections of the same course, with larger estimated losses for first-generation students. The authors read it as displacement of activities that already worked rather than a failure to teach. This is undergraduate evidence at a single site, not K-12.",
       "implication": "The strongest counterweight yet to the AI-first premise: a portfolio should require any AI-centred design to show it is not crowding out the instruction it replaced.",
       "source": "edwp_ai_tutor_2026"
+    },
+    {
+      "date": "2026-10",
+      "tag": "Math",
+      "headline": "ACT class of 2026: composite 19.2, math flat at 19.0",
+      "detail": "1,463,293 graduates had an ACT composite, up from 1,380,130. The mean composite fell from 19.4 to 19.2, math rose from 18.9 to 19.0 and 30% met the math benchmark (29% in 2025). ACT dropped science from the composite for tests from September 2025, so year-on-year comparison is imperfect.",
+      "implication": "Alongside the SAT's gains, the ACT says high school math has stopped falling but is not recovering, which keeps secondary math a gap no proven school model has yet shown it closes at scale.",
+      "source": "act_2026"
     },
     {
       "date": "2026-09-29",
@@ -42,6 +78,17 @@
       "source": [
         "pisa2025_nces",
         "pisa2025_oecd"
+      ]
+    },
+    {
+      "date": "2026-09-08",
+      "tag": "Funding",
+      "headline": "Charter Schools Program awards $416M to eight state grantees, led by Texas",
+      "detail": "The FY 2026 state-entity grants, issued through the Department of Labor, total $416.1 million in expected funding: Texas Education Agency $149.2M, The Mind Trust $68.9M, Florida $53.9M, South Carolina $48.2M, Michigan $38.6M, Excellent Schools Washington $33.3M, Delaware $16.0M and North Dakota $8.0M. It follows the record $500 million CSP round of September 2025.",
+      "implication": "Federal start-up money is concentrated in a handful of states, so philanthropic dollars there can shift from subsidising openings toward evaluating which new schools work.",
+      "source": [
+        "ed_csp_se_2026",
+        "ed_csp_2025"
       ]
     },
     {
@@ -91,6 +138,17 @@
       "implication": "Vendor defaults are outrunning district policy, which raises the value of models that control their own stack."
     },
     {
+      "date": "2026-09-02",
+      "tag": "Policy",
+      "headline": "ProPublica and Texas Tribune: Alpha expands through vouchers; Unbound's preliminary scores far below projections",
+      "detail": "After Texas rejected its charter bid, Alpha grew to more than 30 Texas campuses, most accepted into the state's voucher program, and now runs private schools in 17 states and Puerto Rico. Preliminary state scores presented to Unbound Academy's board showed 28% proficient in English language arts against a projected 65% and 10% in math against a projected 60%; Arizona has not yet published them.",
+      "implication": "Demand-side funding lets an AI-first design grow without passing an authorizer, which shifts the job of demanding evidence from the state to funders.",
+      "source": [
+        "propublica_alpha_2026",
+        "az_ade_assessment_data"
+      ]
+    },
+    {
       "date": "2026-08-31",
       "tag": "Math",
       "headline": "EdWeek's math tracker counts 22 states with math laws since 2022",
@@ -128,13 +186,22 @@
       "implication": "The cheapest AI bet, adding a tutor to an existing school, returns roughly 0.06 to 0.08 SD a year. That is the bar an AI-first redesign must clear."
     },
     {
+      "date": "2026-08-17",
+      "tag": "AI",
+      "headline": "NBER: AI hints add value in math practice only when built into a mastery workflow",
+      "detail": "A randomized experiment with more than 6,000 Hamilton County middle-school students found AI support slowed progress but improved accuracy after mistakes. Mastery progression alone did not raise scores a week later; the clearest delayed gains, marginally significant, came when AI was embedded in the mastery workflow.",
+      "implication": "Evidence for AI as a tool inside a structured school, not for AI as the school: fund designs that specify the practice structure, not the model.",
+      "source": "nber_ai_mastery_2026"
+    },
+    {
       "date": "2026-08",
       "tag": "AI",
-      "headline": "Houston ISD converts two elementary schools to AI-centred 'Future 2' schools",
+      "headline": "Houston ISD converts two elementary schools to 'Future 2' schools",
       "detail": "From 2026-27, C. Martinez and Gregg elementary schools become pre-K-8 'Future 2' schools with a curriculum that prioritises interpersonal skills and real-world experience alongside core academics, staffed by teachers hired to support students working through AI-powered platforms. There are no academic requirements for admission and currently enrolled students carry over by default, with an opt-out to a nearby school. Scientific American reported the district pilots as tests of the Alpha School model.",
-      "implication": "The first chance to see the two-hour AI model run on a neighbourhood intake rather than a tuition-paying one; results against comparable HISD schools would be the first evidence on this design that is not the operator’s own.",
+      "implication": "Corrected in November: the district's own materials say the first four hours follow its standard curriculum and only top-percentile students opt into the AI platform, so these campuses test a redesigned school day rather than the two-hour AI model.",
       "source": [
         "hisd_future2_2026",
+        "hisd_future2_ftr_2026",
         "hisd_future2_schools_2026",
         "sciam_alpha_2026"
       ]
@@ -162,28 +229,23 @@
       "implication": "The evidence and data infrastructure a diligence process relies on is being reorganised while it is being used."
     },
     {
-      "date": "2026-06-16",
-      "tag": "Math",
-      "headline": "Texas STAAR: Algebra I up 7 points; grade-8 math access doubles",
-      "detail": "54% of Algebra I test-takers met grade level in the end-of-course results released June 10; the grades 3–8 release shows 32% of 7th graders took the grade-8 math test, up from 16% in 2023.",
-      "source": [
-        "tea_staar_2026",
-        "tea_staar_eoc_2026"
-      ]
-    },
-    {
-      "date": "2026-06-08",
-      "tag": "AI",
-      "headline": "Common Sense census: 86% of kids 9–17 use AI, 24% daily",
-      "detail": "Three-quarters say school has discussed AI rules; just over half were taught to use it safely; nearly half have never discussed AI safety with a parent.",
-      "source": "csm_census_2026"
-    },
-    {
       "date": "2026-05-26",
       "tag": "AI",
       "headline": "Gallup: only 18% of teachers get formal AI guidance",
       "detail": "34% receive none; 48% only informal guidance. Fewer than 1 in 10 have formal guidance for any specific task.",
       "source": "gallup_ai_2026"
+    },
+    {
+      "date": "2026-05",
+      "tag": "Data",
+      "headline": "Microschooling sector analysis: half the sector depends on state choice funding",
+      "detail": "The National Microschooling Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds one in five open six years or longer and 45% open three to five years. Half report that their families receive state school-choice funding and three in five rely mainly on family tuition, with 66% offering sliding-scale discounts. The survey does not settle the size of the sector; estimates of students attending still run from 750,000 to 2 million. For the first time, operators named growth in nonacademic learning as their most desired student outcome.",
+      "implication": "A sector maturing in operations while moving away from measurable academic outcomes, so a funder wanting evidence here has to pay for the measurement as well as the school.",
+      "source": [
+        "nmc_sector_2026",
+        "rand_microschools",
+        "cap_microschools"
+      ]
     },
     {
       "date": "2026-05-13",
@@ -199,18 +261,6 @@
       "detail": "Up 6.6% from FY 2023, the final year of federal pandemic relief. Instruction was 58.8% of current spending.",
       "source": "census_finance_2024",
       "implication": "The cost baseline any new model is compared against, in the last year before relief funds expired."
-    },
-    {
-      "date": "2026-05",
-      "tag": "Data",
-      "headline": "Microschooling sector analysis: half the sector depends on state choice funding",
-      "detail": "The National Microschooling Center's 2026 survey of 1,000 microschools across all 50 states, DC and Puerto Rico finds one in five open six years or longer and 45% open three to five years. Half report that their families receive state school-choice funding and three in five rely mainly on family tuition, with 66% offering sliding-scale discounts. The survey does not settle the size of the sector; estimates of students attending still run from 750,000 to 2 million. For the first time, operators named growth in nonacademic learning as their most desired student outcome.",
-      "implication": "A sector maturing in operations while moving away from measurable academic outcomes, so a funder wanting evidence here has to pay for the measurement as well as the school.",
-      "source": [
-        "nmc_sector_2026",
-        "rand_microschools",
-        "cap_microschools"
-      ]
     },
     {
       "date": "2026-04-28",
@@ -237,30 +287,6 @@
       "implication": "Any assessment-based accountability claim now has to survive widespread unsupervised AI use."
     },
     {
-      "date": "2026-02-24",
-      "tag": "Data",
-      "headline": "NWEA: one school in three recovered in a subject, one in seven in both",
-      "detail": "Study of 5 million students in 9,326 schools; high-poverty schools made the largest gains but are least likely to be recovered.",
-      "source": "nwea_recovery_2026",
-      "implication": "Two-thirds of schools are still below 2019, which is the size of the addressable problem."
-    },
-    {
-      "date": "2026-02-03",
-      "tag": "Policy",
-      "headline": "FY 2026 deal funds Education at $79B; Title I and IDEA up $20M each",
-      "detail": "Level funding for most K-12 programs; a provision blocks transferring ED funds to other agencies without congressional direction.",
-      "source": "fy26_approps",
-      "implication": "Federal funding held, so state and philanthropic capital remain the swing factor for new schools."
-    },
-    {
-      "date": "2025-12-04",
-      "tag": "Funding",
-      "headline": "City Fund and Bloomberg commit $20M to HBCU charter partnerships",
-      "detail": "Ten million dollars each, with UNCF as partner. Two Alabama schools are live: I Dream Big Academy in Tuscaloosa with Stillman College, opened August 2025, and D.C. Wolfe Charter School with Tuskegee University, reopening as a conversion charter in fall 2026.",
-      "implication": "New-school formation is being routed through anchor institutions, a structural bet on community trust and teacher pipelines.",
-      "source": "cityfund_bloomberg_2025"
-    },
-    {
       "date": "2025-11-14",
       "tag": "Data",
       "headline": "Charters added 111,349 students while districts lost 221,729",
@@ -269,17 +295,6 @@
       "source": [
         "napcs_enrollment_2025",
         "napcs_brief_pdf"
-      ]
-    },
-    {
-      "date": "2025-07-29",
-      "tag": "Policy",
-      "headline": "Education Department signals renewed ESEA waiver flexibility",
-      "detail": "A Dear Colleague letter indicated openness to state flexibility and waivers under ESSA, at a moment when assessment researchers are questioning whether accountability systems identify the right schools at all.",
-      "implication": "More state variation makes cross-state comparison of a network's results harder exactly as networks try to expand across state lines.",
-      "source": [
-        "ed_waiver_letter_2025",
-        "nciea_accountability_2026"
       ]
     },
     {
@@ -293,27 +308,21 @@
   ],
   "upcoming": [
     {
-      "date": "2026-10",
+      "date": "2026-11",
       "what": "NAPCS enrollment report and state charter counts",
-      "why": "Not yet published as of October 1. Whether the charter-district divergence held for a seventh year sets the growth ceiling for every model in the portfolio.",
+      "why": "Not yet published as of November 1 (last year's brief appeared November 14). Whether the charter-district divergence held for a seventh year sets the growth ceiling for every model in the portfolio.",
       "source": "napcs_enrollment_2025"
-    },
-    {
-      "date": "2026-10",
-      "what": "ACT results for the class of 2026",
-      "why": "The class of 2025 averaged 19.4. The SAT showed math recovering but still below 2020, so the ACT math composite is the cross-check.",
-      "source": "act_2025"
     },
     {
       "date": "2026-11",
       "what": "Arizona's 2025–26 report cards, including Unbound Academy's first AASA results",
-      "why": "The first state-test evidence on the two-hour AI model with a non-tuition intake. As of October 2, 2026 the state's report cards publish only through 2024–25.",
+      "why": "The first official state-test evidence on the two-hour AI model with a non-tuition intake. ProPublica reported preliminary scores of 28% proficient in English and 10% in math; as of November 1, 2026 Arizona's report cards and assessment files run only through 2024–25. Last year's file was posted in October.",
       "source": "az_reportcard_unbound"
     },
     {
-      "date": "2026-11",
+      "date": "2026-12",
       "what": "AEI Return to Learn: additional 2025-26 state absenteeism data",
-      "why": "Whether the sub-1-point improvement of 2024-25 becomes the new normal.",
+      "why": "23 states now have 2025–26 data. Whether the early declines hold across them decides if the sub-1-point improvement of 2024–25 was the floor.",
       "source": "r2l_tracker"
     },
     {
@@ -379,6 +388,20 @@
         "Corrected the microschool student range from 750,000–2.1 million back to 750,000–2 million: the higher bound does not appear on the Center’s own pages.",
         "Removed the House vote count on the continuing resolution, which is not in the enacted text; dated the Gallup (Sept 7) and SAT (Sept 29) items precisely.",
         "Unbound Academy: confirmed from Arizona’s own report-card system that 2025–26 results are not yet published there, and said so in the row."
+      ]
+    },
+    {
+      "edition": "November 2026",
+      "date": "2026-11-01",
+      "changes": [
+        "School models: Alpha School row updated with the New York Times finding (42% met the operator's own '2x' standard in both subjects) and ProPublica/Texas Tribune's Texas Preparatory School comparison; Unbound Academy row now quotes the preliminary 28% ELA and 10% math proficiency reported by ProPublica, labelled as unpublished by the state. Tiers unchanged: no independent evaluation has published.",
+        "Correction: the Alpha School row, the school-models finding and the August Houston briefing item no longer describe Houston ISD's Future 2 campuses as a non-selective test of the two-hour AI model. HISD's own announcement and its April 28 'For the Record' post say the first four hours follow the district's standard curriculum, only top-percentile MAP students opt into the AI platform, and AI does not deliver instruction independently.",
+        "School models and Conditions for scale: added the FY 2026 Charter Schools Program state-entity grants ($416.1M, eight grantees) to the funder chips and the capital table.",
+        "Conditions for scale: replaced the 'More waivers' KPI with a count of ESEA Returning Education to the States waivers (8, Ohio on October 30) and rewrote the flexibility finding around the Indiana and Arkansas accountability changes; the AI-first disagreement entry now carries the NYT figure.",
+        "AI and learning: added the NBER Hamilton County mastery-practice experiment (Working Paper 35621) to the evidence table.",
+        "Landscape and math: ACT class of 2026 (composite 19.2, math 19.0, 30% meeting the math benchmark) added to the graduation tile note and the math findings; AEI absenteeism tile now counts 23 states with 2025–26 data.",
+        "Pruned briefing items older than four months that no longer source a headline figure (Texas STAAR, Common Sense census, NWEA recovery, FY 2026 appropriations, City Fund and Bloomberg, the 2025 waiver letter); their figures remain in the section files.",
+        "Left unchanged for want of a newer primary source: NAPCS charter enrollment (2025 brief), CREDO NCSS3, KIPP and BARR effects, NAEP 2024, PDK 2025, Walton and City Fund capital, IES restructuring status, the 30-state scholarship tax credit count. Arizona has not published Unbound Academy's 2025–26 results."
       ]
     }
   ]
